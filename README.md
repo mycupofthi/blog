@@ -13,3 +13,7 @@ share_\_grey
 ### Assets for Author Blog
 
 CMS banner widgets 55954-55959
+
+### Assets for Baby Blog
+
+CMS banner widgets 55960-55964
