@@ -1,0 +1,119 @@
+@charset "UTF-8";
+.cat-hero {
+  margin-bottom: 67px; }
+  .cat-hero .banner__container {
+    max-width: 100% !important; }
+    .cat-hero .banner__container .banner__image {
+      width: 100%; }
+      .cat-hero .banner__container .banner__image .banner__image-picture {
+        width: 100%; }
+  .cat-hero .banner__copy-container {
+    position: relative;
+    margin: 67px auto 0;
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+    .cat-hero .banner__copy-container:before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #000;
+      position: absolute;
+      top: calc(5% + 24px);
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      display: block; }
+    .cat-hero .banner__copy-container .banner__caption-title {
+      font-family: 'Miller Display Light', Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      line-height: 86px;
+      letter-spacing: 0.02em;
+      color: #000;
+      margin: 91px auto 61px;
+      max-width: 1020px; }
+    .cat-hero .banner__copy-container .banner__caption-text {
+      font-family: 'Miller Display', Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: 0.025em;
+      text-decoration: underline;
+      text-transform: none;
+      color: #000;
+      margin: 0 auto;
+      max-width: 1020px; }
+    .cat-hero .banner__copy-container .banner__button {
+      font-family: 'Franklin Gothic Extra Condensed', 'Ultramagnetic', Arial, Helvetica, sans-serif;
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
+      width: 33%;
+      display: inline-block;
+      line-height: 28px; }
+    .cat-hero .banner__copy-container .date,
+    .cat-hero .banner__copy-container .share {
+      font-size: 21px;
+      letter-spacing: 0.1em;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: left; }
+    .cat-hero .banner__copy-container .category {
+      font-size: 35px;
+      letter-spacing: 0.2em; }
+    .cat-hero .banner__copy-container .share {
+      text-align: right; }
+      .cat-hero .banner__copy-container .share:before {
+        content: 'Ì';
+        font-family: 'Wingdings 3';
+        margin-left: 7px; }
+
+.cat-main .banner__container {
+  margin: 0 auto; }
+
+.cat-main .banner__copy-container {
+  position: relative;
+  max-width: 1020px;
+  margin: 40px auto 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .cat-main .banner__copy-container .banner__caption-caption {
+    font-family: 'Gibson Regular', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 150px; }
+  .cat-main .banner__copy-container .banner__caption-title {
+    font-family: 'Gibson Light', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 75px;
+    letter-spacing: 0.023em;
+    text-decoration: underline;
+    margin-bottom: 50px; }
+  .cat-main .banner__copy-container .banner__caption-text {
+    font-family: 'Gibson Light', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    text-transform: none;
+    margin: 0; }
