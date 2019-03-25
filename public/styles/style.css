@@ -234,7 +234,7 @@
     -ms-transform: translateX(-50%);
     padding-left: 610px;
     max-width: 1560px;
-    width: 81.250vw; }
+    width: 81.25vw; }
     @media (max-width: 1920px) {
       .cat-quote .cat-quote-r.banner__copy-container {
         top: 11.719vw;
@@ -257,7 +257,7 @@
         padding: 0;
         margin-top: 7.813vw !important; } }
     .cat-quote .banner__copy-container .banner__caption-title {
-      font-family: 'Miller Banner Light', 'Miller Display Light', Arial, Helvetica, sans-serif;
+      font-family: "Miller Banner Light", "Miller Display Light", Arial, Helvetica, sans-serif;
       font-size: 105px;
       line-height: 1.2;
       letter-spacing: 0;
@@ -271,9 +271,9 @@
           font-size: 7.813vw;
           line-height: 1.1; } }
       .cat-quote .banner__copy-container .banner__caption-title:before {
-        content: '“'; }
+        content: "“"; }
       .cat-quote .banner__copy-container .banner__caption-title:after {
-        content: '”';
+        content: "”";
         display: inline-block;
         background: none;
         margin: 0; }
@@ -325,13 +325,13 @@
     position: relative; }
     @media (max-width: 1920px) {
       .cat-header .banner__copy-container {
-        margin-top: 3.490vw; } }
+        margin-top: 3.49vw; } }
     @media (max-width: 675px) {
       .cat-header .banner__copy-container {
         margin-top: 8.594vw;
         width: 84.375vw; } }
     .cat-header .banner__copy-container:before {
-      content: '';
+      content: "";
       width: 100%;
       height: 1px;
       background: #000;
@@ -349,7 +349,7 @@
         .cat-header .banner__copy-container:before {
           top: 8vw; } }
     .cat-header .banner__copy-container .banner__caption-title {
-      font-family: 'Miller Display Light', Arial, Helvetica, sans-serif;
+      font-family: "Miller Display Light", Arial, Helvetica, sans-serif;
       font-size: 100px;
       line-height: 0.86;
       letter-spacing: 0.02em;
@@ -360,7 +360,7 @@
       @media (max-width: 1920px) {
         .cat-header .banner__copy-container .banner__caption-title {
           font-size: 5.208vw;
-          margin: 6.071vw auto 3.490vw; } }
+          margin: 6.071vw auto 3.49vw; } }
       @media (max-width: 675px) {
         .cat-header .banner__copy-container .banner__caption-title {
           font-size: 7.813vw;
@@ -368,7 +368,7 @@
           width: 100%;
           margin: 10.93838vw auto 7.031vw; } }
     .cat-header .banner__copy-container .banner__caption-text {
-      font-family: 'Miller Display', Arial, Helvetica, sans-serif;
+      font-family: "Miller Display", Arial, Helvetica, sans-serif;
       font-size: 36px;
       line-height: 1.33;
       letter-spacing: 0.025em;
@@ -391,7 +391,7 @@
           text-align: left;
           width: 68.75vw; } }
     .cat-header .banner__copy-container .banner__button {
-      font-family: 'Franklin Gothic Extra Condensed', 'Ultramagnetic', Arial, Helvetica, sans-serif;
+      font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial, Helvetica, sans-serif;
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1;
@@ -429,8 +429,8 @@
     .cat-header .banner__copy-container .share {
       text-align: right; }
       .cat-header .banner__copy-container .share:before {
-        content: 'Ì';
-        font-family: 'Wingdings 3';
+        content: "Ì";
+        font-family: "Wingdings 3";
         margin-left: 7px; }
 
 /* article text - order: btn (img caption or header), title, text */
@@ -455,9 +455,9 @@
   @media (max-width: 675px) {
     .cat-article.banner__copy-container {
       width: 68.75vw;
-      margin: 6.250vw auto; } }
+      margin: 6.25vw auto; } }
   .cat-article.banner__copy-container .banner__caption-title {
-    font-family: 'Gibson Light', Arial, Helvetica, sans-serif;
+    font-family: "Gibson Light", Arial, Helvetica, sans-serif;
     font-size: 40px;
     line-height: 1.785;
     letter-spacing: 0.23em;
@@ -474,7 +474,7 @@
         letter-spacing: 0.245em;
         margin-bottom: 7.031vw; } }
   .cat-article.banner__copy-container .banner__caption-text {
-    font-family: 'Gibson Light', Arial, Helvetica, sans-serif;
+    font-family: "Gibson Light", Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 1.25;
     letter-spacing: 0.025em;
@@ -495,7 +495,7 @@
         text-align: left;
         width: 100%; } }
   .cat-article.banner__copy-container .banner__caption-link {
-    font-family: 'Gibson Regular', Arial, Helvetica, sans-serif;
+    font-family: "Gibson Regular", Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 1.25;
     letter-spacing: 0.025em;
@@ -523,7 +523,7 @@
     border: none;
     padding: 0; }
   .cat-article.banner__copy-container .banner__caption-caption {
-    font-family: 'Gibson Regular', Arial, Helvetica, sans-serif;
+    font-family: "Gibson Regular", Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 1.167;
     letter-spacing: 0.05em;
@@ -532,7 +532,7 @@
     width: 53.125vw; }
     @media (max-width: 1920px) {
       .cat-article.banner__copy-container .banner__caption-caption {
-        font-size: 1.250vw;
+        font-size: 1.25vw;
         margin: -3.125vw auto 7.813vw; } }
     @media (max-width: 939px) {
       .cat-article.banner__copy-container .banner__caption-caption {
@@ -543,7 +543,7 @@
         line-height: 1.2;
         margin: 0 auto 11.719vw; } }
   .cat-article.banner__copy-container .banner__caption-header {
-    font-family: 'Miller Banner Light', 'Miller Display Light', Arial, Helvetica, sans-serif;
+    font-family: "Miller Banner Light", "Miller Display Light", Arial, Helvetica, sans-serif;
     font-size: 80px;
     line-height: 0.9375;
     letter-spacing: 0.045em;
@@ -576,10 +576,10 @@
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
-      margin-top: 6.250vw;
+      margin-top: 6.25vw;
       width: 68.75vw; } }
   .cat-overlap.banner__copy-container .banner__button {
-    font-family: 'Gibson Regular', Arial, Helvetica, sans-serif;
+    font-family: "Gibson Regular", Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 1.167;
     letter-spacing: 0.05em;
@@ -588,7 +588,7 @@
     margin: 0; }
     @media (max-width: 1920px) {
       .cat-overlap.banner__copy-container .banner__button {
-        font-size: 1.250vw; } }
+        font-size: 1.25vw; } }
     @media (max-width: 939px) {
       .cat-overlap.banner__copy-container .banner__button {
         font-size: 12px; } }
@@ -599,3 +599,7 @@
 
 .cat-overlap-r.banner__copy-container {
   left: 50%; }
+
+/* Center text */
+.cat-centered {
+  text-align: center; }
