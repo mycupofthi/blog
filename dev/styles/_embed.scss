@@ -1,0 +1,155 @@
+// EMBEDS
+.cat__embed {
+  .banner__image-picture {
+    position:relative;
+  }
+}
+
+// LISTS - eg. recipes, instructions, q&a
+// positioning 
+.cat-list-center.banner__copy-container {
+  position:relative;
+  margin:75px auto 100px;
+  max-width:1020px;
+  width:53.125vw;
+  top:0;
+  transform:none !important;
+  -webkit-transform:none !important;
+  -ms-transform:none !important;
+  @media (max-width:1920px) {
+    margin:3.906vw auto 5.208vw;
+  }
+  @media (max-width:675px) {
+    margin:12.5vw 0 5.208vw;    
+    left:50%;
+  }
+}
+.cat-list-l.banner__copy-container {
+  max-width:510px;
+  width:26.563vw;
+  left:450px;
+  @media (max-width:1920px) {
+    left:23.438vw;
+  }
+}
+.cat-list-r.banner__copy-container {
+  max-width:410px;
+  width:21.354vw;
+  left:1060px;
+  @media (max-width:1920px) {
+    left:55.208vw;
+  }
+}
+// general styling
+.cat-list.banner__copy-container {
+  text-align:left;
+  top:50%;
+  transform:translateY(-50%);
+  -webkit-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  @media (max-width:675px) {
+    margin-top:12.50vw;
+    width:68.75vw;    
+    left:50%;
+    transform:translateX(-50%) !important;
+    -webkit-transform:translateX(-50%) !important;
+    -ms-transform:translateX(-50%) !important;
+  }
+  .banner__caption-title,
+  .banner__caption-text,
+  .banner__caption-list li {
+    font-size:24px;
+    line-height:1.25;
+    letter-spacing:0.03em;
+    color:#000;
+    @media (max-width:1920px) {
+      font-size:1.25vw;
+    }
+    @media (max-width:939px) {
+      font-size:12px;
+    }
+    @media (max-width:675px) {
+      font-size:3.75vw;
+    }
+  }
+  .banner__caption-title {
+    font-family:'Gibson Regular', Arial, Helvetica, sans-serif;
+    margin:35px 0 24px;
+    &:first-child {
+      margin-top:0 !important;
+    }
+    @media (max-width:1920px) {
+      margin:1.823vw 0 1.25vw;
+    }
+    @media (max-width:675px) {
+      font-size:3.75vw;
+      margin:6.25vw 0;
+
+    }
+  }  
+  .banner__caption-text  {
+    margin:35px 0;
+    @media (max-width:1920px) {
+      margin:1.823vw auto 0;
+    }
+    @media (max-width:675px) {
+      margin:6.250vw auto 0;
+    }
+  }
+  .banner__caption-list li {
+    font-family:'Gibson Light', Arial, Helvetica, sans-serif;    
+    line-height:1.46;
+  }
+}
+
+// Q&A text differences in mobile
+.cat-qa .banner__caption-text {
+  @media (max-width:675px) {
+    margin-top:3.906vw !important;
+  }  
+}
+
+// videos
+.cat-video {
+  @media (max-width:675px) {
+    margin-bottom:calc(10.938vw - 10px);
+  }
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .videoDiv {
+    height: 528px;
+    width: 100%;
+    position: relative;
+    @media (max-width:939px) {
+      max-width: 100%;
+      margin: 0 auto;
+      height: 56.383vw;
+    }
+  }
+  .posterImage {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    &:hover {
+      cursor:pointer;
+    }
+  }
+  #player {
+    display: none;
+    margin:0 auto;
+    @media (max-width:939px) {
+      max-height:56.383vw;
+    }
+    @media (max-width:675px) {
+      max-width:100%;
+    }
+    &:hover {
+      cursor:pointer;
+    }
+  }
+}
