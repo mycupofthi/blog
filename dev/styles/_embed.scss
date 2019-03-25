@@ -3,6 +3,15 @@
   .banner__image-picture {
     position:relative;
   }
+  .banner__caption-text.indented {
+    margin:0;
+    &:before {
+      content:'';
+      display: inline-block;
+      width: 25px;
+      height: 1px;
+    }
+  }
 }
 
 /* no top margin */

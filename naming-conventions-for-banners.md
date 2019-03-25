@@ -22,6 +22,7 @@ Naming conventions for banners & embed blocks
 - **.cat-video** - inserting youtube videos (inspired/books/annieleibovitz for reference) ([example - Annie Leibovitz video](https://preview.indigo.ca/en-ca/inspired/books/))
 
 ### Others - can be added in addition to any of the top classes
+- **.cat-no-bottom** - removes bottom margin 
 - **.cat-bg** - full bleed bg - add class with *.cat-main* or *.cat-hero* (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))
 
 ## **Caption fields** in extra tools
@@ -43,7 +44,8 @@ Naming conventions for banners & embed blocks
 Recipe list & instructions, Q&A, videos, copy with hyperlinks
 
 - **.banner__caption-link** - hyperlinks
-- **.cat-no-top** - no top margin
+- **.cat-no-top** - no top margin - add to caption class
+- **.indented** - add class to banner__caption-text to indent paragraphs
 
 - **.cat-list** - recipes, instructions, Q&A 
     + add .cat-list-center - center text in 1020px wrapper ([example - Q&A section](https://preview.indigo.ca/en-ca/inspired/food-entertaining))
