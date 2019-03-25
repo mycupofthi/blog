@@ -42,6 +42,9 @@ Naming conventions for banners & embed blocks
 ## Embed html blocks
 Recipe list & instructions, Q&A, videos, copy with hyperlinks
 
+- **.banner__caption-link** - hyperlinks
+- **.cat-no-top** - no top margin
+
 - **.cat-list** - recipes, instructions, Q&A 
     + add .cat-list-center - center text in 1020px wrapper ([example - Q&A section](https://preview.indigo.ca/en-ca/inspired/food-entertaining))
     + add .cat-list-l - left copy in 1020px wrapper ([example - ingredients section](https://preview.indigo.ca/en-ca/inspired/food-entertaining))
