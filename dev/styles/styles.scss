@@ -1,22 +1,22 @@
-@import '../styles/_embed.scss';
+@import "../styles/_embed.scss";
 
 /* IMAGES */
 /* full bleed */
 .cat-hero,
 .cat-quote {
-  margin-bottom:150px;
-  @media (max-width:1920px) {
-    margin-bottom:7.813vw;
+  margin-bottom: 150px;
+  @media (max-width: 1920px) {
+    margin-bottom: 7.813vw;
   }
-  @media (max-width:675px) {
-    margin-bottom:10.938vw;
+  @media (max-width: 675px) {
+    margin-bottom: 10.938vw;
   }
   .banner__container {
-    max-width:100% !important;
+    max-width: 100% !important;
     .banner__image {
-      width:100%;
+      width: 100%;
       .banner__image-picture {
-        width:100%;
+        width: 100%;
       }
     }
   }
@@ -27,16 +27,16 @@
 .cat-portrait,
 .cat-video {
   .banner__container {
-    margin:0 auto;
-    width:75vw;
-    @media (max-width:675px) {
-      width:68.75vw;
+    margin: 0 auto;
+    width: 75vw;
+    @media (max-width: 675px) {
+      width: 68.75vw;
     }
     .banner__image-picture {
-      left:50%;
-      transform:translateX(-50%);
-      -webkit-transform:translateX(-50%);
-      -ms-transform:translateX(-50%);
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
     }
   }
 }
@@ -51,186 +51,195 @@
 
 /* full bleed bg behind banner */
 .cat-bg {
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:100%;
-  @media (max-width:675px) {
-    background-position:top;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  @media (max-width: 675px) {
+    background-position: top;
   }
 }
 
 /* QUOTE */
 /* add .cat-quote__caps to caption class for uppercase */
 .cat-quote {
-  margin:50px auto 200px;
-  @media (max-width:1920px) {
-    margin:2.604vw auto 10.417vw;
+  margin: 50px auto 200px;
+  @media (max-width: 1920px) {
+    margin: 2.604vw auto 10.417vw;
   }
-  @media (max-width:675px) {
-    margin:0 auto 10.938vw;
+  @media (max-width: 675px) {
+    margin: 0 auto 10.938vw;
   }
   .cat-quote-l.banner__copy-container {
-    position:absolute;
-    padding-right:480px; 
-    left:50%;
-    transform:translateX(-50%);
-    -webkit-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-    @media (max-width:1920px) {
-      padding-right:25vw;
-    }   
-    @media (max-width:675px) {
-      position:relative;
-      padding:0;
-      margin:auto 0;
+    position: absolute;
+    padding-right: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    @media (max-width: 1920px) {
+      padding-right: 25vw;
+    }
+    @media (max-width: 675px) {
+      position: relative;
+      padding: 0;
+      margin: auto 0;
     }
   }
   .cat-quote-r.banner__copy-container {
-    position:absolute;
-    top:250px;
-    left:50%;
-    transform:translateX(-50%);
-    -webkit-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-    padding-left:610px;
-    max-width:1560px;
-    width:81.250vw;
-    @media (max-width:1920px) {
-      top:11.719vw;
-      padding-left:31.771vw;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    padding-left: 610px;
+    max-width: 1560px;
+    width: 81.25vw;
+    @media (max-width: 1920px) {
+      top: 11.719vw;
+      padding-left: 31.771vw;
     }
-    @media (max-width:675px) {
-      position:relative;
-      padding:0;
-      top:0;
-      margin:auto 0;
+    @media (max-width: 675px) {
+      position: relative;
+      padding: 0;
+      top: 0;
+      margin: auto 0;
     }
   }
   .banner__copy-container {
-    position:relative;
-    max-width:1440px;
-    width:75vw;
-    margin:0 auto;
-    text-align:left;
-    @media (max-width:675px) {
-      width:84.375vw;
-      padding:0;
-      margin-top:7.813vw !important; 
+    position: relative;
+    max-width: 1440px;
+    width: 75vw;
+    margin: 0 auto;
+    text-align: left;
+    @media (max-width: 675px) {
+      width: 84.375vw;
+      padding: 0;
+      margin-top: 7.813vw !important;
     }
     .banner__caption-title {
-      font-family:'Miller Banner Light', 'Miller Display Light', Arial, Helvetica, sans-serif;
-      font-size:105px;
-      line-height:1.2;
-      letter-spacing:0;
-      text-decoration:underline;
-      text-transform:none;
-      @media (max-width:1920px) {
-        font-size:5.469vw;
+      font-family: "Miller Banner Light", "Miller Display Light", Arial,
+        Helvetica, sans-serif;
+      font-size: 105px;
+      line-height: 1.2;
+      letter-spacing: 0;
+      text-decoration: underline;
+      text-transform: none;
+      @media (max-width: 1920px) {
+        font-size: 5.469vw;
       }
-      @media (max-width:675px) {
-        font-size:7.813vw;
-        line-height:1.1;
+      @media (max-width: 675px) {
+        font-size: 7.813vw;
+        line-height: 1.1;
       }
       &:before {
-        content:'“';
+        content: "“";
       }
       &:after {
+<<<<<<< HEAD
         content:'”';
         display:inline-block;
         background:none;
         margin:0;
         width:1px;
+=======
+        content: "”";
+        display: inline-block;
+        background: none;
+        margin: 0;
+>>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
       }
     }
   }
   .cat-quote__caps .banner__caption-title {
-    text-transform:uppercase;
+    text-transform: uppercase;
   }
 }
 
 /* overlap img (below quote banner - check inspired/books/annieleibovitz for reference) */
 .cat-portrait {
-  margin:-550px 0 100px;
-  @media (max-width:1920px) {
-    margin-top:-28.646vw;
-    margin-bottom:5.208vw;
+  margin: -550px 0 100px;
+  @media (max-width: 1920px) {
+    margin-top: -28.646vw;
+    margin-bottom: 5.208vw;
   }
-  @media (max-width:675px) {
-    margin:11.719vw auto 0;
+  @media (max-width: 675px) {
+    margin: 11.719vw auto 0;
   }
   .cat-overlap.banner__copy-container {
-    top:65%;
+    top: 65%;
   }
 }
 
 /* CAPTION CLASSES */
 /* header */
 .cat-header {
-  margin-bottom:150px;
-  @media (max-width:1920px) {
-    margin-bottom:7.813vw;
+  margin-bottom: 150px;
+  @media (max-width: 1920px) {
+    margin-bottom: 7.813vw;
   }
-  @media (max-width:675px) {
-    margin-bottom:10.938vw;
+  @media (max-width: 675px) {
+    margin-bottom: 10.938vw;
   }
   .banner__container {
-    max-width:100% !important;
+    max-width: 100% !important;
     // max=width:1920px;
     // position:relative;
     // overflow:hidden;
     // height:696px;
     .banner__image {
-      width:100%;
+      width: 100%;
       .banner__image-picture {
-        width:100%;
+        width: 100%;
         // width:auto;
         // position:absolute;
         // max-width:none;
         // left:50%;
         // transform:translateX(-50%);
         // -webkit-transform:translateX(-50%);
-        // -ms-transform:translateX(-50%); 
+        // -ms-transform:translateX(-50%);
       }
     }
   }
   .banner__copy-container {
-    position:relative;
-    margin:67px auto 0;
-    max-width:1440px;
-    width:75vw;
+    position: relative;
+    margin: 67px auto 0;
+    max-width: 1440px;
+    width: 75vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    position:relative;   
-    @media (max-width:1920px) {
-      margin-top:3.490vw;
+    position: relative;
+    @media (max-width: 1920px) {
+      margin-top: 3.49vw;
     }
-    @media (max-width:675px) {
-      margin-top:8.594vw;
-      width:84.375vw;
+    @media (max-width: 675px) {
+      margin-top: 8.594vw;
+      width: 84.375vw;
     }
     &:before {
-      content:'';
-      width:100%;
-      height:1px;
-      background:#000;
-      position:absolute;
-      top:49px;
-      left:50%;
-      transform:translateX(-50%);
-      -webkit-transform:translateX(-50%);
-      -ms-transform:translateX(-50%);
-      display:block;
-      @media (max-width:1500px) {
-        top:5vw;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #000;
+      position: absolute;
+      top: 49px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      display: block;
+      @media (max-width: 1500px) {
+        top: 5vw;
       }
-      @media (max-width:675px) {
-        top:8vw;
+      @media (max-width: 675px) {
+        top: 8vw;
       }
-    } 
+    }
     .banner__caption-title {
+<<<<<<< HEAD
       font-family:'Miller Display Light', Arial, Helvetica, sans-serif;
       font-size:100px;
       line-height:0.86;
@@ -242,15 +251,29 @@
       @media (max-width:1920px) {
         font-size:5.208vw;
         margin: 6.071vw auto 3.490vw;
+=======
+      font-family: "Miller Display Light", Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      line-height: 0.86;
+      letter-spacing: 0.02em;
+      color: #000;
+      margin: 91px auto 67px;
+      max-width: 1020px;
+      width: 53.125vw;
+      @media (max-width: 1920px) {
+        font-size: 5.208vw;
+        margin: 6.071vw auto 3.49vw;
+>>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
       }
-      @media (max-width:675px) {
-        font-size:7.813vw;
-        line-height:0.9;
-        width:100%;
-        margin:10.93838vw auto 7.031vw;
+      @media (max-width: 675px) {
+        font-size: 7.813vw;
+        line-height: 0.9;
+        width: 100%;
+        margin: 10.93838vw auto 7.031vw;
       }
     }
     .banner__caption-text {
+<<<<<<< HEAD
       font-family:'Miller Display', Arial, Helvetica, sans-serif;
       font-size:36px;
       line-height:1.33;
@@ -264,61 +287,83 @@
       text-align:left;
       @media (max-width:1920px) {
         font-size:1.775vw;
+=======
+      font-family: "Miller Display", Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      line-height: 1.33;
+      letter-spacing: 0.025em;
+      text-decoration: underline;
+      text-transform: none;
+      color: #000;
+      margin: 0 auto;
+      max-width: 1020px;
+      width: 53.125vw;
+      text-align: left;
+      @media (max-width: 1920px) {
+        font-size: 1.875vw;
+>>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
       }
-      @media (max-width:939px) {
-        font-size:14px;
+      @media (max-width: 939px) {
+        font-size: 14px;
       }
-      @media (max-width:675px) {
-        font-size:3.814vw;
-        text-align:left;
-        width:68.75vw;
+      @media (max-width: 675px) {
+        font-size: 3.814vw;
+        text-align: left;
+        width: 68.75vw;
       }
     }
     .banner__button {
-      font-family:'Franklin Gothic Extra Condensed', 'Ultramagnetic', Arial, Helvetica, sans-serif;
-      order:-1;
-      display:inline-block;
-      line-height:28px;
+      font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial,
+        Helvetica, sans-serif;
+      order: -1;
+      display: inline-block;
+      line-height: 28px;
     }
     .date,
     .share {
-      font-size:21px;
-      line-height:30px;
-      letter-spacing:0.1em;
-      color:rgba(0,0,0,0.5);
-      text-align:left;
-      width:25%;
-      @media (max-width:1500px) {
-        font-size:1.5vw;
-        line-height:2.3;
+      font-size: 21px;
+      line-height: 30px;
+      letter-spacing: 0.1em;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: left;
+      width: 25%;
+      @media (max-width: 1500px) {
+        font-size: 1.5vw;
+        line-height: 2.3;
       }
 
-      @media (max-width:675px) {
-        font-size:3.125vw;
-        line-height:1.2;
+      @media (max-width: 675px) {
+        font-size: 3.125vw;
+        line-height: 1.2;
       }
     }
     .category {
-      font-size:35px;
-      letter-spacing:0.2em; 
-      width:50%;
-      @media (max-width:1500px) {
-        font-size:2.33vw;
-        line-height:1.25;
+      font-size: 35px;
+      letter-spacing: 0.2em;
+      width: 50%;
+      @media (max-width: 1500px) {
+        font-size: 2.33vw;
+        line-height: 1.25;
       }
-      @media (max-width:675px) {
-        font-size:3.125vw;
+      @media (max-width: 675px) {
+        font-size: 3.125vw;
       }
     }
-    .share { 
-      text-align:right;
+    .share {
+      text-align: right;
       &:before {
+<<<<<<< HEAD
         content: '';
         background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png) no-repeat center;
         margin-right: 7px;
         width: 22px;
         height: 15px;
         display: inline-block;
+=======
+        content: "Ì";
+        font-family: "Wingdings 3";
+        margin-left: 7px;
+>>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
       }
     }
   }
@@ -326,10 +371,10 @@
 
 /* article text - order: btn (img caption or header), title, text */
 .cat-article.banner__copy-container {
-  position:relative;
-  max-width:1440px;
-  width:75vw;
-  margin:100px auto 150px;
+  position: relative;
+  max-width: 1440px;
+  width: 75vw;
+  margin: 100px auto 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,166 +382,170 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  @media (max-width:1920px) {
-    margin:5.208vw auto 7.813vw;
+  @media (max-width: 1920px) {
+    margin: 5.208vw auto 7.813vw;
   }
-  @media (max-width:675px) {
-    width:68.75vw;
-    margin:6.250vw auto;
+  @media (max-width: 675px) {
+    width: 68.75vw;
+    margin: 6.25vw auto;
   }
   .banner__caption-title {
-    font-family:'Gibson Light', Arial, Helvetica, sans-serif;
-    font-size:40px;
-    line-height:1.785;
-    letter-spacing:0.23em;
-    text-decoration:underline;
-    margin-bottom:50px;
-    @media (max-width:1920px) {
-      font-size:2.083vw;
-      margin-bottom:2.083vw;
+    font-family: "Gibson Light", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 1.785;
+    letter-spacing: 0.23em;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    @media (max-width: 1920px) {
+      font-size: 2.083vw;
+      margin-bottom: 2.083vw;
     }
-    @media (max-width:675px) {
-      font-size:3.906vw;
-      line-height:1.32;
-      letter-spacing:0.245em;
-      margin-bottom:7.031vw;
+    @media (max-width: 675px) {
+      font-size: 3.906vw;
+      line-height: 1.32;
+      letter-spacing: 0.245em;
+      margin-bottom: 7.031vw;
     }
   }
   .banner__caption-text {
-    font-family:'Gibson Light', Arial, Helvetica, sans-serif;
-    font-size:24px;
-    line-height:1.25;
-    letter-spacing:0.025em;
-    text-transform:none;
-    margin:0 auto;
-    text-align:left;
-    max-width:1020px;
-    width:53.125vw;
-    @media (max-width:1920px) {
-      font-size:1.25vw;
+    font-family: "Gibson Light", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    text-transform: none;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 1020px;
+    width: 53.125vw;
+    @media (max-width: 1920px) {
+      font-size: 1.25vw;
     }
-    @media (max-width:939px) {
-      font-size:12px;
+    @media (max-width: 939px) {
+      font-size: 12px;
     }
-    @media (max-width:675px) {
-      font-size:3.75vw;
-      text-align:left;
-      width:100%;
+    @media (max-width: 675px) {
+      font-size: 3.75vw;
+      text-align: left;
+      width: 100%;
     }
   }
   .banner__caption-link {
-    font-family:'Gibson Regular', Arial, Helvetica, sans-serif;
-    font-size:24px;
-    line-height:1.25;
-    letter-spacing:0.025em;
-    text-transform:none;
-    color:#66948e;
-    font-weight:normal;
-    @media (max-width:1920px) {
-      font-size:1.25vw;
+    font-family: "Gibson Regular", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    text-transform: none;
+    color: #66948e;
+    font-weight: normal;
+    @media (max-width: 1920px) {
+      font-size: 1.25vw;
     }
-    @media (max-width:939px) {
-      font-size:12px;
+    @media (max-width: 939px) {
+      font-size: 12px;
     }
-    @media (max-width:675px) {
-      font-size:3.75vw;
+    @media (max-width: 675px) {
+      font-size: 3.75vw;
     }
     &:hover,
     &:focus {
-      color:#66948e;
+      color: #66948e;
     }
   }
   /* different types of buttons (shows in first position) */
   .banner__button {
-    color:#000;
-    text-transform:uppercase;
-    order:-1;
-    text-decoration:none;
-    border:none;
-    padding:0;
+    color: #000;
+    text-transform: uppercase;
+    order: -1;
+    text-decoration: none;
+    border: none;
+    padding: 0;
   }
   /* img caption */
   .banner__caption-caption {
-    font-family:'Gibson Regular', Arial, Helvetica, sans-serif;
-    font-size:24px;
-    line-height:1.167;
-    letter-spacing:0.05em;
-    margin:-60px auto 150px;
-    max-width:1020px;
-    width:53.125vw;
-    @media (max-width:1920px) {
-      font-size:1.250vw;
-      margin:-3.125vw auto 7.813vw;
+    font-family: "Gibson Regular", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+    margin: -60px auto 150px;
+    max-width: 1020px;
+    width: 53.125vw;
+    @media (max-width: 1920px) {
+      font-size: 1.25vw;
+      margin: -3.125vw auto 7.813vw;
     }
-    @media (max-width:939px) {
-      font-size:12px;
+    @media (max-width: 939px) {
+      font-size: 12px;
     }
-    @media (max-width:675px) {
-      font-size:3.125vw;
-      line-height:1.2;
-      margin:0 auto 11.719vw;
+    @media (max-width: 675px) {
+      font-size: 3.125vw;
+      line-height: 1.2;
+      margin: 0 auto 11.719vw;
     }
   }
   /* large title */
   .banner__caption-header {
-    font-family:'Miller Banner Light', 'Miller Display Light', Arial, Helvetica, sans-serif;
-    font-size:80px;
-    line-height:0.9375;
-    letter-spacing:0.045em;
-    margin:-25px auto 40px;
-    @media (max-width:1920px) {
-      font-size:4.167vw;
-      margin:-1.302vw auto 2.083vw;
+    font-family: "Miller Banner Light", "Miller Display Light", Arial, Helvetica,
+      sans-serif;
+    font-size: 80px;
+    line-height: 0.9375;
+    letter-spacing: 0.045em;
+    margin: -25px auto 40px;
+    @media (max-width: 1920px) {
+      font-size: 4.167vw;
+      margin: -1.302vw auto 2.083vw;
     }
-    @media (max-width:675px) {
-      font-size:7.188vw;
-      line-height:1.09;
-      letter-spacing:-0.01em;
-      margin:0 auto 4.688vw;
+    @media (max-width: 675px) {
+      font-size: 7.188vw;
+      line-height: 1.09;
+      letter-spacing: -0.01em;
+      margin: 0 auto 4.688vw;
     }
   }
 }
 
 /* overlaps image & recipes - within 1440px wrapper - default, copy on left side */
 .cat-overlap.banner__copy-container {
-  text-align:left;
-  max-width:510px;
-  top:0;
-  left:450px;
-  @media (max-width:1920px) {
-    left:23.438vw;
-    width:26.5vw;
+  text-align: left;
+  max-width: 510px;
+  top: 0;
+  left: 450px;
+  @media (max-width: 1920px) {
+    left: 23.438vw;
+    width: 26.5vw;
   }
-  @media (max-width:675px) {
-    text-align:center;
-    left:50%;
-    transform:translateX(-50%);
-    -webkit-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-    margin-top:6.250vw;
-    width:68.75vw;
+  @media (max-width: 675px) {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    margin-top: 6.25vw;
+    width: 68.75vw;
   }
   .banner__button {
-    font-family:'Gibson Regular', Arial, Helvetica, sans-serif;
-    font-size:24px;
-    line-height:1.167;
-    letter-spacing:0.05em;
-    text-decoration:uppercase;
-    margin:0;
-    @media (max-width:1920px) {
-      font-size:1.250vw;
+    font-family: "Gibson Regular", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.05em;
+    text-decoration: uppercase;
+    margin: 0;
+    @media (max-width: 1920px) {
+      font-size: 1.25vw;
     }
-    @media (max-width:939px) {
-      font-size:12px;
+    @media (max-width: 939px) {
+      font-size: 12px;
     }
-    @media (max-width:675px) {
-      font-size:3.125vw;
-      line-height:1.2;
+    @media (max-width: 675px) {
+      font-size: 3.125vw;
+      line-height: 1.2;
     }
   }
 }
 .cat-overlap-r.banner__copy-container {
-  left:50%;
+  left: 50%;
 }
 
-
+/* Center text */
+.cat-centered {
+  text-align: center;
+}
