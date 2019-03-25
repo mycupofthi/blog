@@ -41,6 +41,14 @@
   }
 }
 
+/* no bottom margin */
+.cat-no-bottom {
+  margin-bottom:0 !important;
+  .banner__copy-container {
+    margin-bottom:0 !important;  
+  }
+}
+
 /* full bleed bg behind banner */
 .cat-bg {
   background-repeat: no-repeat;
@@ -128,10 +136,18 @@
         content: "“";
       }
       &:after {
+<<<<<<< HEAD
+        content:'”';
+        display:inline-block;
+        background:none;
+        margin:0;
+        width:1px;
+=======
         content: "”";
         display: inline-block;
         background: none;
         margin: 0;
+>>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
       }
     }
   }
@@ -223,6 +239,19 @@
       }
     }
     .banner__caption-title {
+<<<<<<< HEAD
+      font-family:'Miller Display Light', Arial, Helvetica, sans-serif;
+      font-size:100px;
+      line-height:0.86;
+      letter-spacing:0.02em;
+      color:#000;
+      margin:91px auto 67px;
+      max-width:1440px;
+      width:75vw;  
+      @media (max-width:1920px) {
+        font-size:5.208vw;
+        margin: 6.071vw auto 3.490vw;
+=======
       font-family: "Miller Display Light", Arial, Helvetica, sans-serif;
       font-size: 100px;
       line-height: 0.86;
@@ -234,6 +263,7 @@
       @media (max-width: 1920px) {
         font-size: 5.208vw;
         margin: 6.071vw auto 3.49vw;
+>>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
       }
       @media (max-width: 675px) {
         font-size: 7.813vw;
@@ -243,6 +273,21 @@
       }
     }
     .banner__caption-text {
+<<<<<<< HEAD
+      font-family:'Miller Display', Arial, Helvetica, sans-serif;
+      font-size:36px;
+      line-height:1.33;
+      letter-spacing:0.025em;
+      text-decoration:underline;
+      text-transform:none;
+      color:#000;
+      margin:0 auto;
+      max-width:1020px;
+      width:53.125vw;
+      text-align:left;
+      @media (max-width:1920px) {
+        font-size:1.775vw;
+=======
       font-family: "Miller Display", Arial, Helvetica, sans-serif;
       font-size: 36px;
       line-height: 1.33;
@@ -256,6 +301,7 @@
       text-align: left;
       @media (max-width: 1920px) {
         font-size: 1.875vw;
+>>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
       }
       @media (max-width: 939px) {
         font-size: 14px;
@@ -306,9 +352,18 @@
     .share {
       text-align: right;
       &:before {
+<<<<<<< HEAD
+        content: '';
+        background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png) no-repeat center;
+        margin-right: 7px;
+        width: 22px;
+        height: 15px;
+        display: inline-block;
+=======
         content: "Ì";
         font-family: "Wingdings 3";
         margin-left: 7px;
+>>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
       }
     }
   }
