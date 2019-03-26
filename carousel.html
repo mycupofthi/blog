@@ -48,29 +48,40 @@
       alt: ""
     }
   ];
-  var elements = document.getElementsByClassName("card");
-  elements = Array.from(elements); //convert to array
-  BgFlags = elements.map(
-    element => console.dir(element)
-    // ({
-    //     height: element.offsetTop,
-    //     bgsrc: element.dataset.bgsrc,
-    //     bgcolor: element.dataset.bgcolor,
-    //     size: element.dataset.size,
-    //     name: element.id,
-    //     image: parseInt(element.dataset.image)
-    // })
-  );
-  defaultFlag = BgFlags.filter(flag => flag.name == "defaultFlag")[0]; //we need the [0] because filter() returns an array
 
-  // We initialize a function that will target the existing HTML and input a random blog post in the carousel
-  function getRandomPost() {
-    // We first get a random index in the array
-    var randomIndex = blogPosts[Math.floor(Math.random() * blogPosts.length)];
-    console.log(randomIndex);
-    const card1 = document.getElementById("1");
-    document.getElementById("someid");
+  // card array 
+  var cardNode = document.getElementsByClassName("card");
+  var cardArray = Array.from(cardNode);
+
+
+  function cardMap() {
+    cardArray.map(function(child) {
+      console.dir(child.childNodes)
+    })
   }
 
-  getRandomPost();
+  cardMap()
+
+  const randomIndex = blogPosts[Math.floor(Math.random() * blogPosts.length)];
+  console.log(randomIndex);
+  const card1 = document.getElementById("1");
+  document.getElementById("someid");
+
+  
+
+  // BgFlags = el2.map(
+  //   child => console.log(child)
+  //   // ({
+  //   //     height: element.offsetTop,
+  //   //     bgsrc: element.dataset.bgsrc,
+  //   //     bgcolor: element.dataset.bgcolor,
+  //   //     size: element.dataset.size,
+  //   //     name: element.id,
+  //   //     image: parseInt(element.dataset.image)
+  //   // })
+  // );
+  // defaultFlag = BgFlags.filter(flag => flag.name == "defaultFlag")[0]; //we need the [0] because filter() returns an array
+
+  // We initialize a function that will target the existing HTML and input a random blog post in the carousel
+
 </script>

@@ -23,6 +23,11 @@
 - **.cat-portait** - below quote banner - left img and right captions (inspired/books/annieleibovitz for reference) ([example - below Whoopi quote banner](https://preview.indigo.ca/en-ca/inspired/books/))
 - **.cat-video** - inserting youtube videos (inspired/books/annieleibovitz for reference) ([example - Annie Leibovitz video](https://preview.indigo.ca/en-ca/inspired/books/))
 
+#### Mixed
+
+- **.cat-hero-tablet** - wrapped at 1440px at desktop, full-bleed for tablet, wrapped at mobile ([example - ingredients section](https://preview.indigo.ca/en-ca/inspired/food-entertaining/))
+
+
 ### Others - can be added in addition to any of the top classes
 - **.cat-no-bottom** - removes bottom margin 
 - **.cat-bg** - full bleed bg - add class with *.cat-main* or *.cat-hero* (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))

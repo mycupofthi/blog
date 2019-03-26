@@ -33,11 +33,35 @@
       width: 68.75vw;
     }
     .banner__image-picture {
+      width:100%;
       left: 50%;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
     }
+  }
+}
+
+/* behaviour: .cat-main for desktop, .cat-hero for tablet, .cat-main for mobile - good for recipes */
+.cat-hero-tablet {
+  margin: 0 auto 100px;
+  max-width:1440px;
+  width: 75vw;
+  @media (max-width:1920px) {
+    margin:0 auto 5.208vw;
+  }
+  @media (max-width:939px) {
+    width:100vw;
+    .banner__image {
+      width: 100%;
+      .banner__image-picture {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width:675px) {
+    margin:0 auto 10.938vw;
+    width: 68.75vw;
   }
 }
 
@@ -238,8 +262,10 @@
       letter-spacing: 0.02em;
       color: #000;
       margin: 91px auto 67px;
-      max-width: 1020px;
-      width: 53.125vw;
+      // max-width: 1020px;
+      // width: 53.125vw;
+      max-width: 1440px;
+      width: 75vw;  
       @media (max-width: 1920px) {
         font-size: 5.208vw;
         margin: 6.071vw auto 3.49vw;

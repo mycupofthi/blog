@@ -19,6 +19,7 @@
   margin-top:0 !important;
 }
 
+
 /* LISTS - eg. recipes, instructions, q&a */
 /* positioning */
 .cat-list-center.banner__copy-container {
@@ -39,11 +40,23 @@
   }
 }
 .cat-list-l.banner__copy-container {
-  max-width:510px;
-  width:26.563vw;
-  left:450px;
+  top:0;
+  left:50%;
+  transform:translate(-50%,-50%) !important;
+  -webkit-transform:translate(-50%,-50%) !important;
+  -ms-transform:translate(-50%) !important;
+  padding-right:510px;
+  max-width:1020px;
+  width:53.125vw;
   @media (max-width:1920px) {
-    left:23.438vw;
+    padding-right:26.563vw;
+  }
+  @media (max-width:939px) {
+    padding-right:36.563vw;
+    width:75vw;
+  }
+  @media (max-width:675px) {
+    width:68.75vw;
   }
 }
 .cat-list-r.banner__copy-container {
@@ -52,6 +65,12 @@
   left:1060px;
   @media (max-width:1920px) {
     left:55.208vw;
+  }
+  @media (max-width:939px) {
+    width:32.813vw;
+  }
+  @media (max-width:675px) {
+    width:68.75vw;
   }
 }
 /* general styling */
@@ -68,6 +87,7 @@
     transform:translateX(-50%) !important;
     -webkit-transform:translateX(-50%) !important;
     -ms-transform:translateX(-50%) !important;
+    padding:0;
   }
   .banner__caption-title,
   .banner__caption-text,
@@ -83,7 +103,7 @@
       font-size:12px;
     }
     @media (max-width:675px) {
-      font-size:3.75vw;
+      font-size:3.75vw !important;
     }
   }
   .banner__caption-title {
@@ -116,6 +136,18 @@
   }
 }
 
+/* to account for overflowing text */
+.cat-list-l,
+.cat-list-r {
+  h3,
+  p,
+  ul li {
+    @media (max-width:767px) {
+      font-size:11px !important;
+    }
+  }
+}
+
 
 /* Q&A text differences in mobile*/ 
 .cat-qa .banner__caption-text {
@@ -134,13 +166,17 @@
     margin: 0 auto;
   }
   .videoDiv {
-    height: 528px;
-    width: 100%;
+    height: 810px;
+    width:75vw;
     position: relative;
-    @media (max-width:939px) {
-      max-width: 100%;
+    margin:0 auto;
+    @media (max-width:1920px) {
+      height: 42.188vw;
       margin: 0 auto;
-      height: 56.383vw;
+    }
+    @media (max-width:675px) {
+      width:68.75vw;
+      height:38.672vw;
     }
   }
   .posterImage {
@@ -157,11 +193,12 @@
   #player {
     display: none;
     margin:0 auto;
-    @media (max-width:939px) {
-      max-height:56.383vw;
+    @media (max-width:1920px) {
+      max-height:42.188vw;
+      max-width:100%;
     }
     @media (max-width:675px) {
-      max-width:100%;
+      max-height:38.672vw;
     }
     &:hover {
       cursor:pointer;
