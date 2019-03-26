@@ -34,6 +34,7 @@ Banners can be found in the CMS under Content>Banners>Inspired Blog. Create a ne
 Share Button
 
 share\_\_black
+
 share\_\_grey
 
 ### Assets for Author Blog

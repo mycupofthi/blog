@@ -290,8 +290,7 @@
         content: "”";
         display: inline-block;
         background: none;
-        margin: 0;
-        width: 1px; }
+        margin: 0; }
   .cat-quote .cat-quote__caps .banner__caption-title {
     text-transform: uppercase; }
 
@@ -370,8 +369,8 @@
       letter-spacing: 0.02em;
       color: #000;
       margin: 91px auto 67px;
-      max-width: 1440px;
-      width: 75vw; }
+      max-width: 1020px;
+      width: 53.125vw; }
       @media (max-width: 1920px) {
         .cat-header .banner__copy-container .banner__caption-title {
           font-size: 5.208vw;
@@ -396,7 +395,7 @@
       text-align: left; }
       @media (max-width: 1920px) {
         .cat-header .banner__copy-container .banner__caption-text {
-          font-size: 1.775vw; } }
+          font-size: 1.875vw; } }
       @media (max-width: 939px) {
         .cat-header .banner__copy-container .banner__caption-text {
           font-size: 14px; } }
@@ -444,18 +443,9 @@
     .cat-header .banner__copy-container .share {
       text-align: right; }
       .cat-header .banner__copy-container .share:before {
-<<<<<<< HEAD
-        content: '';
-        background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png) no-repeat center;
-        margin-right: 7px;
-        width: 22px;
-        height: 15px;
-        display: inline-block; }
-=======
         content: "Ì";
         font-family: "Wingdings 3";
         margin-left: 7px; }
->>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
 
 /* article text - order: btn (img caption or header), title, text */
 .cat-article.banner__copy-container {
@@ -625,5 +615,5 @@
   left: 50%; }
 
 /* Center text */
-.cat-centered {
+.cat-header .cat-centered.banner__copy-container .banner__caption-text {
   text-align: center; }
