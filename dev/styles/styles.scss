@@ -43,9 +43,9 @@
 
 /* no bottom margin */
 .cat-no-bottom {
-  margin-bottom:0 !important;
+  margin-bottom: 0 !important;
   .banner__copy-container {
-    margin-bottom:0 !important;  
+    margin-bottom: 0 !important;
   }
 }
 
@@ -136,11 +136,11 @@
         content: "“";
       }
       &:after {
-        content:'”';
-        display:inline-block;
-        background:none;
-        margin:0;
-        width:1px;
+        content: "”";
+        display: inline-block;
+        background: none;
+        margin: 0;
+        width:1px;;
       }
     }
   }
@@ -232,17 +232,17 @@
       }
     }
     .banner__caption-title {
-      font-family:'Miller Display Light', Arial, Helvetica, sans-serif;
-      font-size:100px;
-      line-height:0.86;
-      letter-spacing:0.02em;
-      color:#000;
-      margin:91px auto 67px;
-      max-width:1440px;
-      width:75vw;  
-      @media (max-width:1920px) {
-        font-size:5.208vw;
-        margin: 6.071vw auto 3.490vw;
+      font-family: "Miller Display Light", Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      line-height: 0.86;
+      letter-spacing: 0.02em;
+      color: #000;
+      margin: 91px auto 67px;
+      max-width: 1020px;
+      width: 53.125vw;
+      @media (max-width: 1920px) {
+        font-size: 5.208vw;
+        margin: 6.071vw auto 3.49vw;
       }
       @media (max-width: 675px) {
         font-size: 7.813vw;
@@ -503,6 +503,10 @@
 }
 
 /* Center text */
-.cat-centered {
-  text-align: center;
+.cat-header {
+  .cat-centered.banner__copy-container {
+    .banner__caption-text {
+      text-align: center;
+    }
+  }
 }
