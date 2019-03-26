@@ -499,6 +499,10 @@
 }
 
 /* Center text */
-.cat-centered {
-  text-align: center;
+.cat-header {
+  .cat-centered.banner__copy-container {
+    .banner__caption-text {
+      text-align: center;
+    }
+  }
 }
