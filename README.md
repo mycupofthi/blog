@@ -55,6 +55,6 @@ Category landing page assets are located in `Content>Banners>Inspired Blog>2019 
 
 ### Phase 2
 
-[] - Make accessible hamburger menu
-[] - Make carousel
-[] - Add pinterest share link
+- [] Make accessible hamburger menu
+- [] Make carousel
+- [] Add pinterest share link
