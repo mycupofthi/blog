@@ -17,6 +17,8 @@ Start by making sure you have the following downloaded to your computer: npm and
 
 ## Page Creation
 
+#### Blog Posts
+
 Use the blank responsive template and add the following Content Blocks to the top of your blog page: 55926 and 55968.
 
 Add in hero banner (should contain the same classes as all other '00' banners in the inspired blog).
@@ -29,14 +31,30 @@ If you're working on a blog post that requires a carousel of posts, add the foll
 
 Add in footer Content Block at bottom of page with ID of 55937
 
+#### Category Landing Page
+
+Do the same as above, the only difference is you will add content block 55951 to the top of the page + omit the share and carousel.
+
+Add in the following code to remove the arrow in an html element:
+
+```
+<style>
+    .inspired-header__arrow {
+        display:none;
+    }
+</style>
+```
+
+** Make sure to select styles only so the banner doesn't create extra space **
+
 ### General Assets
 
-Banners can be found in the CMS under Content>Banners>Inspired Blog. Create a new folder for new blog post page and add in your banners (the easiest method to do so is to copy an existing folder and paste it into the Inspired Blog directory)
+Banners can be found in the CMS under `Content>Banners>Inspired Blog`. Create a new folder for new blog post page and add in your banners (the easiest method to do so is to copy an existing folder and paste it into the Inspired Blog directory).
 
-### Assets for Author Blog
+Category landing page assets are located in `Content>Banners>Inspired Blog>2019 - Inspired Landing Page Banners>Category -` just copy and paste any existing banners that match the desired layout.
 
-CMS banner widgets 55954-55959
+### Phase 2
 
-### Assets for Baby Blog
-
-CMS banner widgets 55960-55964
+[] - Make accessible hamburger menu
+[] - Make carousel
+[] - Add pinterest share link
