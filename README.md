@@ -23,6 +23,8 @@ Add in hero banner (should contain the same classes as all other '00' banners in
 
 Add in any related banners or html blocks
 
+Add in content block ID for Share at bottom of blog post 56049
+
 If you're working on a blog post that requires a carousel of posts, add the following Content Block with an ID of 56041
 
 Add in footer Content Block at bottom of page with ID of 55937
@@ -30,12 +32,6 @@ Add in footer Content Block at bottom of page with ID of 55937
 ### General Assets
 
 Banners can be found in the CMS under Content>Banners>Inspired Blog. Create a new folder for new blog post page and add in your banners (the easiest method to do so is to copy an existing folder and paste it into the Inspired Blog directory)
-
-Share Button
-
-share\_\_black
-
-share\_\_grey
 
 ### Assets for Author Blog
 
