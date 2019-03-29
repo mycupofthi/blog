@@ -314,7 +314,7 @@
         width: 78.125vw;
         margin: 9.375vw auto 0; } }
     .main-feat .banner__copy-container .banner__caption-title {
-      font-family: 'Miller Banner Light', 'Miller Display Light', Helvetica, Arial, sans-serif;
+      font-family: "Miller Banner Light", "Miller Display Light", Helvetica, Arial, sans-serif;
       letter-spacing: -0.01em;
       font-size: 50px;
       line-height: 1.2; }
@@ -326,7 +326,7 @@
           font-size: 7.5vw;
           line-height: 1.25; } }
     .main-feat .banner__copy-container .banner__caption-text {
-      font-family: 'Miller Display', Helvetica, Arial, sans-serif;
+      font-family: "Miller Display", Helvetica, Arial, sans-serif;
       letter-spacing: 0.025em;
       color: #000;
       text-transform: none;
@@ -334,7 +334,7 @@
       line-height: 1.375; }
       @media (max-width: 1920px) {
         .main-feat .banner__copy-container .banner__caption-text {
-          font-size: 1.250vw; } }
+          font-size: 1.25vw; } }
       @media (max-width: 939px) {
         .main-feat .banner__copy-container .banner__caption-text {
           font-size: 12px; } }
@@ -376,7 +376,7 @@
   @media (max-width: 675px) {
     .small-feat {
       max-width: 100%;
-      width: 68.750vw; } }
+      width: 68.75vw; } }
   @media (max-width: 675px) {
     .small-feat .banner__container {
       max-width: 100% !important;
@@ -394,7 +394,7 @@
         width: 59.375vw;
         padding: 0; } }
     .small-feat .banner__copy-container .banner__caption-title {
-      font-family: 'Miller Display Light', Helvetica, Arial, sans-serif;
+      font-family: "Miller Display Light", Helvetica, Arial, sans-serif;
       letter-spacing: 0;
       text-decoration: underline;
       color: #000;
@@ -621,7 +621,7 @@
           width: 100%;
           margin: 10.93838vw auto 7.031vw; } }
     .cat-header .banner__copy-container .banner__caption-text {
-      font-family: 'Miller Display', Arial, Helvetica, sans-serif;
+      font-family: "Miller Display", Arial, Helvetica, sans-serif;
       font-size: 36px;
       line-height: 1.33;
       letter-spacing: 0.025em;
@@ -682,7 +682,7 @@
     .cat-header .banner__copy-container .share {
       text-align: right; }
       .cat-header .banner__copy-container .share:before {
-        content: '';
+        content: "";
         background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png) no-repeat center;
         margin-right: 7px;
         width: 22px;
@@ -867,3 +867,18 @@
   background-repeat: repeat-x;
   background-position: 0 95%;
   background-size: 100% 2px; }
+
+.list__feat-l, .list__feat-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.list__feat-l {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
