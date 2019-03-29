@@ -23,14 +23,16 @@
 - **.cat-portait** - below quote banner - left img and right captions (inspired/books/annieleibovitz for reference) ([example - below Whoopi quote banner](https://preview.indigo.ca/en-ca/inspired/books/))
 - **.cat-video** - inserting youtube videos (inspired/books/annieleibovitz for reference) ([example - Annie Leibovitz video](https://preview.indigo.ca/en-ca/inspired/books/))
 
-### Others - can be added in addition to any of the top classes
-<<<<<<< HEAD
-- **.cat-no-bottom** - removes bottom margin 
-- **.cat-bg** - full bleed bg - add class with *.cat-main* or *.cat-hero* (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))
-=======
+#### Mixed
 
-- **.cat-bg** - full bleed bg - add class with _.cat-main_ or _.cat-hero_ (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))
->>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
+- **.cat-hero-tablet** - wrapped at 1440px at desktop, full-bleed for tablet, wrapped at mobile ([example - ingredients section](https://preview.indigo.ca/en-ca/inspired/food-entertaining/))
+
+
+### Others - 
+- **.main-feat** - main features on LP and category pages
+- **.small-feat** - small features on LP
+- **.cat-no-bottom** - removes bottom margin (can be added in addition to any of the top classes)
+- **.cat-bg** - full bleed bg - add class with *.cat-main* or *.cat-hero* (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))
 
 ## **Caption fields** in extra tools
 
@@ -52,14 +54,9 @@
 
 Recipe list & instructions, Q&A, videos, copy with hyperlinks
 
-<<<<<<< HEAD
-- **.banner__caption-link** - hyperlinks
+- **.banner\_\_caption-link** - hyperlinks
 - **.cat-no-top** - no top margin - add to caption class
 - **.indented** - add class to banner__caption-text to indent paragraphs
-=======
-- **.banner\_\_caption-link** - hyperlinks
-- **.cat-no-top** - no top margin
->>>>>>> 55c55fd47540418b3ac6f16d04546670bd95d188
 
 - **.cat-list** - recipes, instructions, Q&A
 

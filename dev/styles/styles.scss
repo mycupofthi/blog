@@ -1,4 +1,4 @@
-@import "../styles/_embed.scss";
+@import "../styles/components/_embed.scss";
 
 /* IMAGES */
 /* full bleed */
@@ -33,11 +33,207 @@
       width: 68.75vw;
     }
     .banner__image-picture {
+      width:100%;
       left: 50%;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
     }
+  }
+}
+
+.cat-960 {
+  .banner__container {
+    margin: 0 auto;
+    width: 50vw;
+    @media (max-width: 675px) {
+      width: 68.75vw;
+    }
+    .banner__image-picture {
+      width:100%;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+    }
+  }
+}
+
+
+/* main feature */
+.main-feat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width:100%;
+  @media (max-width:675px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .banner__container {
+    max-width:55.208vw !important;
+    width:100%;
+    margin-right:100px;
+    @media (max-width:1920px) {
+      margin-right:5.208vw;
+    }
+    @media (max-width:675px) {
+      width:100vw;
+      max-width:100% !important;
+      margin:0;
+    }
+    .banner__image-picture {
+      width:100%;
+    }
+  }
+  .banner__copy-container {
+    position:relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width:520px;
+    width:27.083vw;
+    @media (max-width:675px) {
+      width:78.125vw;
+      margin:9.375vw auto 0;
+    }
+    .banner__caption-title {
+      font-family:'Miller Banner Light', 'Miller Display Light', Helvetica, Arial, sans-serif;
+      letter-spacing:-0.01em;
+      font-size:50px;
+      line-height:1.2;
+      // text-decoration:underline;
+      @media (max-width:1920px) {
+        font-size:2.604vw;
+      }
+      @media (max-width:675px) {
+        font-size:7.5vw;
+        line-height:1.25;
+      }
+    }
+    .banner__caption-text {
+      font-family:'Miller Display', Helvetica, Arial, sans-serif;
+      letter-spacing:0.025em;
+      color:#000;
+      text-transform:none;
+      font-size:24px;
+      line-height:1.375;
+      @media (max-width:1920px) {
+        font-size:1.250vw;
+      }
+      @media (max-width:939px) {
+        font-size:12px;
+      }
+      @media (max-width:675px) {
+        font-size:3.75vw;        
+      }
+    }
+    .cta {
+      text-align:right;
+      @media (max-width:939px) {
+        font-size:12px;
+      }
+      @media (max-width:675px) {
+        font-size:3vw;
+        text-align:center;
+      }
+    }
+  }
+}
+
+
+.main-feat.main-feat-l {
+  flex-direction:row-reverse;
+  @media (max-width:675px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+ .banner__container {
+    margin:0 0 0 5%;
+    @media (max-width:675px) {
+      margin:0;
+    }
+    .banner__image-picture {
+      right:0;
+    }
+  }
+}
+
+.small-feat {
+  max-width:410px;
+  width:22vw;
+  @media (max-width:675px) {
+    max-width: 100%;
+    width: 68.750vw;
+  }
+  .banner__container {
+    @media (max-width:675px) {
+      max-width:100% !important;
+      margin:0 auto;
+ 
+    }
+    .banner__image-picture {
+      width:100%;
+    }
+  }
+  .banner__copy-container {
+    position:relative;
+    margin-top:40px;
+    text-align:left;
+    padding:0 3%;
+    @media (max-width:675px) {
+      margin:9.375vw auto 0;
+      width:59.375vw;
+      padding:0;
+    } 
+    .banner__caption-title {
+      font-family:'Miller Display Light', Helvetica, Arial, sans-serif;
+      letter-spacing:0;
+      text-decoration:underline;
+      color:#000;
+      text-transform:none;
+      font-size:35px;
+      line-height:1.29;
+      @media (max-width:1920px) {
+        font-size:1.823vw;
+      }
+      @media (max-width:675px) {
+        font-size:5.469vw;
+      }
+    }
+  }
+}
+
+/* behaviour: .cat-main for desktop, .cat-hero for tablet, .cat-main for mobile - good for recipes */
+.cat-hero-tablet {
+  margin: 0 auto 100px;
+  max-width:1440px;
+  width: 75vw;
+  @media (max-width:1920px) {
+    margin:0 auto 5.208vw;
+  }
+  @media (max-width:939px) {
+    width:100vw;
+    .banner__image {
+      width: 100%;
+      .banner__image-picture {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width:675px) {
+    margin:0 auto 10.938vw;
+    width: 68.75vw;
   }
 }
 
@@ -58,6 +254,8 @@
     background-position: top;
   }
 }
+
+
 
 /* QUOTE */
 /* add .cat-quote__caps to caption class for uppercase */
@@ -123,7 +321,7 @@
       font-size: 105px;
       line-height: 1.2;
       letter-spacing: 0;
-      text-decoration: underline;
+      // text-decoration: underline;
       text-transform: none;
       @media (max-width: 1920px) {
         font-size: 5.469vw;
@@ -134,12 +332,21 @@
       }
       &:before {
         content: "“";
+        background-image: linear-gradient(to right,black 0%,black 100%);
+        background-repeat: repeat-x;
+        background-position: -2px 90%;
+        background-size: 100% 2px;
       }
       &:after {
         content: "”";
         display: inline-block;
         background: none;
         margin: 0;
+        width:1px;
+        background-image: linear-gradient(to right,black 0%,black 100%);
+        background-repeat: repeat-x;
+        background-position: -2px 90%;
+        background-size: 100% 2px;
       }
     }
   }
@@ -237,8 +444,10 @@
       letter-spacing: 0.02em;
       color: #000;
       margin: 91px auto 67px;
-      max-width: 1020px;
-      width: 53.125vw;
+      // max-width: 1020px;
+      // width: 53.125vw;
+      max-width: 1440px;
+      width: 75vw;  
       @media (max-width: 1920px) {
         font-size: 5.208vw;
         margin: 6.071vw auto 3.49vw;
@@ -251,19 +460,19 @@
       }
     }
     .banner__caption-text {
-      font-family: "Miller Display", Arial, Helvetica, sans-serif;
-      font-size: 36px;
-      line-height: 1.33;
-      letter-spacing: 0.025em;
-      text-decoration: underline;
-      text-transform: none;
-      color: #000;
-      margin: 0 auto;
-      max-width: 1020px;
-      width: 53.125vw;
-      text-align: left;
-      @media (max-width: 1920px) {
-        font-size: 1.875vw;
+      font-family:'Miller Display', Arial, Helvetica, sans-serif;
+      font-size:36px;
+      line-height:1.33;
+      letter-spacing:0.025em;
+      text-decoration:underline;
+      text-transform:none;
+      color:#000;
+      margin:0 auto;
+      max-width:1020px;
+      width:53.125vw;
+      text-align:left;
+      @media (max-width:1920px) {
+        font-size:1.775vw;
       }
       @media (max-width: 939px) {
         font-size: 14px;
@@ -314,9 +523,12 @@
     .share {
       text-align: right;
       &:before {
-        content: "Ì";
-        font-family: "Wingdings 3";
-        margin-left: 7px;
+        content: '';
+        background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png) no-repeat center;
+        margin-right: 7px;
+        width: 22px;
+        height: 15px;
+        display: inline-block;
       }
     }
   }
@@ -506,3 +718,12 @@
     }
   }
 }
+
+/* special underline for miller banner light */
+.underline {
+  background-image: linear-gradient(to right, black 0%, black 100%);
+  background-repeat: repeat-x;
+  background-position: 0 95%;
+  background-size: 100% 2px;
+}
+
