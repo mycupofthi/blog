@@ -28,8 +28,10 @@
 - **.cat-hero-tablet** - wrapped at 1440px at desktop, full-bleed for tablet, wrapped at mobile ([example - ingredients section](https://preview.indigo.ca/en-ca/inspired/food-entertaining/))
 
 
-### Others - can be added in addition to any of the top classes
-- **.cat-no-bottom** - removes bottom margin 
+### Others - 
+- **.main-feat** - main features on LP and category pages
+- **.small-feat** - small features on LP
+- **.cat-no-bottom** - removes bottom margin (can be added in addition to any of the top classes)
 - **.cat-bg** - full bleed bg - add class with *.cat-main* or *.cat-hero* (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))
 
 ## **Caption fields** in extra tools

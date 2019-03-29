@@ -1,4 +1,26 @@
 /* EMBEDS */
+.cat-cta {
+  font-size:24px;
+  line-height:1.16;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+  color:#000;
+  margin-top:90px;
+  &:hover {
+    color:#000;
+  }
+  @media (max-width:1920px) {
+    margin-top:5.688vw;
+    font-size:1.25vw;
+  }
+  @media (max-width:939px) {
+    font-size:12px;
+  }
+  @media (max-width:675px) {
+    margin-top:15.625vw;
+    font-size:3.75vw !important;
+  }
+}
 .cat__embed {
   .banner__image-picture {
     position:relative;

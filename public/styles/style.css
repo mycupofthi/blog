@@ -1,5 +1,26 @@
 @charset "UTF-8";
 /* EMBEDS */
+.cat-cta {
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 90px; }
+  .cat-cta:hover {
+    color: #000; }
+  @media (max-width: 1920px) {
+    .cat-cta {
+      margin-top: 5.688vw;
+      font-size: 1.25vw; } }
+  @media (max-width: 939px) {
+    .cat-cta {
+      font-size: 12px; } }
+  @media (max-width: 675px) {
+    .cat-cta {
+      margin-top: 15.625vw;
+      font-size: 3.75vw !important; } }
+
 .cat__embed .banner__image-picture {
   position: relative; }
 
@@ -234,6 +255,159 @@
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%); }
 
+.cat-960 .banner__container {
+  margin: 0 auto;
+  width: 50vw; }
+  @media (max-width: 675px) {
+    .cat-960 .banner__container {
+      width: 68.75vw; } }
+  .cat-960 .banner__container .banner__image-picture {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); }
+
+/* main feature */
+.main-feat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  @media (max-width: 675px) {
+    .main-feat {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .main-feat .banner__container {
+    max-width: 55.208vw !important;
+    width: 100%;
+    margin-right: 100px; }
+    @media (max-width: 1920px) {
+      .main-feat .banner__container {
+        margin-right: 5.208vw; } }
+    @media (max-width: 675px) {
+      .main-feat .banner__container {
+        width: 100vw;
+        max-width: 100% !important;
+        margin: 0; } }
+    .main-feat .banner__container .banner__image-picture {
+      width: 100%; }
+  .main-feat .banner__copy-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    max-width: 520px;
+    width: 27.083vw; }
+    @media (max-width: 675px) {
+      .main-feat .banner__copy-container {
+        width: 78.125vw;
+        margin: 9.375vw auto 0; } }
+    .main-feat .banner__copy-container .banner__caption-title {
+      font-family: 'Miller Banner Light', 'Miller Display Light', Helvetica, Arial, sans-serif;
+      letter-spacing: -0.01em;
+      font-size: 50px;
+      line-height: 1.2; }
+      @media (max-width: 1920px) {
+        .main-feat .banner__copy-container .banner__caption-title {
+          font-size: 2.604vw; } }
+      @media (max-width: 675px) {
+        .main-feat .banner__copy-container .banner__caption-title {
+          font-size: 7.5vw;
+          line-height: 1.25; } }
+    .main-feat .banner__copy-container .banner__caption-text {
+      font-family: 'Miller Display', Helvetica, Arial, sans-serif;
+      letter-spacing: 0.025em;
+      color: #000;
+      text-transform: none;
+      font-size: 24px;
+      line-height: 1.375; }
+      @media (max-width: 1920px) {
+        .main-feat .banner__copy-container .banner__caption-text {
+          font-size: 1.250vw; } }
+      @media (max-width: 939px) {
+        .main-feat .banner__copy-container .banner__caption-text {
+          font-size: 12px; } }
+      @media (max-width: 675px) {
+        .main-feat .banner__copy-container .banner__caption-text {
+          font-size: 3.75vw; } }
+    .main-feat .banner__copy-container .cta {
+      text-align: right; }
+      @media (max-width: 939px) {
+        .main-feat .banner__copy-container .cta {
+          font-size: 12px; } }
+      @media (max-width: 675px) {
+        .main-feat .banner__copy-container .cta {
+          font-size: 3vw;
+          text-align: center; } }
+
+.main-feat.main-feat-l {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  @media (max-width: 675px) {
+    .main-feat.main-feat-l {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .main-feat.main-feat-l .banner__container {
+    margin: 0 0 0 5%; }
+    @media (max-width: 675px) {
+      .main-feat.main-feat-l .banner__container {
+        margin: 0; } }
+    .main-feat.main-feat-l .banner__container .banner__image-picture {
+      right: 0; }
+
+.small-feat {
+  max-width: 410px;
+  width: 22vw; }
+  @media (max-width: 675px) {
+    .small-feat {
+      max-width: 100%;
+      width: 68.750vw; } }
+  @media (max-width: 675px) {
+    .small-feat .banner__container {
+      max-width: 100% !important;
+      margin: 0 auto; } }
+  .small-feat .banner__container .banner__image-picture {
+    width: 100%; }
+  .small-feat .banner__copy-container {
+    position: relative;
+    margin-top: 40px;
+    text-align: left;
+    padding: 0 3%; }
+    @media (max-width: 675px) {
+      .small-feat .banner__copy-container {
+        margin: 9.375vw auto 0;
+        width: 59.375vw;
+        padding: 0; } }
+    .small-feat .banner__copy-container .banner__caption-title {
+      font-family: 'Miller Display Light', Helvetica, Arial, sans-serif;
+      letter-spacing: 0;
+      text-decoration: underline;
+      color: #000;
+      text-transform: none;
+      font-size: 35px;
+      line-height: 1.29; }
+      @media (max-width: 1920px) {
+        .small-feat .banner__copy-container .banner__caption-title {
+          font-size: 1.823vw; } }
+      @media (max-width: 675px) {
+        .small-feat .banner__copy-container .banner__caption-title {
+          font-size: 5.469vw; } }
+
 /* behaviour: .cat-main for desktop, .cat-hero for tablet, .cat-main for mobile - good for recipes */
 .cat-hero-tablet {
   margin: 0 auto 100px;
@@ -330,7 +504,6 @@
       font-size: 105px;
       line-height: 1.2;
       letter-spacing: 0;
-      text-decoration: underline;
       text-transform: none; }
       @media (max-width: 1920px) {
         .cat-quote .banner__copy-container .banner__caption-title {
@@ -340,13 +513,23 @@
           font-size: 7.813vw;
           line-height: 1.1; } }
       .cat-quote .banner__copy-container .banner__caption-title:before {
-        content: "“"; }
+        content: "“";
+        background-image: -webkit-gradient(linear, left top, right top, from(black), to(black));
+        background-image: linear-gradient(to right, black 0%, black 100%);
+        background-repeat: repeat-x;
+        background-position: -2px 90%;
+        background-size: 100% 2px; }
       .cat-quote .banner__copy-container .banner__caption-title:after {
         content: "”";
         display: inline-block;
         background: none;
         margin: 0;
-        width: 1px; }
+        width: 1px;
+        background-image: -webkit-gradient(linear, left top, right top, from(black), to(black));
+        background-image: linear-gradient(to right, black 0%, black 100%);
+        background-repeat: repeat-x;
+        background-position: -2px 90%;
+        background-size: 100% 2px; }
   .cat-quote .cat-quote__caps .banner__caption-title {
     text-transform: uppercase; }
 
@@ -676,3 +859,11 @@
 /* Center text */
 .cat-header .cat-centered.banner__copy-container .banner__caption-text {
   text-align: center; }
+
+/* special underline for miller banner light */
+.underline {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(black));
+  background-image: linear-gradient(to right, black 0%, black 100%);
+  background-repeat: repeat-x;
+  background-position: 0 95%;
+  background-size: 100% 2px; }
