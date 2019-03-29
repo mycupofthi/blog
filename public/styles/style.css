@@ -1,26 +1,5 @@
 @charset "UTF-8";
 /* EMBEDS */
-.cat-cta {
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000;
-  margin-top: 90px; }
-  .cat-cta:hover {
-    color: #000; }
-  @media (max-width: 1920px) {
-    .cat-cta {
-      margin-top: 5.688vw;
-      font-size: 1.25vw; } }
-  @media (max-width: 939px) {
-    .cat-cta {
-      font-size: 12px; } }
-  @media (max-width: 675px) {
-    .cat-cta {
-      margin-top: 15.625vw;
-      font-size: 3.75vw !important; } }
-
 .cat__embed .banner__image-picture {
   position: relative; }
 
@@ -165,6 +144,64 @@
 @media (max-width: 675px) {
   .cat-qa .banner__caption-text {
     margin-top: 3.906vw !important; } }
+
+/* cta */
+.cat-cta {
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 90px; }
+  .cat-cta:hover {
+    color: #000; }
+  @media (max-width: 1920px) {
+    .cat-cta {
+      margin-top: 5.688vw;
+      font-size: 1.25vw; } }
+  @media (max-width: 939px) {
+    .cat-cta {
+      font-size: 12px; } }
+  @media (max-width: 675px) {
+    .cat-cta {
+      margin-top: 15.625vw;
+      font-size: 3.75vw !important; } }
+
+/* list numbers */
+.list__number {
+  max-width: 100px;
+  width: 5.208vw;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  background: white;
+  font-family: 'Miller Banner Light', 'Miller Display Light', Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  letter-spacing: 0.02em; }
+  @media (max-width: 1920px) {
+    .list__number {
+      font-size: 5.208vw; } }
+  @media (max-width: 675px) {
+    .list__number {
+      font-size: 11.766vw;
+      letter-spacing: 0.03em;
+      width: 10.156vw; } }
+  .list__number:before {
+    content: '';
+    max-width: 1440px;
+    width: 75vw;
+    height: 1px;
+    background: black;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1; }
+    @media (max-width: 675px) {
+      .list__number:before {
+        width: 84.375vw; } }
 
 /* videos */
 @media (max-width: 675px) {
