@@ -27,12 +27,12 @@
 
 - **.cat-hero-tablet** - wrapped at 1440px at desktop, full-bleed for tablet, wrapped at mobile ([example - ingredients section](https://preview.indigo.ca/en-ca/inspired/food-entertaining/))
 
+### Others -
 
-### Others - 
 - **.main-feat** - main features on LP and category pages
 - **.small-feat** - small features on LP
 - **.cat-no-bottom** - removes bottom margin (can be added in addition to any of the top classes)
-- **.cat-bg** - full bleed bg - add class with *.cat-main* or *.cat-hero* (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))
+- **.cat-bg** - full bleed bg - add class with _.cat-main_ or _.cat-hero_ (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))
 
 ## **Caption fields** in extra tools
 
@@ -56,7 +56,8 @@ Recipe list & instructions, Q&A, videos, copy with hyperlinks
 
 - **.banner\_\_caption-link** - hyperlinks
 - **.cat-no-top** - no top margin - add to caption class
-- **.indented** - add class to banner__caption-text to indent paragraphs
+- **.indented** - add class to banner\_\_caption-text to indent paragraphs
+- **.text--initial** - add class to make first letters of word initialized in a title (instead of text-transform: uppercase)
 
 - **.cat-list** - recipes, instructions, Q&A
 
@@ -72,7 +73,7 @@ Recipe list & instructions, Q&A, videos, copy with hyperlinks
 ```
 <section class="cat__embed">
   <div class="banner cat-hero/cat-main/etc.">
-    <div class="banner__container" style="max-width:1920px">
+    <div class="banner__container">
       <div class="banner__image">
         <picture>
           <source media="(min-width: 675px)" srcset="">
