@@ -212,6 +212,16 @@
         "&amp;subject=" +
         document.title;
     });
+  const shareLink = document
+    .getElementsByClassName("share")
+    .addEventListener("click", function(e) {
+      e.preventDefault();
+      window.location.href =
+        "mailto:?body=Check this out: " +
+        escape(window.location.href) +
+        "&amp;subject=" +
+        document.title;
+    });
   // FACEBOOK SHARE
   const facebookLink = document
     .getElementById("facebookShare")
