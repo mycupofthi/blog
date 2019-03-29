@@ -33,14 +33,21 @@ Add in footer Content Block at bottom of page with ID of 55937
 
 #### Category Landing Page
 
-Do the same as above, the only difference is you will add content block 55951 to the top of the page + omit the share and carousel.
-
-Add in the following code to remove the arrow in an html element:
+Do the same as above and add in the following code to remove the arrow in an html element and add some extra styles:
 
 ```
 <style>
     .inspired-header__arrow {
         display:none;
+    }
+    @media (max-width: 675px) {
+        .inspired-header__container {
+            top: 12vw
+        }
+        .cat-header .banner__copy-container .category {
+            font-size: 5.47vw;
+            width: 100%;
+        }
     }
 </style>
 ```
@@ -55,6 +62,6 @@ Category landing page assets are located in `Content>Banners>Inspired Blog>2019 
 
 ### Phase 2
 
-- [] Make accessible hamburger menu
-- [] Make carousel
-- [] Add pinterest share link
+- [ ] Make accessible hamburger menu
+- [ ] Make carousel
+- [ ] Add pinterest share link
