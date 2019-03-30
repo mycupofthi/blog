@@ -893,6 +893,14 @@
 .list {
   width: 75vw;
   margin: 0 auto; }
+  .list .banner__container {
+    width: 25%; }
+  .list .cat-article.banner__copy-container .banner__caption-text {
+    width: 85%;
+    line-height: 1.5; }
+  .list .cat-article.banner__copy-container .banner__caption-title {
+    margin-bottom: 1.083vw;
+    width: 95%; }
   .list__feat-l, .list__feat-r {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -908,23 +916,18 @@
         -ms-flex-align: center;
             align-items: center;
     margin-top: 5.208vw; }
-    @media (max-width: 675px) {
-      .list__feat-l, .list__feat-r {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
-    .list__feat-l .cat-main .banner__container, .list__feat-r .cat-main .banner__container {
-      width: 30%;
+    .list__feat-l .banner__container, .list__feat-r .banner__container {
       margin: 0; }
     .list__feat-l .banner__caption--name, .list__feat-r .banner__caption--name {
       font-size: 24px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 1.083vw; }
       @media (max-width: 1920px) {
         .list__feat-l .banner__caption--name, .list__feat-r .banner__caption--name {
           font-size: 1.25vw; } }
     .list__feat-l .banner__copy-container.cat-article, .list__feat-r .banner__copy-container.cat-article {
-      margin: 0; }
+      margin: 0;
+      width: 75%; }
   .list__feat-l {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -932,4 +935,20 @@
             flex-direction: row-reverse; }
     .list__feat-l .banner__copy-container.cat-article {
       -ms-flex-item-align: start;
-          align-self: flex-start; }
+          align-self: flex-start;
+      margin-left: 3%;
+      margin-right: 3%; }
+  .list__feat-r .banner__copy-container.cat-article {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  @media (max-width: 675px) {
+    .list__feat-l, .list__feat-r {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .list .banner__container,
+    .list .banner__copy-container.cat-article {
+      width: 100%; }
+    .list .banner__caption--name {
+      font-size: 3.75vw; } }
