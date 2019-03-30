@@ -1,21 +1,113 @@
-<style></style>
+<style>
+.carousel {
+  padding:0;
+  margin:100px auto;
+}
+.bxslider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content:space-between;
+  width:100%;
+  max-width:1920px;
+}
+  .card {
+    max-width:585px;
+    width:30.469vw;
+  }
+    .card img {
+      width:100%;
+    }
+    .card .banner__copy-container {
+      position:relative;
+      margin: 40px auto 0;
+      text-align: left;
+      max-width:385px;
+      width:20.052vw;
+    }
+    .card .banner__caption-title {
+      font-family:'Miller Banner Light', 'Miller Display Light', Arial, Helvetica, sans-serif;
+      font-size:35px;
+      line-height:1.43;
+      letter-spacing:0;
+      text-transform:none;
+      text-decoration:underline;
+    }
+.carousel a:hover {
+  text-decoration:none;
+}
 
-<div>
+@media (max-width:1920px) {
+  .carousel {
+    margin:5.208vw auto;
+  }
+  .card .banner__caption-title {
+    font-size:1.823vw;
+  }
+}
+
+
+@media (max-width:675px) {
+  .carousel {
+    margin:15.625vw auto;
+    padding: 0;
+    position:relative;
+  }
+    .carousel:before {
+      content: '';
+      height: 1px;
+      width: 84.375vw;
+      background: black;
+      position: absolute;
+      top: -15.625vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  .card {
+    max-width:300px;
+    width:46.875vw;
+  }
+    .card:last-of-type {
+      display:none;
+    }
+    .card .banner__copy-container {
+      width:37.500vw;
+    }
+    .card .banner__caption-title {
+      font-size:3.712vw;
+    }
+}
+
+</style>
+
+<section class="carousel">
   <div class="bxslider">
     <div class="card" id="1">
-      <img src="" title="" />
-      <a href=""></a>
+      <a href="">
+        <img src="https://static.indigoimages.ca/2019/585x585_blog_10books.jpg"/>
+        <div class="banner__copy-container">
+          <h2 class="banner__caption-title">10 must-read books by badass moms</h2>
+        </div>
+      </a>
     </div>
     <div class="card" id="2">
-      <img src="" title="" />
-      <a href=""></a>
+      <a href="">
+        <img src="https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg" title="" />
+        <div class="banner__copy-container">
+          <h2 class="banner__caption-title">Chef Sous Chef's Instagram-worthy brunch</h2>
+        </div>
+      </a>
     </div>
     <div class="card" id="3">
-      <img src="" title="" />
-      <a href=""></a>
+      <a href="/en-ca/inspired/food-entertaining/salmon-recipe/?ref=blog%3afood%3ablog-main%3a02-landing-food-article-2%3abanner&amp;cl=02-landing-food-article-2_banner" data-ref="blog:food:blog-main:02-landing-food-article-2:banner">
+        <img src="https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg" title="" />
+        <div class="banner__copy-container">
+          <h2 class="banner__caption-title">Chef Sous Chef's Instagram-worthy brunch</h2>
+        </div>
+      </a>
     </div>
   </div>
-</div>
+</section>
 
 <script>
   "use strict";
@@ -86,4 +178,14 @@
 
 </script>
 
-<
+<!-- https://static.indigoimages.ca/2019/585x585_blog_spa.jpg
+https://static.indigoimages.ca/2019/585x585_blog_salmonrecipe.jpg
+https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg
+https://static.indigoimages.ca/2019/585x585_blog_10books.jpg
+https://static.indigoimages.ca/2019/585x585_blog_typesofmom.jpg
+https://static.indigoimages.ca/2019/585x585_blog_lettertomom.jpg
+https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg
+https://static.indigoimages.ca/2019/585x585_blog_chefsouschef.jpg
+https://static.indigoimages.ca/2019/585x585_blog_baby.jpg
+https://static.indigoimages.ca/2019/585_585_blog_curated_magnolia.jpg
+https://static.indigoimages.ca/2019/585x585_blog_crystal.jpg -->

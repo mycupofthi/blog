@@ -420,9 +420,10 @@
     width: 100%; }
   .small-feat .banner__copy-container {
     position: relative;
-    margin-top: 40px;
+    margin: 40px auto 0;
     text-align: left;
-    padding: 0 3%; }
+    max-width: 320px;
+    width: 16.667vw; }
     @media (max-width: 675px) {
       .small-feat .banner__copy-container {
         margin: 9.375vw auto 0;
@@ -697,14 +698,33 @@
         .cat-header .banner__copy-container .category {
           font-size: 3.125vw; } }
     .cat-header .banner__copy-container .share {
-      text-align: right; }
+      text-align: right;
+      position: relative; }
       .cat-header .banner__copy-container .share:before {
         content: "";
         background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png) no-repeat center;
+        background-size: contain;
         margin-right: 7px;
         width: 22px;
         height: 15px;
-        display: inline-block; }
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        right: 50px; }
+        @media (max-width: 1500px) {
+          .cat-header .banner__copy-container .share:before {
+            width: 1.246vw;
+            height: 0.881vw;
+            right: 3.5vw; } }
+        @media (max-width: 939px) {
+          .cat-header .banner__copy-container .share:before {
+            right: 3.25vw; } }
+        @media (max-width: 675px) {
+          .cat-header .banner__copy-container .share:before {
+            top: 48%;
+            right: 7vw; } }
 
 /* article text - order: btn (img caption or header), title, text */
 .cat-article.banner__copy-container {

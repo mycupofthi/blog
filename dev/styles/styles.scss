@@ -186,9 +186,10 @@
   }
   .banner__copy-container {
     position: relative;
-    margin-top: 40px;
+    margin: 40px auto 0;
     text-align: left;
-    padding: 0 3%;
+    max-width:320px;
+    width:16.667vw;
     @media (max-width: 675px) {
       margin: 9.375vw auto 0;
       width: 59.375vw;
@@ -500,14 +501,32 @@
     }
     .share {
       text-align: right;
+      position:relative;
       &:before {
         content: "";
         background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png)
           no-repeat center;
+        background-size:contain;
         margin-right: 7px;
         width: 22px;
         height: 15px;
         display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 50px;
+        @media (max-width:1500px) {
+          width:1.246vw;
+          height:0.881vw;
+          right:3.5vw;
+        }
+        @media (max-width:939px) {
+          right:3.25vw;
+        }
+        @media (max-width:675px) {
+          top:48%;
+          right:7vw;
+        }
       }
     }
   }
@@ -796,3 +815,4 @@
     }
   }
 }
+
