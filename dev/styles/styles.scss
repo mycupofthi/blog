@@ -764,6 +764,7 @@
     }
   }
   @media (max-width: 675px) {
+    padding-top: 2vw;
     &__feat-l,
     &__feat-r {
       flex-direction: column;
@@ -772,8 +773,26 @@
     .banner__copy-container.cat-article {
       width: 100%;
     }
+    .banner__container {
+      margin-top: 5vw;
+    }
     .banner__caption--name {
       font-size: 3.75vw;
+    }
+    .cat-article.banner__copy-container .banner__caption-title {
+      margin-top: 6vw;
+    }
+    .cat-article.banner__copy-container .banner__caption-text {
+      width: 95%;
+    }
+  }
+}
+
+/* Make images full bleed on mobile */
+@media (max-width: 675px) {
+  .banner.cat-main.mobile-full-bleed {
+    .banner__container {
+      width: 100vw;
     }
   }
 }

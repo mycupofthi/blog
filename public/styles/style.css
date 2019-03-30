@@ -942,13 +942,26 @@
     -ms-flex-item-align: start;
         align-self: flex-start; }
   @media (max-width: 675px) {
-    .list__feat-l, .list__feat-r {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-    .list .banner__container,
-    .list .banner__copy-container.cat-article {
-      width: 100%; }
-    .list .banner__caption--name {
-      font-size: 3.75vw; } }
+    .list {
+      padding-top: 2vw; }
+      .list__feat-l, .list__feat-r {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .list .banner__container,
+      .list .banner__copy-container.cat-article {
+        width: 100%; }
+      .list .banner__container {
+        margin-top: 5vw; }
+      .list .banner__caption--name {
+        font-size: 3.75vw; }
+      .list .cat-article.banner__copy-container .banner__caption-title {
+        margin-top: 6vw; }
+      .list .cat-article.banner__copy-container .banner__caption-text {
+        width: 95%; } }
+
+/* Make images full bleed on mobile */
+@media (max-width: 675px) {
+  .banner.cat-main.mobile-full-bleed .banner__container {
+    width: 100vw; } }
