@@ -22,6 +22,7 @@
 - **.cat-main** - general
 - **.cat-portait** - below quote banner - left img and right captions (inspired/books/annieleibovitz for reference) ([example - below Whoopi quote banner](https://preview.indigo.ca/en-ca/inspired/books/))
 - **.cat-video** - inserting youtube videos (inspired/books/annieleibovitz for reference) ([example - Annie Leibovitz video](https://preview.indigo.ca/en-ca/inspired/books/))
+- **mobile-full-bleed** - adjusts a banner to full bleed on mobile
 
 #### Mixed
 
