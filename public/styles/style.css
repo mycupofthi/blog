@@ -167,6 +167,13 @@
       font-size: 3.75vw !important; } }
 
 /* list numbers */
+#10.list__number {
+  max-width: 130px;
+  width: 6.771px; }
+  @media (max-width: 675px) {
+    #10.list__number {
+      width: 15.156vw; } }
+
 .list__number {
   max-width: 100px;
   width: 5.208vw;
@@ -325,7 +332,6 @@
       font-size: 36px;
       line-height: 1.33;
       letter-spacing: 0.025em;
-      text-decoration: underline;
       text-transform: none;
       color: #000;
       margin: 0 auto;
@@ -548,8 +554,7 @@
           font-size: 12px; } }
       @media (max-width: 675px) {
         .main-feat .banner__copy-container .cta {
-          font-size: 3vw;
-          text-align: center; } }
+          font-size: 3vw; } }
 
 .main-feat.main-feat-l {
   -webkit-box-orient: horizontal;
