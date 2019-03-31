@@ -247,6 +247,171 @@
   .cat-video #player:hover {
     cursor: pointer; }
 
+/* STORY HEADER */
+.cat-header {
+  margin-bottom: 150px; }
+  @media (max-width: 1920px) {
+    .cat-header {
+      margin-bottom: 7.813vw; } }
+  @media (max-width: 675px) {
+    .cat-header {
+      margin-bottom: 10.938vw; } }
+  .cat-header .banner__container {
+    max-width: 100% !important; }
+    .cat-header .banner__container .banner__image {
+      width: 100%; }
+      .cat-header .banner__container .banner__image .banner__image-picture {
+        width: 100%; }
+  .cat-header .banner__copy-container {
+    position: relative;
+    margin: 67px auto 0;
+    max-width: 1440px;
+    width: 75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+    @media (max-width: 1920px) {
+      .cat-header .banner__copy-container {
+        margin-top: 3.49vw; } }
+    @media (max-width: 675px) {
+      .cat-header .banner__copy-container {
+        margin-top: 8.594vw;
+        width: 84.375vw; } }
+    .cat-header .banner__copy-container:before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #000;
+      position: absolute;
+      top: 49px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      display: block; }
+      @media (max-width: 1920px) {
+        .cat-header .banner__copy-container:before {
+          top: calc(2.2vw + 1.302vw); } }
+      @media (max-width: 675px) {
+        .cat-header .banner__copy-container:before {
+          top: calc(2.7vw + 3.906vw); } }
+    .cat-header .banner__copy-container .banner__caption-title {
+      font-family: "Miller Display Light", Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      line-height: 0.86;
+      letter-spacing: 0.02em;
+      color: #000;
+      margin: 91px auto 67px;
+      max-width: 1440px;
+      width: 75vw; }
+      @media (max-width: 1920px) {
+        .cat-header .banner__copy-container .banner__caption-title {
+          font-size: 5.208vw;
+          margin: 6.071vw auto 3.49vw; } }
+      @media (max-width: 675px) {
+        .cat-header .banner__copy-container .banner__caption-title {
+          font-size: 7.813vw;
+          line-height: 0.9;
+          width: 100%;
+          margin: 10.93838vw auto 7.031vw; } }
+    .cat-header .banner__copy-container .banner__caption-text {
+      font-family: "Miller Display", Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      line-height: 1.33;
+      letter-spacing: 0.025em;
+      text-decoration: underline;
+      text-transform: none;
+      color: #000;
+      margin: 0 auto;
+      max-width: 1020px;
+      width: 53.125vw;
+      text-align: left; }
+      @media (max-width: 1920px) {
+        .cat-header .banner__copy-container .banner__caption-text {
+          font-size: 1.775vw; } }
+      @media (max-width: 939px) {
+        .cat-header .banner__copy-container .banner__caption-text {
+          font-size: 14px; } }
+      @media (max-width: 675px) {
+        .cat-header .banner__copy-container .banner__caption-text {
+          font-size: 3.814vw;
+          text-align: left;
+          width: 68.75vw; } }
+    .cat-header .banner__copy-container .banner__button {
+      font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial, Helvetica, sans-serif;
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
+      display: inline-block;
+      line-height: 28px; }
+    .cat-header .banner__copy-container .date,
+    .cat-header .banner__copy-container .share {
+      font-size: 21px;
+      line-height: 40px;
+      letter-spacing: 0.1em;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: left;
+      width: 25%; }
+      @media (max-width: 1920px) {
+        .cat-header .banner__copy-container .date,
+        .cat-header .banner__copy-container .share {
+          font-size: 1.5vw;
+          line-height: 2.2; } }
+      @media (max-width: 675px) {
+        .cat-header .banner__copy-container .date,
+        .cat-header .banner__copy-container .share {
+          font-size: 3.125vw;
+          line-height: 1.2; } }
+    .cat-header .banner__copy-container .category {
+      font-size: 35px;
+      letter-spacing: 0.2em;
+      width: 50%; }
+      @media (max-width: 1920px) {
+        .cat-header .banner__copy-container .category {
+          font-size: 1.823vw;
+          line-height: 1.7; } }
+      @media (max-width: 675px) {
+        .cat-header .banner__copy-container .category {
+          font-size: 3.125vw;
+          line-height: 1.2; } }
+    .cat-header .banner__copy-container .share {
+      text-align: right;
+      position: relative; }
+      .cat-header .banner__copy-container .share:before {
+        content: "";
+        background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png) no-repeat center;
+        background-size: contain;
+        margin-right: 7px;
+        width: 22px;
+        height: 15px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        right: 50px; }
+        @media (max-width: 1920px) {
+          .cat-header .banner__copy-container .share:before {
+            height: 1.302vw;
+            width: 1.667vw;
+            right: 3.75vw;
+            top: 1.6vw; } }
+        @media (max-width: 939px) {
+          .cat-header .banner__copy-container .share:before {
+            right: 3.25vw; } }
+        @media (max-width: 675px) {
+          .cat-header .banner__copy-container .share:before {
+            width: 3.438vw;
+            height: 1.875vw;
+            top: 1.8vw;
+            right: 7vw; } }
+
 /* IMAGES */
 /* full bleed */
 .cat-hero,
@@ -430,7 +595,7 @@
         width: 59.375vw;
         padding: 0; } }
     .small-feat .banner__copy-container .banner__caption-title {
-      font-family: "Miller Display Light", Helvetica, Arial, sans-serif;
+      font-family: 'Miller Banner Light', 'Miller Display Light', Helvetica, Arial, sans-serif;
       letter-spacing: 0;
       text-decoration: underline;
       color: #000;
@@ -439,7 +604,8 @@
       line-height: 1.29; }
       @media (max-width: 1920px) {
         .small-feat .banner__copy-container .banner__caption-title {
-          font-size: 1.823vw; } }
+          font-size: 1.823vw;
+          line-height: 1.7; } }
       @media (max-width: 675px) {
         .small-feat .banner__copy-container .banner__caption-title {
           font-size: 5.469vw; } }
@@ -565,167 +731,6 @@
     top: 65%; }
 
 /* CAPTION CLASSES */
-/* header */
-.cat-header {
-  margin-bottom: 150px; }
-  @media (max-width: 1920px) {
-    .cat-header {
-      margin-bottom: 7.813vw; } }
-  @media (max-width: 675px) {
-    .cat-header {
-      margin-bottom: 10.938vw; } }
-  .cat-header .banner__container {
-    max-width: 100% !important; }
-    .cat-header .banner__container .banner__image {
-      width: 100%; }
-      .cat-header .banner__container .banner__image .banner__image-picture {
-        width: 100%; }
-  .cat-header .banner__copy-container {
-    position: relative;
-    margin: 67px auto 0;
-    max-width: 1440px;
-    width: 75vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative; }
-    @media (max-width: 1920px) {
-      .cat-header .banner__copy-container {
-        margin-top: 3.49vw; } }
-    @media (max-width: 675px) {
-      .cat-header .banner__copy-container {
-        margin-top: 8.594vw;
-        width: 84.375vw; } }
-    .cat-header .banner__copy-container:before {
-      content: "";
-      width: 100%;
-      height: 1px;
-      background: #000;
-      position: absolute;
-      top: 49px;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      display: block; }
-      @media (max-width: 1500px) {
-        .cat-header .banner__copy-container:before {
-          top: 5vw; } }
-      @media (max-width: 675px) {
-        .cat-header .banner__copy-container:before {
-          top: 8vw; } }
-    .cat-header .banner__copy-container .banner__caption-title {
-      font-family: "Miller Display Light", Arial, Helvetica, sans-serif;
-      font-size: 100px;
-      line-height: 0.86;
-      letter-spacing: 0.02em;
-      color: #000;
-      margin: 91px auto 67px;
-      max-width: 1440px;
-      width: 75vw; }
-      @media (max-width: 1920px) {
-        .cat-header .banner__copy-container .banner__caption-title {
-          font-size: 5.208vw;
-          margin: 6.071vw auto 3.49vw; } }
-      @media (max-width: 675px) {
-        .cat-header .banner__copy-container .banner__caption-title {
-          font-size: 7.813vw;
-          line-height: 0.9;
-          width: 100%;
-          margin: 10.93838vw auto 7.031vw; } }
-    .cat-header .banner__copy-container .banner__caption-text {
-      font-family: "Miller Display", Arial, Helvetica, sans-serif;
-      font-size: 36px;
-      line-height: 1.33;
-      letter-spacing: 0.025em;
-      text-decoration: underline;
-      text-transform: none;
-      color: #000;
-      margin: 0 auto;
-      max-width: 1020px;
-      width: 53.125vw;
-      text-align: left; }
-      @media (max-width: 1920px) {
-        .cat-header .banner__copy-container .banner__caption-text {
-          font-size: 1.775vw; } }
-      @media (max-width: 939px) {
-        .cat-header .banner__copy-container .banner__caption-text {
-          font-size: 14px; } }
-      @media (max-width: 675px) {
-        .cat-header .banner__copy-container .banner__caption-text {
-          font-size: 3.814vw;
-          text-align: left;
-          width: 68.75vw; } }
-    .cat-header .banner__copy-container .banner__button {
-      font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial, Helvetica, sans-serif;
-      -webkit-box-ordinal-group: 0;
-          -ms-flex-order: -1;
-              order: -1;
-      display: inline-block;
-      line-height: 28px; }
-    .cat-header .banner__copy-container .date,
-    .cat-header .banner__copy-container .share {
-      font-size: 21px;
-      line-height: 30px;
-      letter-spacing: 0.1em;
-      color: rgba(0, 0, 0, 0.5);
-      text-align: left;
-      width: 25%; }
-      @media (max-width: 1500px) {
-        .cat-header .banner__copy-container .date,
-        .cat-header .banner__copy-container .share {
-          font-size: 1.5vw;
-          line-height: 2.3; } }
-      @media (max-width: 675px) {
-        .cat-header .banner__copy-container .date,
-        .cat-header .banner__copy-container .share {
-          font-size: 3.125vw;
-          line-height: 1.2; } }
-    .cat-header .banner__copy-container .category {
-      font-size: 35px;
-      letter-spacing: 0.2em;
-      width: 50%; }
-      @media (max-width: 1500px) {
-        .cat-header .banner__copy-container .category {
-          font-size: 2.33vw;
-          line-height: 1.25; } }
-      @media (max-width: 675px) {
-        .cat-header .banner__copy-container .category {
-          font-size: 3.125vw; } }
-    .cat-header .banner__copy-container .share {
-      text-align: right;
-      position: relative; }
-      .cat-header .banner__copy-container .share:before {
-        content: "";
-        background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png) no-repeat center;
-        background-size: contain;
-        margin-right: 7px;
-        width: 22px;
-        height: 15px;
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-        right: 50px; }
-        @media (max-width: 1500px) {
-          .cat-header .banner__copy-container .share:before {
-            width: 1.246vw;
-            height: 0.881vw;
-            right: 3.5vw; } }
-        @media (max-width: 939px) {
-          .cat-header .banner__copy-container .share:before {
-            right: 3.25vw; } }
-        @media (max-width: 675px) {
-          .cat-header .banner__copy-container .share:before {
-            top: 48%;
-            right: 7vw; } }
-
 /* article text - order: btn (img caption or header), title, text */
 .cat-article.banner__copy-container {
   position: relative;
@@ -754,7 +759,6 @@
     font-size: 40px;
     line-height: 1.785;
     letter-spacing: 0.23em;
-    text-decoration: underline;
     margin-bottom: 50px; }
     @media (max-width: 1920px) {
       .cat-article.banner__copy-container .banner__caption-title {
@@ -985,3 +989,14 @@
 @media (max-width: 675px) {
   .banner.cat-main.mobile-full-bleed .banner__container {
     width: 100vw; } }
+
+/* show only on certain viewports */
+.mobileOnly {
+  display: none; }
+  @media (max-width: 675px) {
+    .mobileOnly {
+      display: block; } }
+
+@media (max-width: 675px) {
+  .desktopOnly {
+    display: none; } }
