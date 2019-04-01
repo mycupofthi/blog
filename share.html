@@ -3,103 +3,103 @@
 <!-- We want this component to be separate from the carousel in case a page exists that needs the carousel alone -->
 
 <style>
-.share-end {
-  margin: 0 auto;
-  width: 75vw;
-}
-.share-end__button {
-  border-bottom: 1px solid black;
-  text-align: right;
-  padding-bottom: 20px;
-}
-a.share-end__button--link {
-  font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial,
-    Helvetica, sans-serif;
-  line-height: 30px;
-  font-weight:normal;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: black;
-  font-size: 36.53px;
-  position:relative;
-}
-.share-end__button--link:before {
-  content: "";
-  background: url(https://static.indigoimages.ca/2019/share__black.png)
-    no-repeat center;
-  background-size:contain;
-  width: 40px;
-  height: 28px;
-  display: inline-block;
-  position: absolute;
-  top: 51%;
-  transform: translateY(-50%);
-  left: -50px;
-}
-.share-end__social--buttons-list {
-  margin-top: 2%;
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-}
-.share-end__social--buttons-list-item a {
-  margin-left: 12px;
-  text-decoration: none;
-  height: 68px;
-  width: 68px;
-  background: black;
-  display: block;
-  border-radius: 100%;
-}
-.share-end__social--buttons-list-item svg {
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  width: 33%;
-  height: 33%;
-  position: relative;
-}
-.share-end__social--buttons-list-item svg path {
-  fill: white;
-}
-@media (max-width:1920px) {
+  .share-end {
+    margin: 0 auto;
+    width: 75vw;
+  }
+  .share-end__button {
+    border-bottom: 1px solid black;
+    text-align: right;
+    padding-bottom: 20px;
+  }
   a.share-end__button--link {
-    font-size:1.903vw;
+    font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial,
+      Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 30px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: black;
+    font-size: 36.53px;
+    position: relative;
   }
   .share-end__button--link:before {
-    width: 2.083vw;
-    height: 1.458vw;
-    left: -2.5vw;
-  }
-  .share-end__social--buttons-list-item a {
-    width: 5vw;
-    height: 5vw;
-  }
-}
-@media (max-width: 675px) {
-  a.share-end__button--link {
-    font-size: 4.648vw;
-  }
-  .share-end__button--link:before {
-    width:5.156vw;
-    height:3.281vw;
-    left:-6vw;
-  }
-  .share-end__social--buttons-list-item a {
-    height: 8vw;
-    width: 8vw;
+    content: "";
+    background: url(https://static.indigoimages.ca/2019/share__black.png)
+      no-repeat center;
+    background-size: contain;
+    width: 40px;
+    height: 28px;
+    display: inline-block;
+    position: absolute;
+    top: 51%;
+    transform: translateY(-50%);
+    left: -50px;
   }
   .share-end__social--buttons-list {
-    margin-top: 5%;
+    margin-top: 2%;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
   }
-}
+  .share-end__social--buttons-list-item a {
+    margin-left: 12px;
+    text-decoration: none;
+    height: 68px;
+    width: 68px;
+    background: black;
+    display: block;
+    border-radius: 100%;
+  }
+  .share-end__social--buttons-list-item svg {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 33%;
+    height: 33%;
+    position: relative;
+  }
+  .share-end__social--buttons-list-item svg path {
+    fill: white;
+  }
+  @media (max-width: 1920px) {
+    a.share-end__button--link {
+      font-size: 1.903vw;
+    }
+    .share-end__button--link:before {
+      width: 2.083vw;
+      height: 1.458vw;
+      left: -2.5vw;
+    }
+    .share-end__social--buttons-list-item a {
+      width: 3.5vw;
+      height: 3.5vw;
+    }
+  }
+  @media (max-width: 675px) {
+    a.share-end__button--link {
+      font-size: 4.648vw;
+    }
+    .share-end__button--link:before {
+      width: 5.156vw;
+      height: 3.281vw;
+      left: -6vw;
+    }
+    .share-end__social--buttons-list-item a {
+      height: 8vw;
+      width: 8vw;
+    }
+    .share-end__social--buttons-list {
+      margin-top: 5%;
+    }
+  }
 </style>
 
 <section class="share-end" id="share/">
   <div class="share-end__button">
-    <a href="" id="emailShare" class="shand__button--link">
+    <a href="" id="emailShare" class="share-end__button--link">
       share this story
     </a>
   </div>
@@ -182,11 +182,7 @@ a.share-end__button--link {
           </a>
         </li>
         <li class="share-end__social--buttons-list-item">
-          <a
-            href="https://pinterest.com/chaptersindigo/"
-            target="_blank"
-            id="pinterestShare"
-          >
+          <a href="" target="_blank" id="pinterestShare">
             <svg
               id="SvgjsSvg1018"
               xmlns="http://www.w3.org/2000/svg"
@@ -225,16 +221,6 @@ a.share-end__button--link {
         "&amp;subject=" +
         document.title;
     });
-  const shareLink = document
-    .getElementsByClassName("share")
-    .addEventListener("click", function(e) {
-      e.preventDefault();
-      window.location.href =
-        "mailto:?body=Check this out: " +
-        escape(window.location.href) +
-        "&amp;subject=" +
-        document.title;
-    });
   // FACEBOOK SHARE
   const facebookLink = document
     .getElementById("facebookShare")
@@ -252,30 +238,47 @@ a.share-end__button--link {
       return false;
     });
 
-  //   // Pinterest Share
-
-  //   function prepareSharerUrl() {
-  //     return Promise.resolve(null);
-  //   }
-  //   function launchShareWindow(url) {
-  //     log(`${this._sharerName} url: ${url}`);
-  //     if (url) {
-  //       const width = 600;
-  //       const height = 320;
-  //       let left = $(window).width() / 2 - width / 2,
-  //         top = $(window).height() / 2 - height / 2,
-  //         windowParams = `left=${left},top=${top},width=${width},height=${height},resizable,scrollbars=yes,status=1`;
-  //       window.open(url, null, windowParams);
-  //     }
-  //   }
-  //   const pinterestShare = document
-  //     .getElementById("pinterestShare")
-  //     .addEventListener("click", function(e) {
-  //       console.log(this);
-  //       e.preventDefault();
-  //       prepareSharerUrl().then(launchShareWindow.bind(this));
-  //       window.dispatchEvent(
-  //         e.createCustomEvent("socialShare_click", this._sharerName)
-  //       );
-  //     });
+  // PINTEREST SHARE
+  const pinterestLink = document
+    .getElementById("pinterestShare")
+    .addEventListener("click", function(e) {
+      e.preventDefault();
+      // first we store the window URL in a string so we can input it into the share URL
+      const windowUrl = window.location.toString();
+      // we need to trim the https:// off the URL to leave us only with the remaining URL for the page
+      const urlToAdd = windowUrl.slice(8);
+      // We want to target the header banner and the title within it using querySelectorAll
+      // If you are re-using this code on a different page then you may need to adjust the below target to be the intended title/description for the pinterest post
+      const headerNode = document.querySelectorAll(
+        ".cat-header .banner__caption-title"
+      );
+      // Since the above produces a nodeList we want to store the innerHTML in it's own variable to then push to the description
+      const descToAdd = encodeURIComponent(headerNode[0].innerText);
+      // we now pull the header mobile image as our pinterest placeholder
+      // If you are re-using this on a different page you'll just need to adjust the querySelectorAll to refer to the intended banner
+      const headerImage = document.querySelectorAll(
+        ".cat-header .banner__image source"
+      );
+      // headerImage pulls another nodelist with 2 items (there are two source tags in the picture element) we want the second one with a more square image
+      const pinImage = encodeURIComponent(
+        headerImage[1].attributes[0].nodeValue
+      );
+      // headerImage[1].srcset
+      // we separate each section in order to concatenate later
+      // Now we initialize the URL with all of the above components
+      const fullUrl =
+        "http://pinterest.com/pin/create/button/?url=https%3A%2F%2F" +
+        urlToAdd +
+        "&media=" +
+        pinImage +
+        "&description=" +
+        descToAdd;
+      // USING THE ABOVE DATA WE NOW OPEN OUR PINTEREST POP-UP
+      window.open(
+        fullUrl,
+        "",
+        "menubar=0,toolbar=0,resizable=1,scrollbars=0,width=800,height=700"
+      );
+      return false;
+    });
 </script>
