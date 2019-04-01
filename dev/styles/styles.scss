@@ -82,7 +82,7 @@
       font-size: 36px;
       line-height: 1.33;
       letter-spacing: 0.025em;
-      text-decoration: underline;
+      // text-decoration: underline;
       text-transform: none;
       color: #000;
       margin: 0 auto;
@@ -291,7 +291,7 @@
       }
       @media (max-width: 675px) {
         font-size: 7.5vw;
-        line-height: 1.25;
+        line-height: 1.1;
       }
     }
     .banner__caption-text {
@@ -309,6 +309,7 @@
       }
       @media (max-width: 675px) {
         font-size: 3.75vw;
+        margin-top:0;
       }
     }
     .cta {
@@ -318,7 +319,7 @@
       }
       @media (max-width: 675px) {
         font-size: 3vw;
-        text-align: center;
+        // text-align: center;
       }
     }
   }
@@ -380,7 +381,6 @@
       line-height: 1.29;
       @media (max-width: 1920px) {
         font-size: 1.823vw;
-        line-height:1.7;
       }
       @media (max-width: 675px) {
         font-size: 5.469vw;
@@ -492,7 +492,7 @@
       font-family: "Miller Banner Light", "Miller Display Light", Arial,
         Helvetica, sans-serif;
       font-size: 105px;
-      line-height: 1.2;
+      line-height: 1.1;
       letter-spacing: 0;
       // text-decoration: underline;
       text-transform: none;

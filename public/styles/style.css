@@ -325,7 +325,6 @@
       font-size: 36px;
       line-height: 1.33;
       letter-spacing: 0.025em;
-      text-decoration: underline;
       text-transform: none;
       color: #000;
       margin: 0 auto;
@@ -524,7 +523,7 @@
       @media (max-width: 675px) {
         .main-feat .banner__copy-container .banner__caption-title {
           font-size: 7.5vw;
-          line-height: 1.25; } }
+          line-height: 1.1; } }
     .main-feat .banner__copy-container .banner__caption-text {
       font-family: "Miller Display", Helvetica, Arial, sans-serif;
       letter-spacing: 0.025em;
@@ -540,7 +539,8 @@
           font-size: 12px; } }
       @media (max-width: 675px) {
         .main-feat .banner__copy-container .banner__caption-text {
-          font-size: 3.75vw; } }
+          font-size: 3.75vw;
+          margin-top: 0; } }
     .main-feat .banner__copy-container .cta {
       text-align: right; }
       @media (max-width: 939px) {
@@ -548,8 +548,7 @@
           font-size: 12px; } }
       @media (max-width: 675px) {
         .main-feat .banner__copy-container .cta {
-          font-size: 3vw;
-          text-align: center; } }
+          font-size: 3vw; } }
 
 .main-feat.main-feat-l {
   -webkit-box-orient: horizontal;
@@ -604,8 +603,7 @@
       line-height: 1.29; }
       @media (max-width: 1920px) {
         .small-feat .banner__copy-container .banner__caption-title {
-          font-size: 1.823vw;
-          line-height: 1.7; } }
+          font-size: 1.823vw; } }
       @media (max-width: 675px) {
         .small-feat .banner__copy-container .banner__caption-title {
           font-size: 5.469vw; } }
@@ -704,7 +702,7 @@
     .cat-quote .banner__copy-container .banner__caption-title {
       font-family: "Miller Banner Light", "Miller Display Light", Arial, Helvetica, sans-serif;
       font-size: 105px;
-      line-height: 1.2;
+      line-height: 1.1;
       letter-spacing: 0;
       text-transform: none; }
       @media (max-width: 1920px) {

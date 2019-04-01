@@ -3,90 +3,103 @@
 <!-- We want this component to be separate from the carousel in case a page exists that needs the carousel alone -->
 
 <style>
-  .share-end {
-    margin: 0 auto;
-    width: 75vw;
-  }
-  .share-end__button {
-    border-bottom: 1px solid black;
-    text-align: right;
-    padding-bottom: 20px;
-  }
+.share-end {
+  margin: 0 auto;
+  width: 75vw;
+}
+.share-end__button {
+  border-bottom: 1px solid black;
+  text-align: right;
+  padding-bottom: 20px;
+}
+a.share-end__button--link {
+  font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial,
+    Helvetica, sans-serif;
+  line-height: 30px;
+  font-weight:normal;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: black;
+  font-size: 36.53px;
+  position:relative;
+}
+.share-end__button--link:before {
+  content: "";
+  background: url(https://static.indigoimages.ca/2019/share__black.png)
+    no-repeat center;
+  background-size:contain;
+  width: 40px;
+  height: 28px;
+  display: inline-block;
+  position: absolute;
+  top: 51%;
+  transform: translateY(-50%);
+  left: -50px;
+}
+.share-end__social--buttons-list {
+  margin-top: 2%;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.share-end__social--buttons-list-item a {
+  margin-left: 12px;
+  text-decoration: none;
+  height: 68px;
+  width: 68px;
+  background: black;
+  display: block;
+  border-radius: 100%;
+}
+.share-end__social--buttons-list-item svg {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 33%;
+  height: 33%;
+  position: relative;
+}
+.share-end__social--buttons-list-item svg path {
+  fill: white;
+}
+@media (max-width:1920px) {
   a.share-end__button--link {
-    font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial,
-      Helvetica, sans-serif;
-    line-height: 30px;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: black;
-    font-size: 36.53px;
+    font-size:1.903vw;
   }
   .share-end__button--link:before {
-    content: "Ì";
-    font-family: "Wingdings 3";
-    font-size: 51px;
-    margin-left: 7px;
-  }
-  .share-end__social--buttons-list {
-    margin-top: 2%;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
+    width: 2.083vw;
+    height: 1.458vw;
+    left: -2.5vw;
   }
   .share-end__social--buttons-list-item a {
-    margin-left: 12px;
-    text-decoration: none;
-    height: 68px;
-    width: 68px;
-    background: black;
-    display: block;
-    border-radius: 100%;
+    width: 5vw;
+    height: 5vw;
   }
-  .share-end__social--buttons-list-item svg {
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    width: 33%;
-    height: 33%;
-    position: relative;
+}
+@media (max-width: 675px) {
+  a.share-end__button--link {
+    font-size: 4.648vw;
   }
-  .share-end__social--buttons-list-item svg path {
-    fill: white;
+  .share-end__button--link:before {
+    width:5.156vw;
+    height:3.281vw;
+    left:-6vw;
   }
-  @media (max-width: 1500px) {
-    a.share-end__button--link {
-      font-size: 2.44vw;
-    }
-    .share-end__button--link:before {
-      font-size: 3.4vw;
-    }
-    .share-end__social--buttons-list-item a {
-      width: 5vw;
-      height: 5vw;
-    }
+  .share-end__social--buttons-list-item a {
+    height: 8vw;
+    width: 8vw;
   }
-  @media (max-width: 675px) {
-    a.share-end__button--link {
-      font-size: 4.65vw;
-    }
-    .share-end__button--link:before {
-      font-size: 6.99vw;
-    }
-    .share-end__social--buttons-list-item a {
-      height: 8vw;
-      width: 8vw;
-    }
-    .share-end__social--buttons-list {
-      margin-top: 5%;
-    }
+  .share-end__social--buttons-list {
+    margin-top: 5%;
   }
+}
 </style>
 
 <section class="share-end" id="share/">
   <div class="share-end__button">
-    <a href="" id="emailShare" class="share-end__button--link">
+    <a href="" id="emailShare" class="shand__button--link">
       share this story
     </a>
   </div>
