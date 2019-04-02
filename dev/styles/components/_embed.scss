@@ -4,14 +4,8 @@
   .banner__image-picture {
     position: relative;
   }
-  .banner__caption-text.indented {
-    margin: 0;
-    &:before {
-      content: "";
-      display: inline-block;
-      width: 25px;
-      height: 1px;
-    }
+  .banner__caption-text.paragraph {
+    margin-top: 15px !important;
   }
 }
 
@@ -162,6 +156,8 @@
   text-transform: uppercase;
   color: #000;
   margin-top: 90px;
+  font-weight:normal;
+  font-family:'Gibson Regular';
   &:hover {
     color: #000;
   }
@@ -264,3 +260,5 @@
     }
   }
 }
+
+

@@ -57,7 +57,7 @@ Recipe list & instructions, Q&A, videos, copy with hyperlinks
 
 - **.banner\_\_caption-link** - hyperlinks
 - **.cat-no-top** - no top margin - add to caption class
-- **.indented** - add class to banner\_\_caption-text to indent paragraphs
+- **.paragraph** - add class to banner\_\_caption-text to create spaces in paragraphs
 - **.text--initial** - add class to make first letters of word initialized in a title (instead of text-transform: uppercase)
 
 - **.cat-list** - recipes, instructions, Q&A

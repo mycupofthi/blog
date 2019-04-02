@@ -549,7 +549,7 @@
   .banner__caption-title {
     font-family: "Gibson Light", Arial, Helvetica, sans-serif;
     font-size: 40px;
-    line-height: 1.785;
+    line-height: 1.35;
     letter-spacing: 0.23em;
     // text-decoration: underline;
     margin-bottom: 50px;
@@ -637,6 +637,9 @@
       font-size: 3.125vw;
       line-height: 1.2;
       margin: 0 auto 11.719vw;
+    }
+    .banner__caption-link {
+      text-transform:uppercase;
     }
   }
   /* large title */
@@ -824,3 +827,15 @@
   }
 }
 
+/* general font styling for links and books*/
+em {
+  font-family:'Gibson Light Italic', Arial, Helvetica, sans-serif;
+}
+.banner__caption-link em {
+  font-family:'Gibson Italic', Arial, Helvetica, sans-serif;
+}
+
+strong {
+  font-family:'Gibson Regular';
+  font-weight:normal;
+}
