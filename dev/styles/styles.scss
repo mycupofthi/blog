@@ -56,7 +56,7 @@
       }
     }
     .banner__caption-title {
-      font-family: "Miller Display Light", Arial, Helvetica, sans-serif;
+      font-family: "Miller Banner Light", Arial, Helvetica, sans-serif;
       font-size: 100px;
       line-height: 0.86;
       letter-spacing: 0.02em;
@@ -118,7 +118,7 @@
       width: 25%;
       @media (max-width: 1920px) {
         font-size: 1.5vw;
-        line-height:2.2;
+        line-height: 2.2;
       }
 
       @media (max-width: 675px) {
@@ -130,23 +130,23 @@
       font-size: 35px;
       letter-spacing: 0.2em;
       width: 50%;
-      @media (max-width:1920px) {
-        font-size:1.823vw;
-        line-height:1.7;
+      @media (max-width: 1920px) {
+        font-size: 1.823vw;
+        line-height: 1.7;
       }
       @media (max-width: 675px) {
         font-size: 3.125vw;
-        line-height:1.2;
+        line-height: 1.2;
       }
     }
     .share {
       text-align: right;
-      position:relative;
+      position: relative;
       &:before {
         content: "";
         background: url(https://static.indigoimages.ca/2019/123154_blog_storyheader_shareicon.png)
           no-repeat center;
-        background-size:contain;
+        background-size: contain;
         margin-right: 7px;
         width: 22px;
         height: 15px;
@@ -155,20 +155,20 @@
         top: 50%;
         transform: translateY(-50%);
         right: 50px;
-        @media (max-width:1920px) {
+        @media (max-width: 1920px) {
           height: 1.302vw;
           width: 1.667vw;
           right: 3.75vw;
           top: 1.6vw;
         }
-        @media (max-width:939px) {
-          right:3.25vw;
+        @media (max-width: 939px) {
+          right: 3.25vw;
         }
-        @media (max-width:675px) {
+        @media (max-width: 675px) {
           width: 3.438vw;
           height: 1.875vw;
-          top:1.8vw;
-          right:7vw;
+          top: 1.8vw;
+          right: 7vw;
         }
       }
     }
@@ -284,7 +284,7 @@
         Arial, sans-serif;
       letter-spacing: -0.01em;
       font-size: 50px;
-      line-height: 1.2;
+      line-height: 1;
       // text-decoration:underline;
       @media (max-width: 1920px) {
         font-size: 2.604vw;
@@ -295,7 +295,7 @@
       }
     }
     .banner__caption-text {
-      font-family: "Miller Display", Helvetica, Arial, sans-serif;
+      font-family: "Miller Banner Light", Helvetica, Arial, sans-serif;
       letter-spacing: 0.025em;
       color: #000;
       text-transform: none;
@@ -309,11 +309,12 @@
       }
       @media (max-width: 675px) {
         font-size: 3.75vw;
-        margin-top:0;
+        margin-top: 0;
       }
     }
     .cta {
       text-align: right;
+      line-height: 50px;
       @media (max-width: 939px) {
         font-size: 12px;
       }
@@ -364,17 +365,17 @@
     position: relative;
     margin: 40px auto 0;
     text-align: left;
-    max-width:320px;
-    width:16.667vw;
+    max-width: 320px;
+    width: 16.667vw;
     @media (max-width: 675px) {
       margin: 9.375vw auto 0;
       width: 59.375vw;
       padding: 0;
     }
     .banner__caption-title {
-      font-family: 'Miller Banner Light', 'Miller Display Light', Helvetica, Arial, sans-serif;
+      font-family: "Miller Banner Light", "Miller Display Light", Helvetica,
+        Arial, sans-serif;
       letter-spacing: 0;
-      text-decoration: underline;
       color: #000;
       text-transform: none;
       font-size: 35px;
@@ -639,7 +640,7 @@
       margin: 0 auto 11.719vw;
     }
     .banner__caption-link {
-      text-transform:uppercase;
+      text-transform: uppercase;
     }
   }
   /* large title */
@@ -740,6 +741,8 @@
   }
   .cat-article.banner__copy-container .banner__caption-title {
     margin-bottom: 1.083vw;
+    letter-spacing: 0.2em;
+    line-height: 1.25;
     width: 95%;
   }
   &__feat-l,
@@ -757,6 +760,7 @@
       font-size: 24px;
       text-transform: uppercase;
       margin-bottom: 1.083vw;
+      letter-spacing: 0.1em;
       @media (max-width: 1920px) {
         font-size: 1.25vw;
       }
@@ -815,27 +819,27 @@
 
 /* show only on certain viewports */
 .mobileOnly {
-  display:none;
-  @media (max-width:675px) {
-    display:block;
+  display: none;
+  @media (max-width: 675px) {
+    display: block;
   }
 }
 
 .desktopOnly {
-  @media (max-width:675px) {
-    display:none;
+  @media (max-width: 675px) {
+    display: none;
   }
 }
 
 /* general font styling for links and books*/
 em {
-  font-family:'Gibson Light Italic', Arial, Helvetica, sans-serif;
+  font-family: "Gibson Light Italic", Arial, Helvetica, sans-serif;
 }
 .banner__caption-link em {
-  font-family:'Gibson Italic', Arial, Helvetica, sans-serif;
+  font-family: "Gibson Italic", Arial, Helvetica, sans-serif;
 }
 
 strong {
-  font-family:'Gibson Regular';
-  font-weight:normal;
+  font-family: "Gibson Regular";
+  font-weight: normal;
 }

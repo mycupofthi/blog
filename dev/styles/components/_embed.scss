@@ -156,8 +156,8 @@
   text-transform: uppercase;
   color: #000;
   margin-top: 90px;
-  font-weight:normal;
-  font-family:'Gibson Regular';
+  font-weight: normal;
+  font-family: "Gibson Regular";
   &:hover {
     color: #000;
   }
@@ -211,6 +211,38 @@
   }
 }
 
+.list-after,
+.list-before {
+  position: relative;
+}
+.list-after::after {
+  content: "";
+  position: absolute;
+  background: url(https://static.indigoimages.ca/2019/123154_typesofmom_02.png);
+  width: 29%;
+  height: 619px;
+  right: 0;
+  top: -70%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media (max-width: 939px) {
+    top: -18vw;
+  }
+}
+.list-before::before {
+  content: "";
+  position: absolute;
+  background: url(https://static.indigoimages.ca/2019/123154_typesofmom_03.png);
+  width: 25%;
+  height: 683px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 20%;
+  @media (max-width: 939px) {
+  }
+}
+
 /* videos */
 .cat-video {
   @media (max-width: 675px) {
@@ -260,5 +292,3 @@
     }
   }
 }
-
-

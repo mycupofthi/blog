@@ -6,11 +6,12 @@
   .share-end {
     margin: 0 auto;
     width: 75vw;
+    padding-bottom: 5%;
   }
   .share-end__button {
     border-bottom: 1px solid black;
     text-align: right;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
   }
   a.share-end__button--link {
     font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial,
@@ -79,6 +80,10 @@
     }
   }
   @media (max-width: 675px) {
+    .share-end {
+      width: 80vw;
+      padding-bottom: 10%;
+    }
     a.share-end__button--link {
       font-size: 4.648vw;
     }
@@ -93,6 +98,12 @@
     }
     .share-end__social--buttons-list {
       margin-top: 5%;
+    }
+  }
+  @media (max-width: 1920px) and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+    #pinterestShare {
+      display: none;
     }
   }
 </style>
@@ -256,29 +267,23 @@
       const descToAdd = encodeURIComponent(headerNode[0].innerText);
       // we now pull the header mobile image as our pinterest placeholder
       // If you are re-using this on a different page you'll just need to adjust the querySelectorAll to refer to the intended banner
-      const headerImage = document.querySelectorAll(
-        ".cat-header .banner__image source"
-      );
-      // headerImage pulls another nodelist with 2 items (there are two source tags in the picture element) we want the second one with a more square image
-      const pinImage = encodeURIComponent(
-        headerImage[1].attributes[0].nodeValue
-      );
+      // const headerImage = document.querySelectorAll(
+      //   ".cat-header .banner__image source"
+      // );
+      // // headerImage pulls another nodelist with 2 items (there are two source tags in the picture element) we want the second one with a more square image
+      // const pinImage = encodeURIComponent(
+      //   headerImage[1].attributes[0].nodeValue
+      // );
       // headerImage[1].srcset
       // we separate each section in order to concatenate later
       // Now we initialize the URL with all of the above components
       const fullUrl =
         "http://pinterest.com/pin/create/button/?url=https%3A%2F%2F" +
         urlToAdd +
-        "&media=" +
-        pinImage +
         "&description=" +
         descToAdd;
       // USING THE ABOVE DATA WE NOW OPEN OUR PINTEREST POP-UP
-      window.open(
-        fullUrl,
-        "",
-        "menubar=0,toolbar=0,resizable=1,scrollbars=0,width=800,height=700"
-      );
+      window.open(fullUrl, "_blank");
       return false;
     });
 </script>
