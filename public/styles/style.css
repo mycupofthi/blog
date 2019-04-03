@@ -148,7 +148,7 @@
   color: #000;
   margin-top: 90px;
   font-weight: normal;
-  font-family: 'Gibson Regular'; }
+  font-family: "Gibson Regular"; }
   .cat-cta:hover {
     color: #000; }
   @media (max-width: 1920px) {
@@ -197,6 +197,35 @@
     @media (max-width: 675px) {
       .list__number:before {
         width: 84.375vw; } }
+
+.list-after,
+.list-before {
+  position: relative; }
+
+.list-after::after {
+  content: "";
+  position: absolute;
+  background: url(https://static.indigoimages.ca/2019/123154_typesofmom_02.png);
+  width: 29%;
+  height: 619px;
+  right: 0;
+  top: -70%;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 939px) {
+    .list-after::after {
+      top: -18vw; } }
+
+.list-before::before {
+  content: "";
+  position: absolute;
+  background: url(https://static.indigoimages.ca/2019/123154_typesofmom_03.png);
+  width: 25%;
+  height: 683px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 20%; }
 
 /* videos */
 @media (max-width: 675px) {
@@ -299,7 +328,7 @@
         .cat-header .banner__copy-container:before {
           top: calc(2.7vw + 3.906vw); } }
     .cat-header .banner__copy-container .banner__caption-title {
-      font-family: "Miller Display Light", Arial, Helvetica, sans-serif;
+      font-family: "Miller Banner Light", Arial, Helvetica, sans-serif;
       font-size: 100px;
       line-height: 0.86;
       letter-spacing: 0.02em;
@@ -513,7 +542,7 @@
       font-family: "Miller Banner Light", "Miller Display Light", Helvetica, Arial, sans-serif;
       letter-spacing: -0.01em;
       font-size: 50px;
-      line-height: 1.2; }
+      line-height: 1; }
       @media (max-width: 1920px) {
         .main-feat .banner__copy-container .banner__caption-title {
           font-size: 2.604vw; } }
@@ -522,7 +551,7 @@
           font-size: 7.5vw;
           line-height: 1.1; } }
     .main-feat .banner__copy-container .banner__caption-text {
-      font-family: "Miller Display", Helvetica, Arial, sans-serif;
+      font-family: "Miller Banner Light", Helvetica, Arial, sans-serif;
       letter-spacing: 0.025em;
       color: #000;
       text-transform: none;
@@ -539,7 +568,8 @@
           font-size: 3.75vw;
           margin-top: 0; } }
     .main-feat .banner__copy-container .cta {
-      text-align: right; }
+      text-align: right;
+      line-height: 50px; }
       @media (max-width: 939px) {
         .main-feat .banner__copy-container .cta {
           font-size: 12px; } }
@@ -591,9 +621,8 @@
         width: 59.375vw;
         padding: 0; } }
     .small-feat .banner__copy-container .banner__caption-title {
-      font-family: 'Miller Banner Light', 'Miller Display Light', Helvetica, Arial, sans-serif;
+      font-family: "Miller Banner Light", "Miller Display Light", Helvetica, Arial, sans-serif;
       letter-spacing: 0;
-      text-decoration: underline;
       color: #000;
       text-transform: none;
       font-size: 35px;
@@ -921,6 +950,8 @@
     line-height: 1.5; }
   .list .cat-article.banner__copy-container .banner__caption-title {
     margin-bottom: 1.083vw;
+    letter-spacing: 0.2em;
+    line-height: 1.25;
     width: 95%; }
   .list__feat-l, .list__feat-r {
     display: -webkit-box;
@@ -942,7 +973,8 @@
     .list__feat-l .banner__caption--name, .list__feat-r .banner__caption--name {
       font-size: 24px;
       text-transform: uppercase;
-      margin-bottom: 1.083vw; }
+      margin-bottom: 1.083vw;
+      letter-spacing: 0.1em; }
       @media (max-width: 1920px) {
         .list__feat-l .banner__caption--name, .list__feat-r .banner__caption--name {
           font-size: 1.25vw; } }
@@ -1000,11 +1032,11 @@
 
 /* general font styling for links and books*/
 em {
-  font-family: 'Gibson Light Italic', Arial, Helvetica, sans-serif; }
+  font-family: "Gibson Light Italic", Arial, Helvetica, sans-serif; }
 
 .banner__caption-link em {
-  font-family: 'Gibson Italic', Arial, Helvetica, sans-serif; }
+  font-family: "Gibson Italic", Arial, Helvetica, sans-serif; }
 
 strong {
-  font-family: 'Gibson Regular';
+  font-family: "Gibson Regular";
   font-weight: normal; }
