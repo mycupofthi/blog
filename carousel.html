@@ -3,14 +3,30 @@
   padding:0;
   margin:100px auto;
 }
-.bxslider {
+.bx-wrapper {
+  position:relative;
+  margin:0 auto;
+}
+/* .bxslider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content:space-between;
   width:100%;
   max-width:1920px;
-}
+  margin:0 auto;
+} */
+  .bx-prev,
+  .bx-next {
+    position:absolute;
+    top:39.5%;
+  }
+    .bx-prev {
+      left:1%;
+    }
+    .bx-next {
+      right:1%;
+    }
   .card {
     max-width:585px;
     width:30.469vw;
@@ -81,111 +97,135 @@
 </style>
 
 <section class="carousel">
-  <div class="bxslider">
-    <div class="card" id="1">
-      <a href="">
-        <img src="https://static.indigoimages.ca/2019/585x585_blog_10books.jpg"/>
-        <div class="banner__copy-container">
-          <h2 class="banner__caption-title">10 must-read books by badass moms</h2>
-        </div>
-      </a>
-    </div>
-    <div class="card" id="2">
-      <a href="">
-        <img src="https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg" title="" />
-        <div class="banner__copy-container">
-          <h2 class="banner__caption-title">Chef Sous Chef's Instagram-worthy brunch</h2>
-        </div>
-      </a>
-    </div>
-    <div class="card" id="3">
-      <a href="/en-ca/inspired/food-entertaining/salmon-recipe/?ref=blog%3afood%3ablog-main%3a02-landing-food-article-2%3abanner&amp;cl=02-landing-food-article-2_banner" data-ref="blog:food:blog-main:02-landing-food-article-2:banner">
-        <img src="https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg" title="" />
-        <div class="banner__copy-container">
-          <h2 class="banner__caption-title">Chef Sous Chef's Instagram-worthy brunch</h2>
-        </div>
-      </a>
-    </div>
-  </div>
+  <div class="bxslider-test"></div>
 </section>
 
 <script>
-  "use strict";
+const blogPosts = [
+  // USE BELOW CODE AS TEMPLATE FOR FUTURE BLOG POSTS
+  //   please take care in separating each object with a comma
+  //   {
+  //     imgURL: "",
+  //     linkURL: "",
+  //     postTitle: ""
+  //   }
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_spa.jpg",
+    linkURL: "/inspired/wellness/spa-day",
+    postTitle: "How to Create a Spa Day at Home ",
+    
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_salmonrecipe.jpg",
+    linkURL: "/inspired/food-entertaining/salmon-recipe",
+    postTitle: "Recipe: Orange Honey Salmon",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg",
+    linkURL: "/inspired/books/Annie-Leibovitz",
+    postTitle: "5 Life Lessons with Annie Leibovitz",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_10books.jpg",
+    linkURL: "/inspired/books/10-books",
+    postTitle: "Shelf Life: 10 Books by Badass Moms",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_typesofmom.jpg",
+    linkURL: "/inspired/gifting/types-of-mom",
+    postTitle: "Mother's Day Gift Ideas for Every Type of Mom",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_lettertomom.jpg",
+    linkURL: "/inspired/gifting/letters-to-mom",
+    postTitle: "How to Master the Art of Letter Writing",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg",
+    linkURL: "/inspired/style-design/matt-and-nat",
+    postTitle: "Curated by Indigo: Matt & Nat",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_chefsouschef.jpg",
+    linkURL: "/inspired/food-entertaining/blueberry-french-toast",
+    postTitle: "In the Kitchen with Chef Sous Chef",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_baby.jpg",
+    linkURL: "/inspired/family/nursery-decor",
+    postTitle: "How to Create a Calming Baby Nursery",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585_585_blog_curated_magnolia.jpg",
+    linkURL: "/inspired/style-design/joanna-gaines",
+    postTitle: "Curated by Indigo: Magnolia Home by Joanna Gaines",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_crystal.jpg",
+    linkURL: "/inspired/wellness/crystals",
+    postTitle: "4 Ways Crystals Can Improve Your Life",
+  }
+];
 
-  var blogPosts = [
-    // USE BELOW CODE AS TEMPLATE FOR FUTURE BLOG POSTS
-    //   please take care in separating each object with a comma
-    //   {
-    //     imgURL: "",
-    //     linkURL: "",
-    //     postDesc: "",
-    //     alt: ""
-    //   }
-    {
-      imgURL: "https://static.indigoimages.ca/2019/test1carousel.png",
-      linkURL: "indigo.ca",
-      postDesc: "first blog post",
-      alt: ""
-    },
-    {
-      imgURL: "https://static.indigoimages.ca/2019/test2carousel.png",
-      linkURL: "indigo.ca",
-      postDesc: "second blog post",
-      alt: ""
-    },
-    {
-      imgURL: "https://static.indigoimages.ca/2019/test3carousel.png",
-      linkURL: "indigo.ca",
-      postDesc: "third blog post",
-      alt: ""
-    }
-  ];
+// initialize empty array, take out object from array if location matches linkUrl, and 
+// shuffle array
+const adjustedBP = [];
 
-  // card array 
-  var cardNode = document.getElementsByClassName("card");
-  var cardArray = Array.from(cardNode);
+blogPosts.map(function(d) {
 
-
-  function cardMap() {
-    cardArray.map(function(child) {
-      console.dir(child.childNodes)
-    })
+  // if linkURL is NOT in array, then add into adjustedBP
+  if (window.location.href.indexOf(d.linkURL) === -1) {
+    adjustedBP.push(d);
   }
 
-  cardMap()
+})
 
-  const randomIndex = blogPosts[Math.floor(Math.random() * blogPosts.length)];
-  console.log(randomIndex);
-  const card1 = document.getElementById("1");
-  document.getElementById("someid");
+// shuffle array
+function shuffle(array) {
+  var i = 0
+    , j = 0
+    , temp = null
 
-  
+  for (i = array.length - 1; i > 0; i -= 1) {
+    j = Math.floor(Math.random() * (i + 1))
+    temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
+  }
+}
 
-  // BgFlags = el2.map(
-  //   child => console.log(child)
-  //   // ({
-  //   //     height: element.offsetTop,
-  //   //     bgsrc: element.dataset.bgsrc,
-  //   //     bgcolor: element.dataset.bgcolor,
-  //   //     size: element.dataset.size,
-  //   //     name: element.id,
-  //   //     image: parseInt(element.dataset.image)
-  //   // })
-  // );
-  // defaultFlag = BgFlags.filter(flag => flag.name == "defaultFlag")[0]; //we need the [0] because filter() returns an array
+shuffle(adjustedBP);
 
-  // We initialize a function that will target the existing HTML and input a random blog post in the carousel
+// appending card to bxslider parent
+function appendCard() {
+// markup for individual card
+  const bxslider = document.querySelector('.bxslider-test');
+  let blogURL, blogImg, blogTitle;
 
+  adjustedBP.map(function(d) {
+    const blogURL = d.linkURL
+    const blogImg = d.imgURL;
+    const blogTitle = d.postTitle;
+    return blogURL, blogImg, blogTitle;
+  })
+
+  for (let i=0; i <= 9; i++) {
+    const cardIndex = i;
+    const markup = 
+    `<a href="${blogURL}" class="card__link">
+        <img src="${blogImg}" class="card__image">
+        <h2 class="banner__caption-title">${blogTitle}</h2>
+      </a>`;
+    
+    // create card container and add the markup 
+    const cardContainer = document.createElement('div');
+    cardContainer.className = 'card';
+    cardContainer.id = cardIndex;
+    cardContainer.innerHTML = markup;
+    bxslider.appendChild(cardContainer);
+  }  
+  console.log(adjustedBP)
+}
+
+appendCard();
 </script>
-
-<!-- https://static.indigoimages.ca/2019/585x585_blog_spa.jpg
-https://static.indigoimages.ca/2019/585x585_blog_salmonrecipe.jpg
-https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg
-https://static.indigoimages.ca/2019/585x585_blog_10books.jpg
-https://static.indigoimages.ca/2019/585x585_blog_typesofmom.jpg
-https://static.indigoimages.ca/2019/585x585_blog_lettertomom.jpg
-https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg
-https://static.indigoimages.ca/2019/585x585_blog_chefsouschef.jpg
-https://static.indigoimages.ca/2019/585x585_blog_baby.jpg
-https://static.indigoimages.ca/2019/585_585_blog_curated_magnolia.jpg
-https://static.indigoimages.ca/2019/585x585_blog_crystal.jpg -->
