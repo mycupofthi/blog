@@ -1,13 +1,15 @@
 <style>
-.carousel {
-  padding:0;
-  margin:100px auto;
-}
-.bx-wrapper {
-  position:relative;
-  margin:0 auto;
-}
-/* .bxslider {
+  .carousel {
+    padding: 0;
+    margin: 100px auto;
+  }
+
+  .bx-wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /* .bxslider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,59 +20,68 @@
 } */
   .bx-prev,
   .bx-next {
-    position:absolute;
-    top:39.5%;
+    position: absolute;
+    top: 39.5%;
   }
-    .bx-prev {
-      left:1%;
-    }
-    .bx-next {
-      right:1%;
-    }
+
+  .bx-prev {
+    left: 1%;
+  }
+
+  .bx-next {
+    right: 1%;
+  }
+
   .card {
-    max-width:585px;
-    width:30.469vw;
+    max-width: 585px;
+    width: 30.469vw;
   }
-    .card img {
-      width:100%;
-    }
-    .card .banner__copy-container {
-      position:relative;
-      margin: 40px auto 0;
-      text-align: left;
-      max-width:385px;
-      width:20.052vw;
-    }
-    .card .banner__caption-title {
-      font-family:'Miller Banner Light', 'Miller Display Light', Arial, Helvetica, sans-serif;
-      font-size:35px;
-      line-height:1.43;
-      letter-spacing:0;
-      text-transform:none;
-      text-decoration:underline;
-    }
-.carousel a:hover {
-  text-decoration:none;
-}
 
-@media (max-width:1920px) {
-  .carousel {
-    margin:5.208vw auto;
+  .card img {
+    width: 100%;
   }
+
+  .card .banner__copy-container {
+    position: relative;
+    margin: 40px auto 0;
+    text-align: left;
+    max-width: 385px;
+    width: 20.052vw;
+  }
+
   .card .banner__caption-title {
-    font-size:1.823vw;
+    font-family: "Miller Banner Light", "Miller Display Light", Arial, Helvetica,
+      sans-serif;
+    font-size: 35px;
+    line-height: 1.43;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: underline;
   }
-}
 
-
-@media (max-width:675px) {
-  .carousel {
-    margin:15.625vw auto;
-    padding: 0;
-    position:relative;
+  .carousel a:hover {
+    text-decoration: none;
   }
+
+  @media (max-width: 1920px) {
+    .carousel {
+      margin: 5.208vw auto;
+    }
+
+    .card .banner__caption-title {
+      font-size: 1.823vw;
+    }
+  }
+
+  @media (max-width: 675px) {
+    .carousel {
+      margin: 15.625vw auto;
+      padding: 0;
+      position: relative;
+    }
+
     .carousel:before {
-      content: '';
+      content: "";
       height: 1px;
       width: 84.375vw;
       background: black;
@@ -79,21 +90,24 @@
       left: 50%;
       transform: translateX(-50%);
     }
-  .card {
-    max-width:300px;
-    width:46.875vw;
-  }
-    .card:last-of-type {
-      display:none;
-    }
-    .card .banner__copy-container {
-      width:37.500vw;
-    }
-    .card .banner__caption-title {
-      font-size:3.712vw;
-    }
-}
 
+    .card {
+      max-width: 300px;
+      width: 46.875vw;
+    }
+
+    .card:last-of-type {
+      display: none;
+    }
+
+    .card .banner__copy-container {
+      width: 37.5vw;
+    }
+
+    .card .banner__caption-title {
+      font-size: 3.712vw;
+    }
+  }
 </style>
 
 <section class="carousel">
@@ -101,100 +115,111 @@
 </section>
 
 <script>
-const blogPosts = [
-  // USE BELOW CODE AS TEMPLATE FOR FUTURE BLOG POSTS
-  //   please take care in separating each object with a comma
-  //   {
-  //     imgURL: "",
-  //     linkURL: "",
-  //     postTitle: ""
-  //   }
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_spa.jpg",
-    linkURL: "/inspired/wellness/spa-day",
-    postTitle: "How to Create a Spa Day at Home ",
-    
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_salmonrecipe.jpg",
-    linkURL: "/inspired/food-entertaining/salmon-recipe",
-    postTitle: "Recipe: Orange Honey Salmon",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg",
-    linkURL: "/inspired/books/Annie-Leibovitz",
-    postTitle: "5 Life Lessons with Annie Leibovitz",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_10books.jpg",
-    linkURL: "/inspired/books/10-books",
-    postTitle: "Shelf Life: 10 Books by Badass Moms",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_typesofmom.jpg",
-    linkURL: "/inspired/gifting/types-of-mom",
-    postTitle: "Mother's Day Gift Ideas for Every Type of Mom",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_lettertomom.jpg",
-    linkURL: "/inspired/gifting/letters-to-mom",
-    postTitle: "How to Master the Art of Letter Writing",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg",
-    linkURL: "/inspired/style-design/matt-and-nat",
-    postTitle: "Curated by Indigo: Matt & Nat",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_chefsouschef.jpg",
-    linkURL: "/inspired/food-entertaining/blueberry-french-toast",
-    postTitle: "In the Kitchen with Chef Sous Chef",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_baby.jpg",
-    linkURL: "/inspired/family/nursery-decor",
-    postTitle: "How to Create a Calming Baby Nursery",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585_585_blog_curated_magnolia.jpg",
-    linkURL: "/inspired/style-design/joanna-gaines",
-    postTitle: "Curated by Indigo: Magnolia Home by Joanna Gaines",
-  },
-  {
-    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_crystal.jpg",
-    linkURL: "/inspired/wellness/crystals",
-    postTitle: "4 Ways Crystals Can Improve Your Life",
+  const blogPosts = [
+    // USE BELOW CODE AS TEMPLATE FOR FUTURE BLOG POSTS
+    //   please take care in separating each object with a comma
+    //   {
+    //     imgURL: "",
+    //     linkURL: "",
+    //     postTitle: ""
+    //   }
+    {
+      imgURL: "https://static.indigoimages.ca/2019/585x585_blog_spa.jpg",
+      linkURL: "/inspired/wellness/spa-day",
+      postTitle: "How to Create a Spa Day at Home "
+    },
+    {
+      imgURL:
+        "https://static.indigoimages.ca/2019/585x585_blog_salmonrecipe.jpg",
+      linkURL: "/inspired/food-entertaining/salmon-recipe",
+      postTitle: "Recipe: Orange Honey Salmon"
+    },
+    {
+      imgURL:
+        "https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg",
+      linkURL: "/inspired/books/Annie-Leibovitz",
+      postTitle: "5 Life Lessons with Annie Leibovitz"
+    },
+    {
+      imgURL: "https://static.indigoimages.ca/2019/585x585_blog_10books.jpg",
+      linkURL: "/inspired/books/10-books",
+      postTitle: "Shelf Life: 10 Books by Badass Moms"
+    },
+    {
+      imgURL: "https://static.indigoimages.ca/2019/585x585_blog_typesofmom.jpg",
+      linkURL: "/inspired/gifting/types-of-mom",
+      postTitle: "Mother's Day Gift Ideas for Every Type of Mom"
+    },
+    {
+      imgURL:
+        "https://static.indigoimages.ca/2019/585x585_blog_lettertomom.jpg",
+      linkURL: "/inspired/gifting/letters-to-mom",
+      postTitle: "How to Master the Art of Letter Writing"
+    },
+    {
+      imgURL:
+        "https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg",
+      linkURL: "/inspired/style-design/matt-and-nat",
+      postTitle: "Curated by Indigo: Matt & Nat"
+    },
+    {
+      imgURL:
+        "https://static.indigoimages.ca/2019/585x585_blog_chefsouschef.jpg",
+      linkURL: "/inspired/food-entertaining/blueberry-french-toast",
+      postTitle: "In the Kitchen with Chef Sous Chef"
+    },
+    {
+      imgURL: "https://static.indigoimages.ca/2019/585x585_blog_baby.jpg",
+      linkURL: "/inspired/family/nursery-decor",
+      postTitle: "How to Create a Calming Baby Nursery"
+    },
+    {
+      imgURL:
+        "https://static.indigoimages.ca/2019/585_585_blog_curated_magnolia.jpg",
+      linkURL: "/inspired/style-design/joanna-gaines",
+      postTitle: "Curated by Indigo: Magnolia Home by Joanna Gaines"
+    },
+    {
+      imgURL: "https://static.indigoimages.ca/2019/585x585_blog_crystal.jpg",
+      linkURL: "/inspired/wellness/crystals",
+      postTitle: "4 Ways Crystals Can Improve Your Life"
+    }
+  ];
+
+  // initialize empty array, take out object from array if location matches linkUrl, and
+  // shuffle array
+  const adjustedBP = [];
+
+  blogPosts.map(function(d) {
+    // if linkURL is NOT in array, then add into adjustedBP
+    if (window.location.href.indexOf(d.linkURL) === -1) {
+      adjustedBP.push(d);
+    }
+  });
+
+  // shuffle array
+  function shuffle(array) {
+    var i = 0,
+      j = 0,
+      temp = null;
+
+    for (i = array.length - 1; i > 0; i -= 1) {
+      j = Math.floor(Math.random() * (i + 1));
+      temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
   }
-];
 
-// initialize empty array, take out object from array if location matches linkUrl, and 
-// shuffle array
-const adjustedBP = [];
+  shuffle(adjustedBP);
 
-blogPosts.map(function(d) {
+  let blogURL, blogImg, blogTitle;
 
-  // if linkURL is NOT in array, then add into adjustedBP
-  if (window.location.href.indexOf(d.linkURL) === -1) {
-    adjustedBP.push(d);
-  }
+  // appending card to bxslider parent
+  function appendCard() {
+    // markup for individual card
+    const bxslider = document.querySelector(".bxslider-test");
 
-})
-
-// shuffle array
-function shuffle(array) {
-  var i = 0
-    , j = 0
-    , temp = null
-
-  for (i = array.length - 1; i > 0; i -= 1) {
-    j = Math.floor(Math.random() * (i + 1))
-    temp = array[i]
-    array[i] = array[j]
-    array[j] = temp
-  }
-}
-
-shuffle(adjustedBP);
 
 let blogURL, blogImg, blogTitle;
 

@@ -228,8 +228,19 @@
   @media (max-width: 939px) {
     top: -18vw;
   }
+  @media (max-width: 675px) {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 115vw;
+    background: url(https://static.indigoimages.ca/2019/123154_typesofmom_02__m.png);
+    background-size: 83%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    top: -5vw;
+  }
 }
-.list-before::before {
+.list-before::after {
   content: "";
   position: absolute;
   background: url(https://static.indigoimages.ca/2019/123154_typesofmom_03.png);
@@ -240,6 +251,17 @@
   left: 0;
   top: 20%;
   @media (max-width: 939px) {
+    top: 15vw;
+  }
+  @media (max-width: 675px) {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 90vw;
+    background: url(https://static.indigoimages.ca/2019/123154_typesofmom_03__m.png);
+    background-size: 83%;
+    background-repeat: no-repeat;
+    top: -5vw;
   }
 }
 
