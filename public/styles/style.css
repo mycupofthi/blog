@@ -415,6 +415,8 @@
           font-size: 3.125vw;
           line-height: 1.2; } }
     .cat-header .banner__copy-container .share {
+      /* remove visibility hidden once share is approved again :) */
+      visibility: hidden;
       text-align: right;
       position: relative; }
       .cat-header .banner__copy-container .share:before {
