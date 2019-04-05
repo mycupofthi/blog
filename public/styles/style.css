@@ -217,15 +217,7 @@
       top: -18vw; } }
   @media (max-width: 675px) {
     .list-after::after {
-      position: relative;
-      display: block;
-      width: 100vw;
-      height: 115vw;
-      background: url(https://static.indigoimages.ca/2019/123154_typesofmom_02__m.png);
-      background-size: 83%;
-      background-position: 100%;
-      background-repeat: no-repeat;
-      top: -5vw; } }
+      display: none; } }
 
 .list-before::after {
   content: "";
@@ -242,14 +234,7 @@
       top: 15vw; } }
   @media (max-width: 675px) {
     .list-before::after {
-      position: relative;
-      display: block;
-      width: 100vw;
-      height: 90vw;
-      background: url(https://static.indigoimages.ca/2019/123154_typesofmom_03__m.png);
-      background-size: 83%;
-      background-repeat: no-repeat;
-      top: -5vw; } }
+      display: none; } }
 
 /* videos */
 @media (max-width: 675px) {
@@ -371,7 +356,7 @@
           width: 100%;
           margin: 10.93838vw auto 7.031vw; } }
     .cat-header .banner__copy-container .banner__caption-text {
-      font-family: "Miller Display", Arial, Helvetica, sans-serif;
+      font-family: "Miller Banner Light", Arial, Helvetica, sans-serif;
       font-size: 36px;
       line-height: 1.33;
       letter-spacing: 0.025em;
@@ -575,7 +560,7 @@
           font-size: 7.5vw;
           line-height: 1.1; } }
     .main-feat .banner__copy-container .banner__caption-text {
-      font-family: "Miller Banner Light", Helvetica, Arial, sans-serif;
+      font-family: "Miller Display", Helvetica, Arial, sans-serif;
       letter-spacing: 0.025em;
       color: #000;
       text-transform: none;
@@ -650,13 +635,22 @@
       color: #000;
       text-transform: none;
       font-size: 35px;
-      line-height: 1.29; }
+      line-height: 1.29;
+      position: relative; }
       @media (max-width: 1920px) {
         .small-feat .banner__copy-container .banner__caption-title {
           font-size: 1.823vw; } }
       @media (max-width: 675px) {
         .small-feat .banner__copy-container .banner__caption-title {
           font-size: 5.469vw; } }
+    .small-feat .banner__copy-container .banner__caption-title::after {
+      display: inline;
+      content: "";
+      padding-left: 7px;
+      margin-left: 7px;
+      background: url(//static.indigoimages.ca/2017/triangle-cta.svg);
+      background-position: center;
+      background-repeat: no-repeat; }
 
 /* behaviour: .cat-main for desktop, .cat-hero for tablet, .cat-main for mobile - good for recipes */
 .cat-hero-tablet {
