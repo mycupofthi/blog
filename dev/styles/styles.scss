@@ -78,7 +78,7 @@
       }
     }
     .banner__caption-text {
-      font-family: "Miller Display", Arial, Helvetica, sans-serif;
+      font-family: "Miller Banner Light", Arial, Helvetica, sans-serif;
       font-size: 36px;
       line-height: 1.33;
       letter-spacing: 0.025em;
@@ -295,7 +295,7 @@
       }
     }
     .banner__caption-text {
-      font-family: "Miller Banner Light", Helvetica, Arial, sans-serif;
+      font-family: "Miller Display", Helvetica, Arial, sans-serif;
       letter-spacing: 0.025em;
       color: #000;
       text-transform: none;
@@ -380,12 +380,22 @@
       text-transform: none;
       font-size: 35px;
       line-height: 1.29;
+      position: relative;
       @media (max-width: 1920px) {
         font-size: 1.823vw;
       }
       @media (max-width: 675px) {
         font-size: 5.469vw;
       }
+    }
+    .banner__caption-title::after {
+      display: inline;
+      content: "";
+      padding-left: 7px;
+      margin-left: 7px;
+      background: url(//static.indigoimages.ca/2017/triangle-cta.svg);
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 }
