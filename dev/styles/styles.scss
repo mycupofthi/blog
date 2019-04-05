@@ -140,6 +140,8 @@
       }
     }
     .share {
+      /* remove visibility hidden once share is approved again :) */
+      visibility: hidden;
       text-align: right;
       position: relative;
       &:before {
@@ -351,7 +353,7 @@
   @media (max-width: 675px) {
     max-width: 100%;
     width: 68.75vw;
-    margin:0 auto 10.938vw;
+    margin: 0 auto 10.938vw;
   }
   .banner__container {
     @media (max-width: 675px) {
@@ -368,8 +370,8 @@
     text-align: left;
     max-width: 320px;
     width: 16.667vw;
-    @media (max-width:1920px) {
-      margin:2.083vw auto 0;
+    @media (max-width: 1920px) {
+      margin: 2.083vw auto 0;
     }
     @media (max-width: 675px) {
       margin: 9.375vw auto 0;
