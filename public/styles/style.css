@@ -611,7 +611,8 @@
   @media (max-width: 675px) {
     .small-feat {
       max-width: 100%;
-      width: 68.75vw; } }
+      width: 68.75vw;
+      margin: 0 auto 10.938vw; } }
   @media (max-width: 675px) {
     .small-feat .banner__container {
       max-width: 100% !important;
@@ -624,6 +625,9 @@
     text-align: left;
     max-width: 320px;
     width: 16.667vw; }
+    @media (max-width: 1920px) {
+      .small-feat .banner__copy-container {
+        margin: 2.083vw auto 0; } }
     @media (max-width: 675px) {
       .small-feat .banner__copy-container {
         margin: 9.375vw auto 0;
