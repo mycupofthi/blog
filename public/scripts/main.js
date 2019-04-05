@@ -55,19 +55,19 @@ var blogPosts = [
   postTitle: "4 Ways Crystals Can Improve Your Life"
 }];
 
-// initialize empty array, take out object from array if location matches linkUrl, and 
-// shuffle array
+// initialize empty array
 var adjustedBP = [];
 
+// map through original array
 blogPosts.map(function (d) {
 
-  // if linkURL is NOT in array, then add into adjustedBP
+  // if the current url does not match object linkURL, add to adjusted array
   if (window.location.href.indexOf(d.linkURL) === -1) {
     adjustedBP.push(d);
   }
 });
 
-// shuffle array
+// shuffle adjusted array
 function shuffle(array) {
   var i = 0,
       j = 0,
@@ -83,29 +83,85 @@ function shuffle(array) {
 
 shuffle(adjustedBP);
 
-// appending card to bxslider parent
-function appendCard() {
-  // markup for individual card
-  var bxslider = document.querySelector('.bxslider-test');
+var blogURL = void 0,
+    blogImg = void 0,
+    blogTitle = void 0;
 
-  adjustedBP.map(function (d) {
-    var blogURL = d.linkURL;
-    var blogImg = d.imgURL;
-    var blogTitle = d.postTitle;
-  });
+// append card to bxslider
+function appendCard() {
+
+  // markup for individual card
+  var bxslider = document.querySelector('.bxslider-inspire');
 
   for (var i = 0; i <= 9; i++) {
-    var cardIndex = i;
-    var markup = "<a href=\"" + blogURL + "\" class=\"card__link\">\n        <img src=\"" + blogImg + "\" class=\"card__image\">\n        <h2 class=\"banner__caption-title\">" + blogTitle + "</h2>\n      </a>";
 
-    // create card container and add the markup 
+    blogURL = adjustedBP[i].linkURL;
+    blogImg = adjustedBP[i].imgURL;
+    blogTitle = adjustedBP[i].postTitle;
+
+    var markup = "<a href=\"" + blogURL + "\" class=\"card__link\">\n      <img src=\"" + blogImg + "\" class=\"card__image\">\n      <div class=\"banner__copy-container\">\n        <h2 class=\"banner__caption-title\">" + blogTitle + "</h2>\n      </div>\n    </a>";
+
+    var cardIndex = i;
+
+    // create card container, add the markup  and append to bxslider
     var cardContainer = document.createElement('div');
     cardContainer.className = 'card';
     cardContainer.id = cardIndex;
     cardContainer.innerHTML = markup;
     bxslider.appendChild(cardContainer);
   }
-  console.log(adjustedBP);
 }
 
 appendCard();
+
+prerequire.add(['jquery'], function ($) {
+  $(function () {
+    var $slider = void 0;
+
+    // bxslider config settings
+    function buildSliderConfig() {
+      var windowWidth = $(window).width();
+      var margin = void 0;
+
+      // card margin settings based on viewport
+      if (windowWidth <= 675) {
+        margin = 0.0625 * windowWidth;
+      } else if (windowWidth < 1920) {
+        margin = 0.04 * windowWidth;
+      } else if (windowWidth >= 1920) {
+        margin = 82.5;
+      }
+
+      return {
+        pager: windowWidth <= 675 ? true : false,
+        slideWidth: windowWidth <= 675 ? 316.4 : 585,
+        slideMargin: margin,
+        maxSlides: windowWidth <= 675 ? 2 : 3,
+        minSlides: windowWidth <= 675 ? 2 : 3,
+        moveSlides: windowWidth <= 675 ? 2 : 3,
+        nextText: '<img src="https://static.indigoimages.ca/2019/next.png">',
+        prevText: '<img src="https://static.indigoimages.ca/2019/previous.png">'
+      };
+    }
+
+    // initialize and reload slider behaviour
+    function configureSlider() {
+      var config = buildSliderConfig();
+
+      // if the slider is reloaded, reload config
+      if ($slider && $slider.reloadSlider) {
+        $slider.reloadSlider(config);
+
+        // else initialize slider
+      } else {
+        $slider = $('.bxslider-inspire').bxSlider(config);
+      }
+    }
+
+    // if the orientation changes or he window is resized, change config settings
+    $(window).on('orientationchange resize', _.debounce(configureSlider));
+
+    // init 
+    configureSlider();
+  });
+});
