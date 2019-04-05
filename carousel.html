@@ -104,7 +104,7 @@
       }
       .card .banner__copy-container {
         width:31.250vw;
-        margin:9.375vw auto 0;
+        margin:3.125vw auto 0;
       }
         .card .banner__caption-title {
           font-size:3.712vw;
@@ -119,137 +119,151 @@
     margin-left:1.05vw;
   }
 }
-</style> 
+</style>
 
 <section class="carousel">
   <div class="bxslider-test"></div>
 </section>
 
 <script>
-"use strict";
-
-var blogPosts = [
-// USE BELOW CODE AS TEMPLATE FOR FUTURE BLOG POSTS
-//   please take care in separating each object with a comma
-//   {
-//     imgURL: "",
-//     linkURL: "",
-//     postTitle: ""
-//   }
-{
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_spa.jpg",
-  linkURL: "/inspired/wellness/spa-day",
-  postTitle: "How to Create a Spa Day at Home "
-
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_salmonrecipe.jpg",
-  linkURL: "/inspired/food-entertaining/salmon-recipe",
-  postTitle: "Recipe: Orange Honey Salmon"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg",
-  linkURL: "/inspired/books/Annie-Leibovitz",
-  postTitle: "5 Life Lessons with Annie Leibovitz"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_10books.jpg",
-  linkURL: "/inspired/books/10-books",
-  postTitle: "Shelf Life: 10 Books by Badass Moms"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_typesofmom.jpg",
-  linkURL: "/inspired/gifting/types-of-mom",
-  postTitle: "Mother's Day Gift Ideas for Every Type of Mom"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_lettertomom.jpg",
-  linkURL: "/inspired/gifting/letters-to-mom",
-  postTitle: "How to Master the Art of Letter Writing"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg",
-  linkURL: "/inspired/style-design/matt-and-nat",
-  postTitle: "Curated by Indigo: Matt & Nat"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_chefsouschef.jpg",
-  linkURL: "/inspired/food-entertaining/blueberry-french-toast",
-  postTitle: "In the Kitchen with Chef Sous Chef"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_baby.jpg",
-  linkURL: "/inspired/family/nursery-decor",
-  postTitle: "How to Create a Calming Baby Nursery"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585_585_blog_curated_magnolia.jpg",
-  linkURL: "/inspired/style-design/joanna-gaines",
-  postTitle: "Curated by Indigo: Magnolia Home by Joanna Gaines"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_crystal.jpg",
-  linkURL: "/inspired/wellness/crystals",
-  postTitle: "4 Ways Crystals Can Improve Your Life"
-}];
+const blogPosts = [
+  // USE BELOW CODE AS TEMPLATE FOR FUTURE BLOG POSTS
+  //   please take care in separating each object with a comma
+  //   {
+  //     imgURL: "",
+  //     linkURL: "",
+  //     postTitle: ""
+  //   }
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_spa.jpg",
+    linkURL: "/inspired/wellness/spa-day",
+    postTitle: "How to Create a Spa Day at Home ",
+    
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_salmonrecipe.jpg",
+    linkURL: "/inspired/food-entertaining/salmon-recipe",
+    postTitle: "Recipe: Orange Honey Salmon",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg",
+    linkURL: "/inspired/books/Annie-Leibovitz",
+    postTitle: "5 Life Lessons with Annie Leibovitz",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_10books.jpg",
+    linkURL: "/inspired/books/10-books",
+    postTitle: "Shelf Life: 10 Books by Badass Moms",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_typesofmom.jpg",
+    linkURL: "/inspired/gifting/types-of-mom",
+    postTitle: "Mother's Day Gift Ideas for Every Type of Mom",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_lettertomom.jpg",
+    linkURL: "/inspired/gifting/letters-to-mom",
+    postTitle: "How to Master the Art of Letter Writing",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_curated_mattnat.jpg",
+    linkURL: "/inspired/style-design/matt-and-nat",
+    postTitle: "Curated by Indigo: Matt & Nat",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_chefsouschef.jpg",
+    linkURL: "/inspired/food-entertaining/blueberry-french-toast",
+    postTitle: "In the Kitchen with Chef Sous Chef",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_baby.jpg",
+    linkURL: "/inspired/family/nursery-decor",
+    postTitle: "How to Create a Calming Baby Nursery",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585_585_blog_curated_magnolia.jpg",
+    linkURL: "/inspired/style-design/joanna-gaines",
+    postTitle: "Curated by Indigo: Magnolia Home by Joanna Gaines",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_crystal.jpg",
+    linkURL: "/inspired/wellness/crystals",
+    postTitle: "4 Ways Crystals Can Improve Your Life",
+  }
+];
 
 // initialize empty array
-var adjustedBP = [];
+const adjustedBP = [];
 
 // map through original array
-blogPosts.map(function (d) {
+blogPosts.map(function(d) {
 
   // if the current url does not match object linkURL, add to adjusted array
   if (window.location.href.indexOf(d.linkURL) === -1) {
     adjustedBP.push(d);
   }
-});
+
+})
 
 // shuffle adjusted array
 function shuffle(array) {
-  var i = 0,
-      j = 0,
-      temp = null;
+  var i = 0
+    , j = 0
+    , temp = null
 
   for (i = array.length - 1; i > 0; i -= 1) {
-    j = Math.floor(Math.random() * (i + 1));
-    temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+    j = Math.floor(Math.random() * (i + 1))
+    temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
   }
 }
 
 shuffle(adjustedBP);
 
-var blogURL = void 0,
-    blogImg = void 0,
-    blogTitle = void 0;
+let blogURL, blogImg, blogTitle;
 
 // append card to bxslider
 function appendCard() {
 
   // markup for individual card
-  var bxslider = document.querySelector('.bxslider-inspire');
-
-  for (var i = 0; i <= 9; i++) {
+  const bxslider = document.querySelector('.bxslider-inspire');
+  
+  for (let i=0; i <= 9; i++) {
 
     blogURL = adjustedBP[i].linkURL;
     blogImg = adjustedBP[i].imgURL;
     blogTitle = adjustedBP[i].postTitle;
 
-    var markup = "<a href=\"" + blogURL + "\" class=\"card__link\">\n      <img src=\"" + blogImg + "\" class=\"card__image\">\n      <div class=\"banner__copy-container\">\n        <h2 class=\"banner__caption-title\">" + blogTitle + "</h2>\n      </div>\n    </a>";
+    const markup = 
+    `<a href="${blogURL}" class="card__link">
+      <img src="${blogImg}" class="card__image">
+      <div class="banner__copy-container">
+        <h2 class="banner__caption-title">${blogTitle}</h2>
+      </div>
+    </a>`;
 
-    var cardIndex = i;
+    const cardIndex = i;
 
     // create card container, add the markup  and append to bxslider
-    var cardContainer = document.createElement('div');
+    const cardContainer = document.createElement('div');
     cardContainer.className = 'card';
     cardContainer.id = cardIndex;
     cardContainer.innerHTML = markup;
     bxslider.appendChild(cardContainer);
-  }
+  }  
 }
 
 appendCard();
 
-prerequire.add(['jquery'], function ($) {
-  $(function () {
-    var $slider = void 0;
+prerequire.add(['jquery'], function($) {
+  $(function() {
+    let $slider;
 
     // bxslider config settings
     function buildSliderConfig() {
-      var windowWidth = $(window).width();
-      var margin = void 0;
+      let windowWidth = $(window).width();
+      let margin;
 
       // card margin settings based on viewport
       if (windowWidth <= 675) {
@@ -261,26 +275,26 @@ prerequire.add(['jquery'], function ($) {
       }
 
       return {
-        pager: false,
-        slideWidth: windowWidth <= 675 ? 316.4 : 585,
+        pager: (windowWidth <= 675) ? true : false,
+        slideWidth: (windowWidth <= 675) ? 316.4 : 585,
         slideMargin: margin,
-        maxSlides: windowWidth <= 675 ? 2 : 3,
-        minSlides: windowWidth <= 675 ? 2 : 3,
-        moveSlides: windowWidth <= 675 ? 2 : 3,
+        maxSlides:(windowWidth <= 675) ? 2 : 3,
+        minSlides: (windowWidth <= 675) ? 2 : 3,
+        moveSlides:(windowWidth <= 675) ? 2 : 3,
         nextText: '<img src="https://static.indigoimages.ca/2019/next.png">',
         prevText: '<img src="https://static.indigoimages.ca/2019/previous.png">'
-      };
+      }; 
     }
 
     // initialize and reload slider behaviour
     function configureSlider() {
-      var config = buildSliderConfig();
-
+      const config = buildSliderConfig();
+      
       // if the slider is reloaded, reload config
       if ($slider && $slider.reloadSlider) {
         $slider.reloadSlider(config);
-
-        // else initialize slider
+      
+      // else initialize slider
       } else {
         $slider = $('.bxslider-inspire').bxSlider(config);
       }
@@ -291,6 +305,7 @@ prerequire.add(['jquery'], function ($) {
 
     // init 
     configureSlider();
+      
   });
-});
+})
 </script>
