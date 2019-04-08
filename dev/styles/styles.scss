@@ -135,13 +135,13 @@
         line-height: 1.7;
       }
       @media (max-width: 675px) {
-        font-size: 3.125vw;
-        line-height: 1.2;
+        font-size: 3.325vw;
+        line-height: 1.05;
       }
     }
     .share {
       /* remove visibility hidden once share is approved again :) */
-      visibility: hidden;
+      // visibility: hidden;
       text-align: right;
       position: relative;
       &:before {
@@ -398,6 +398,7 @@
       display: inline;
       content: "";
       padding-left: 7px;
+      top:2.5px;
       margin-left: 7px;
       background: url(//static.indigoimages.ca/2017/triangle-cta.svg);
       background-position: center;
@@ -511,7 +512,6 @@
       font-size: 105px;
       line-height: 1.1;
       letter-spacing: 0;
-      // text-decoration: underline;
       text-transform: none;
       @media (max-width: 1920px) {
         font-size: 5.469vw;
@@ -520,6 +520,20 @@
         font-size: 7.813vw;
         line-height: 1.1;
       }
+    }
+  }
+  .cat-quote__byline {
+    font-size: 25px;
+    font-family: 'Gibson Regular';
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    @media (max-width:1920px) {
+      font-size:1.302vw;
+      margin-top:1.563vw;
+    }
+    @media (max-width:675px) {
+      font-size:3.125vw;
+      margin-top:3.125vw;
     }
   }
   .cat-quote__caps .banner__caption-title {

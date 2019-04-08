@@ -71,7 +71,7 @@ const adjustedBP = [];
 blogPosts.map(function(d) {
 
   // if the current url does not match object linkURL, add to adjusted array
-  if (window.location.href.indexOf(d.linkURL) === -1) {
+  if (window.location.href.indexOf(d.linkURL) === -1)  {
     adjustedBP.push(d);
   }
 
@@ -137,7 +137,7 @@ prerequire.add(['jquery'], function($) {
       let windowWidth = $(window).width();
       let margin;
 
-      // card margin settings based on viewport
+      // card right margin based on viewport
       if (windowWidth <= 675) {
         margin = 0.0625 * windowWidth;
       } else if (windowWidth < 1920) {
@@ -172,7 +172,7 @@ prerequire.add(['jquery'], function($) {
       }
     }
 
-    // if the orientation changes or he window is resized, change config settings
+    // if the orientation changes or the window is resized, change config settings
     $(window).on('orientationchange resize', _.debounce(configureSlider));
 
     // init 

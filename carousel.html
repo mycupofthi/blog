@@ -1,8 +1,20 @@
 <style>
 .carousel {
   padding:0;
-  margin:100px auto;
+  margin:200px auto 100px;
+  position:relative;
 }
+  .carousel:before {
+    content: '';
+    height: 1px;
+    max-width:1440px;
+    width: 75vw;
+    background: black;
+    position: absolute;
+    top: -10.417vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .carousel a:hover {
     text-decoration:none;
   }
@@ -60,7 +72,7 @@
 
 @media (max-width:1920px) {
   .carousel {
-    margin:5.208vw auto;
+    margin:10.417vw auto 5.208vw;
   }
     .card .banner__copy-container {
       margin:2.604vw auto 0;
@@ -78,14 +90,8 @@
     position:relative;
   }
     .carousel:before {
-      content: '';
-      height: 1px;
       width: 84.375vw;
-      background: black;
-      position: absolute;
       top: -15.625vw;
-      left: 50%;
-      transform: translateX(-50%);
     }
     .bx-prev,
     .bx-next {
@@ -199,7 +205,7 @@ const adjustedBP = [];
 blogPosts.map(function(d) {
 
   // if the current url does not match object linkURL, add to adjusted array
-  if (window.location.href.indexOf(d.linkURL) === -1) {
+  if (window.location.href.indexOf(d.linkURL) === -1)  {
     adjustedBP.push(d);
   }
 
@@ -265,7 +271,7 @@ prerequire.add(['jquery'], function($) {
       let windowWidth = $(window).width();
       let margin;
 
-      // card margin settings based on viewport
+      // card right margin based on viewport
       if (windowWidth <= 675) {
         margin = 0.0625 * windowWidth;
       } else if (windowWidth < 1920) {
@@ -300,7 +306,7 @@ prerequire.add(['jquery'], function($) {
       }
     }
 
-    // if the orientation changes or he window is resized, change config settings
+    // if the orientation changes or the window is resized, change config settings
     $(window).on('orientationchange resize', _.debounce(configureSlider));
 
     // init 
