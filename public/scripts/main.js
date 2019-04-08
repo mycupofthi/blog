@@ -123,7 +123,7 @@ prerequire.add(['jquery'], function ($) {
       var windowWidth = $(window).width();
       var margin = void 0;
 
-      // card margin settings based on viewport
+      // card right margin based on viewport
       if (windowWidth <= 675) {
         margin = 0.0625 * windowWidth;
       } else if (windowWidth < 1920) {
@@ -158,7 +158,7 @@ prerequire.add(['jquery'], function ($) {
       }
     }
 
-    // if the orientation changes or he window is resized, change config settings
+    // if the orientation changes or the window is resized, change config settings
     $(window).on('orientationchange resize', _.debounce(configureSlider));
 
     // init 

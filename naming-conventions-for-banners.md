@@ -16,6 +16,7 @@
 
 - **.cat-hero** - general
 - **.cat-quote** - quotes ([example](https://preview.indigo.ca/Admin/ContentDetails.aspx?id=55963&language=4105))
+  - cta 1 - .cat-quote__byline - quoted by line
 
 ### Wrapped - 1440px
 
