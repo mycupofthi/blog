@@ -16,7 +16,7 @@
 
 - **.cat-hero** - general
 - **.cat-quote** - quotes ([example](https://preview.indigo.ca/Admin/ContentDetails.aspx?id=55963&language=4105))
-  - cta 1 - .cat-quote__byline - quoted by line
+  - cta 1 - .cat-quote\_\_byline - quoted by line
 
 ### Wrapped - 1440px
 
@@ -35,6 +35,7 @@
 - **.small-feat** - small features on LP
 - **.cat-no-bottom** - removes bottom margin (can be added in addition to any of the top classes)
 - **.cat-bg** - full bleed bg - add class with _.cat-main_ or _.cat-hero_ (inspired/family/nursery-decor for reference) - (eg. 55961) ([example](https://preview.indigo.ca/en-ca/inspired/family/nursery-decor))
+- **.cat-line-break** - if you're manually writing out the HTML, including a text you want in a new line in a span with this class will add a line break
 
 ## **Caption fields** in extra tools
 
@@ -51,6 +52,7 @@
 - **.cat-centered** - centers text
 - **.cat-overlap** - absolutely positioned over image within 1440px wrapper (default - copy on left)
   - add .cat-overlap-r - copy on right side
+    -- **.cat-quote-80** - 80vw
 
 ## Embed html blocks
 
@@ -60,6 +62,7 @@ Recipe list & instructions, Q&A, videos, copy with hyperlinks
 - **.cat-no-top** - no top margin - add to caption class
 - **.paragraph** - add class to banner\_\_caption-text to create spaces in paragraphs
 - **.text--initial** - add class to make first letters of word initialized in a title (instead of text-transform: uppercase)
+- **.default-text--transform** - add class to return to default text transform (sentence casing)
 
 - **.cat-list** - recipes, instructions, Q&A
 

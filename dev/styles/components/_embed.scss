@@ -299,3 +299,15 @@
     }
   }
 }
+
+.share-top__social {
+  width: 70%;
+  right: 0;
+  position: absolute;
+  bottom: 75%;
+  &--buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,5 +1,6 @@
-<script>
-  // we then store the markup we would like to add in a variable
+// SHARE FUNCTIONALITY FOR HEADER //
+
+// we then store the markup we would like to add in a variable
   let markup = `  
           <div class="share-top__social--buttons">
             <ul class="share-top__social--buttons-list">
@@ -105,85 +106,84 @@
           </div>
         </div>`;
   // we need to target the existing share button with class of .share__menu
-  const share = document.querySelector(".share__menu");
-  function createShareElement() {
-    const shareContainer = document.createElement("div");
-    shareContainer.id = "topShare";
-    shareContainer.className = "share-top__social hide";
-    shareContainer.innerHTML = markup;
+  window.onload = function() {
+    const share = document.querySelector(".share__menu");
+    function createShareMenu() {
+      const shareContainer = document.createElement("div");
+      shareContainer.id = "topShare";
+      shareContainer.className = "share-top__social hide";
+      shareContainer.innerHTML = markup;
+      console.dir(shareContainer)
+      share.appendChild(shareContainer);
+      return false;
+    }
+    // We listen for a click event on this element, if clicked run createShareMenu()
+    share.addEventListener(
+      "click", createShareMenu());
   }
-  createShareElement();
-  share.setAttribute("id", "share__menu");
-  // We listen for a click event on this element, if clicked run createShareMenu()
-  share.addEventListener(
-    "click",
-    document.getElementByID("topShare").classList.remove("hide")
-  );
 
-  // Initializing functions for below markup to call to
-  // SHARE BY EMAIL
-  const emailLink = document
-    .getElementById("top_emailShare")
-    .addEventListener("click", function(e) {
-      e.preventDefault();
-      window.location.href =
-        "mailto:?body=Check this out: " +
-        escape(window.location.href) +
-        "&amp;subject=" +
-        document.title;
-    });
-  // FACEBOOK SHARE
-  const facebookLink = document
-    .getElementById("top_facebookShare")
-    .addEventListener("click", function(e) {
-      e.preventDefault();
-      window.open(
-        "https://www.facebook.com/sharer/sharer.php?u=" +
-          escape(window.location.href) +
-          "&amp;t=" +
-          document.title,
-        "",
-        "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
-      );
+  // // SHARE BY EMAIL
+  // const emailLink = document
+  //   .getElementById("top_emailShare")
+  //   .addEventListener("click", function(e) {
+  //     e.preventDefault();
+  //     window.location.href =
+  //       "mailto:?body=Check this out: " +
+  //       escape(window.location.href) +
+  //       "&amp;subject=" +
+  //       document.title;
+  //   });
+  // // FACEBOOK SHARE
+  // const facebookLink = document
+  //   .getElementById("top_facebookShare")
+  //   .addEventListener("click", function(e) {
+  //     e.preventDefault();
+  //     window.open(
+  //       "https://www.facebook.com/sharer/sharer.php?u=" +
+  //         escape(window.location.href) +
+  //         "&amp;t=" +
+  //         document.title,
+  //       "",
+  //       "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  //     );
 
-      return false;
-    });
+  //     return false;
+  //   });
 
-  // PINTEREST SHARE
-  const pinterestLink = document
-    .getElementById("top_pinterestShare")
-    .addEventListener("click", function(e) {
-      e.preventDefault();
-      // first we store the window URL in a string so we can input it into the share URL
-      const windowUrl = window.location.toString();
-      // we need to trim the https:// off the URL to leave us only with the remaining URL for the page
-      const urlToAdd = windowUrl.slice(8);
-      // We want to target the header banner and the title within it using querySelectorAll
-      // If you are re-using this code on a different page then you may need to adjust the below target to be the intended title/description for the pinterest post
-      const headerNode = document.querySelectorAll(
-        ".cat-header .banner__caption-title"
-      );
-      // Since the above produces a nodeList we want to store the innerHTML in it's own variable to then push to the description
-      const descToAdd = encodeURIComponent(headerNode[0].innerText);
-      // we now pull the header mobile image as our pinterest placeholder
-      // If you are re-using this on a different page you'll just need to adjust the querySelectorAll to refer to the intended banner
-      // const headerImage = document.querySelectorAll(
-      //   ".cat-header .banner__image source"
-      // );
-      // // headerImage pulls another nodelist with 2 items (there are two source tags in the picture element) we want the second one with a more square image
-      // const pinImage = encodeURIComponent(
-      //   headerImage[1].attributes[0].nodeValue
-      // );
-      // headerImage[1].srcset
-      // we separate each section in order to concatenate later
-      // Now we initialize the URL with all of the above components
-      const fullUrl =
-        "http://pinterest.com/pin/create/button/?url=https%3A%2F%2F" +
-        urlToAdd +
-        "&description=" +
-        descToAdd;
-      // USING THE ABOVE DATA WE NOW OPEN OUR PINTEREST POP-UP
-      window.open(fullUrl, "_blank");
-      return false;
-    });
-</script>
+  // // PINTEREST SHARE
+  // const pinterestLink = document
+  //   .getElementById("top_pinterestShare")
+  //   .addEventListener("click", function(e) {
+  //     e.preventDefault();
+  //     // first we store the window URL in a string so we can input it into the share URL
+  //     const windowUrl = window.location.toString();
+  //     // we need to trim the https:// off the URL to leave us only with the remaining URL for the page
+  //     const urlToAdd = windowUrl.slice(8);
+  //     // We want to target the header banner and the title within it using querySelectorAll
+  //     // If you are re-using this code on a different page then you may need to adjust the below target to be the intended title/description for the pinterest post
+  //     const headerNode = document.querySelectorAll(
+  //       ".cat-header .banner__caption-title"
+  //     );
+  //     // Since the above produces a nodeList we want to store the innerHTML in it's own variable to then push to the description
+  //     const descToAdd = encodeURIComponent(headerNode[0].innerText);
+  //     // we now pull the header mobile image as our pinterest placeholder
+  //     // If you are re-using this on a different page you'll just need to adjust the querySelectorAll to refer to the intended banner
+  //     // const headerImage = document.querySelectorAll(
+  //     //   ".cat-header .banner__image source"
+  //     // );
+  //     // // headerImage pulls another nodelist with 2 items (there are two source tags in the picture element) we want the second one with a more square image
+  //     // const pinImage = encodeURIComponent(
+  //     //   headerImage[1].attributes[0].nodeValue
+  //     // );
+  //     // headerImage[1].srcset
+  //     // we separate each section in order to concatenate later
+  //     // Now we initialize the URL with all of the above components
+  //     const fullUrl =
+  //       "http://pinterest.com/pin/create/button/?url=https%3A%2F%2F" +
+  //       urlToAdd +
+  //       "&description=" +
+  //       descToAdd;
+  //     // USING THE ABOVE DATA WE NOW OPEN OUR PINTEREST POP-UP
+  //     window.open(fullUrl, "_blank");
+  //     return false;
+  //   });
