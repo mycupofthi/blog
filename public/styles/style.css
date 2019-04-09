@@ -669,10 +669,9 @@
       display: inline;
       content: "";
       padding-left: 7px;
-      top: 2.5px;
-      margin-left: 7px;
+      margin-left: 15px;
       background: url(//static.indigoimages.ca/2017/triangle-cta.svg);
-      background-position: 0 55%;
+      background-position: 0 61%;
       background-repeat: no-repeat; }
 
 /* behaviour: .cat-main for desktop, .cat-hero for tablet, .cat-main for mobile - good for recipes */
@@ -901,10 +900,10 @@
     font-family: "Gibson Regular", Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 1.167;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     margin: -60px auto 150px;
     max-width: 1020px;
-    width: 53.125vw; }
+    width: 60vw; }
     @media (max-width: 1920px) {
       .cat-article.banner__copy-container .banner__caption-caption {
         font-size: 1.25vw;
