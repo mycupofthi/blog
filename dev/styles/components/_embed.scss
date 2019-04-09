@@ -250,6 +250,59 @@
   }
 }
 
+/* Heather Q&A quotes */
+.heather__quote-after,
+.heather__quote-before {
+  position: relative;
+  .cat-quote {
+    .banner__copy-container {
+      width: 82vw;
+      max-width: 1540px;
+    }
+  }
+}
+
+.heather__quote-before::before {
+  content: "";
+  position: absolute;
+  background: url(https://static.indigoimages.ca/2019/123154_heather_01.png);
+  width: 29%;
+  height: 873px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  z-index: -10;
+  top: -59%;
+  @media (max-width: 675px) {
+    top: -2vw;
+    background: url(https://static.indigoimages.ca/2019/123154_heather_01__m.png);
+    background-repeat: no-repeat;
+    width: 32%;
+    top: -7vw;
+    background-size: contain;
+  }
+}
+.heather__quote-after::after {
+  content: "";
+  position: absolute;
+  background: url(https://static.indigoimages.ca/2019/123154_heather_02.png);
+  width: 25%;
+  height: 883px;
+  z-index: -10;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  top: -59%;
+  @media (max-width: 675px) {
+    top: -2vw;
+    background: url(https://static.indigoimages.ca/2019/123154_heather_02__m.png);
+    background-repeat: no-repeat;
+    top: -16vw;
+    width: 34%;
+    background-size: contain;
+  }
+}
+
 /* videos */
 .cat-video {
   @media (max-width: 675px) {
@@ -297,5 +350,17 @@
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+.share-top__social {
+  width: 70%;
+  right: 0;
+  position: absolute;
+  bottom: 75%;
+  &--buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
