@@ -4,16 +4,28 @@
 
 Start by making sure you have the following downloaded to your computer: npm and git
 
-1. Start by Clicking the Fork button on top of this project, this will generate your own version on github.
-2. In your terminal type `cd` and the folder that you have for this project that you would like to place the code in
-3. Type `git clone [url for repository] .` (the period is important so it puts the folders in the directory you're in, otherwise it'll just create a new folder inside your folder)
+1. Start by Clicking the Fork button on top of this project, this will generate your own version on github. Navigate to your fork and copy the fork link.
+2. In your terminal (for windows we recommend [cmder](https://cmder.net/)) type `cd` and the folder that you have for this project that you would like to place the code in (it should look something like https://github.com/YOUR_GITHUB_USERNAME/blog.git).
+3. In your terminal type `git clone [url for repository] .` (the period is important so it puts the folders in the directory you're in, otherwise it'll just create a new folder inside your folder).
+   - to make sure you're situated on the right repository type in `git remote -v`, it'll give you a list of the origin(should be your forked repo) and the upstream which should be the main indigo-online-production-projects/blog.git
 4. Once you've downloaded the project to your computer type `npm i` to install the node package modules, these are necessary to compile and process the code. You may notice some warnings, it's safe to ignore them right now and it shouldn't prevent you from going forward.
-5. This project uses SASS for the CSS. To compile this we use gulp. In your terminal (still within this project folder) simply type gulp and it'll begin watching your files. Every time you hit save it will compile your code.
+5. This project uses SASS for the CSS. To compile this we use gulp. In your terminal (still within this project folder) simply type `gulp` and it'll begin watching your files. Every time you hit save it will compile your code.
 6. To pull compiled code for using on the CMS simply navigate to the folder public>styles and copy the content in style.css into the CMS (╯✧∇✧)╯
+
+**For more info on SCSS/Sass check out [Sass Basics](https://sass-lang.com/guide) - particularly, the guide on nesting**
 
 ### Making Changes to Project
 
-(☞ ﾟ ∇ ﾟ)☞ Woohoo you've made some changes! Now you want to push them to github so that anyone else who picks up this project is working with all of the same material as you are.
+(☞ ﾟ ∇ ﾟ)☞ Woohoo you've made some changes! Now you want to push them to github so that anyone else who picks up this project is working with the same base material you are.
+
+In your terminal do the following
+
+1. Type `git status`. This will list all of the files that you've changed. Take a look at the list and pat yourself on a job well done. These are the files that will soon be staged for github.
+2. Type `git add -A` this will add all of the files to the staging area to push to git hub.
+3. Type `git commit -m "your message here"` here is where you type in a message to inform everyone on what these changes were, keep it brief, if you want to add more info it can be done later.
+4. Now we can fire out your work to github! Type in `git push origin master`. This will load all of your code to your fork.
+
+In your browser now navigate to your github fork.
 
 ## Page Creation
 
