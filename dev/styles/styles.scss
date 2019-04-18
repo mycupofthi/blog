@@ -876,3 +876,11 @@ strong {
   font-family: "Gibson Regular";
   font-weight: normal;
 }
+
+/* Visibilty Hidden  */
+.visibilityHidden {
+  opacity: 0;
+  bottom: 430%;
+  z-index: -100;
+  transition: 0.3s all ease-in-out;
+}

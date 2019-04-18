@@ -331,8 +331,11 @@
   .cat-video #player:hover {
     cursor: pointer; }
 
+.share__menu {
+  cursor: pointer; }
+
 .share-top__social {
-  width: 58%;
+  width: 130px;
   right: 0;
   position: absolute;
   bottom: 90%;
@@ -357,28 +360,41 @@
       width: 28px;
       background: #000;
       display: block;
-      border-radius: 100%; }
+      border-radius: 100%;
+      position: relative; }
     .share-top__social--buttons-list-item svg {
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       top: 50%;
       width: 50%;
+      left: 50%;
       height: 50%;
-      position: relative; }
+      position: absolute; }
     .share-top__social--buttons-list-item svg path,
     .share-top__social--buttons-list-item svg rect {
       fill: white; }
+  @media (max-width: 1920px) {
+    .share-top__social {
+      width: 40%; }
+      .share-top__social--buttons-list-item a {
+        width: 1.5vw;
+        height: 1.5vw; } }
   @media (max-width: 939px) {
-    .share-top__social--buttons-list-item a {
-      width: 3vw;
-      height: 3vw; } }
-  @media (max-width: 640px) {
+    .share-top__social {
+      width: 74%; }
+      .share-top__social--buttons-list-item a {
+        width: 3vw;
+        height: 3vw; } }
+  @media (max-width: 675px) {
     .share-top__social {
       width: 90%;
       bottom: 115%; }
       .share-top__social--buttons-list-item a {
         width: 4vw;
         height: 4vw; } }
+  @media (max-width: 675px) and (max-width: 1920px) and (-ms-high-contrast: none), (max-width: 675px) and (-ms-high-contrast: active) {
+    .share-top__social #top_pinterestShare {
+      display: none; } }
 
 /* STORY HEADER */
 .cat-header {
@@ -1178,3 +1194,11 @@ em {
 strong {
   font-family: "Gibson Regular";
   font-weight: normal; }
+
+/* Visibilty Hidden  */
+.visibilityHidden {
+  opacity: 0;
+  bottom: 430%;
+  z-index: -100;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out; }
