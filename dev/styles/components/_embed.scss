@@ -353,8 +353,12 @@
   }
 }
 
+.share__menu {
+  cursor: pointer;
+}
+
 .share-top__social {
-  width: 58%;
+  width: 130px;
   right: 0;
   position: absolute;
   bottom: 90%;
@@ -373,20 +377,32 @@
       background: #000;
       display: block;
       border-radius: 100%;
+      position: relative;
     }
     &-item svg {
       transform: translate(-50%, -50%);
       top: 50%;
       width: 50%;
+      left: 50%;
       height: 50%;
-      position: relative;
+      position: absolute;
     }
     &-item svg path,
     &-item svg rect {
       fill: white;
     }
   }
+  @media (max-width: 1920px) {
+    width: 40%;
+    &--buttons-list {
+      &-item a {
+        width: 1.5vw;
+        height: 1.5vw;
+      }
+    }
+  }
   @media (max-width: 939px) {
+    width: 74%;
     &--buttons-list {
       &-item a {
         width: 3vw;
@@ -394,13 +410,19 @@
       }
     }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 675px) {
     width: 90%;
     bottom: 115%;
     &--buttons-list {
       &-item a {
         width: 4vw;
         height: 4vw;
+      }
+    }
+    @media (max-width: 1920px) and (-ms-high-contrast: none),
+      (-ms-high-contrast: active) {
+      #top_pinterestShare {
+        display: none;
       }
     }
   }
