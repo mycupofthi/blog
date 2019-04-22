@@ -1,5 +1,11 @@
 @import "../styles/components/_embed.scss";
 
+/* Remove carousel from indigo app */
+.indigo-app {
+  .carousel {
+    display: none;
+  }
+}
 /* STORY HEADER */
 .cat-header {
   margin-bottom: 150px;

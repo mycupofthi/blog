@@ -396,6 +396,10 @@
     .share-top__social #top_pinterestShare {
       display: none; } }
 
+/* Remove carousel from indigo app */
+.indigo-app .carousel {
+  display: none; }
+
 /* STORY HEADER */
 .cat-header {
   margin-bottom: 150px; }
