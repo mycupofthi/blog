@@ -894,6 +894,14 @@
         margin-top: 3.125vw; } }
   .cat-quote .cat-quote__caps .banner__caption-title {
     text-transform: uppercase; }
+  .cat-quote .cat-quote-top {
+    top: 155px; }
+    @media (max-width: 1920px) {
+      .cat-quote .cat-quote-top {
+        top: 8.073vw; } }
+    @media (max-width: 675) {
+      .cat-quote .cat-quote-top {
+        top: 0; } }
 
 /* overlap img (below quote banner - check inspired/books/annieleibovitz for reference) */
 .cat-portrait {

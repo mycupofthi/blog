@@ -17,11 +17,13 @@ var blogPosts = [
   imgURL: "https://static.indigoimages.ca/2019/585x585_blog_salmonrecipe.jpg",
   linkURL: "/inspired/food-entertaining/salmon-recipe",
   postTitle: "Recipe: Orange Honey Salmon"
-}, {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg",
-  linkURL: "/inspired/books/Annie-Leibovitz",
-  postTitle: "5 Life Lessons with Annie Leibovitz"
-}, {
+},
+// {
+//   imgURL: "https://static.indigoimages.ca/2019/585x585_blog_author_annie.jpg",
+//   linkURL: "/inspired/books/Annie-Leibovitz",
+//   postTitle: "5 Life Lessons with Annie Leibovitz",
+// },
+{
   imgURL: "https://static.indigoimages.ca/2019/585x585_blog_10books.jpg",
   linkURL: "/inspired/books/10-books",
   postTitle: "Shelf Life: 10 Books by Badass Moms"
@@ -53,6 +55,10 @@ var blogPosts = [
   imgURL: "https://static.indigoimages.ca/2019/585x585_blog_crystal.jpg",
   linkURL: "/inspired/wellness/crystals",
   postTitle: "4 Ways Crystals Can Improve Your Life"
+}, {
+  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_mothersdaybrunch.jpg",
+  linkURL: "/en-ca/inspired/food-entertainment/mothers-day-brunch/joanna-gaines",
+  postTitle: "Setting A Mother's Day Brunch Table With Crumb"
 }];
 
 // initialize empty array

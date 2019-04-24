@@ -544,6 +544,15 @@
   .cat-quote__caps .banner__caption-title {
     text-transform: uppercase;
   }
+  .cat-quote-top {
+    top: 155px;
+    @media (max-width: 1920px) {
+      top: 8.073vw;
+    }
+    @media (max-width: 675) {
+      top: 0;
+    }
+  }
 }
 
 /* overlap img (below quote banner - check inspired/books/annieleibovitz for reference) */
