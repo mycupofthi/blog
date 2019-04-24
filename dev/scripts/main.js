@@ -64,7 +64,7 @@ const blogPosts = [
   },
     {
       imgURL: "https://static.indigoimages.ca/2019/585x585_blog_mothersdaybrunch.jpg",
-      linkURL: "/en-ca/inspired/food-entertainment/mothers-day-brunch/joanna-gaines",
+      linkURL: "/en-ca/inspired/food-entertaining/mothers-day-brunch",
       postTitle: "Setting A Mother's Day Brunch Table With Crumb",
   }
 ];
