@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="banner cat-header" data-reactroot="">
+      <div class="banner__copy-container">
+        <a
+          data-ref="blog:style:blogstylemagnolia:00-crumb-hero-1-setting:banner"
+        >
+          <h2 class="banner__caption-title">
+            Setting A Mother’s Day Brunch Table With Crumb
+          </h2>
+        </a>
+        <p class="banner__caption-text">
+          Hosting Mother’s Day Brunch can induce a smidge of intimidation in
+          even the most seasoned home entertainers. I mean, who do we really
+          want to impress more than our own mothers? On a day that’s about
+          showing all the love to mom, it’s nice to have a few tricks up your
+          sleeve that will impress, but also keep you stress-free when you’re
+          prepping the house for guests. We’ve asked the creator of Crumb,
+          <a href="thisiscrumb.com" target="_blank" class="banner__caption-link"
+            >Devin Connell</a
+          >, to share her top tips for setting a meaningful Mother’s Day table.
+        </p>
+        <a class="banner__button date">Apr.22.2019</a
+        ><a
+          href="/en-ca/inspired/food-entertaining/"
+          class="banner__button category"
+          >Food+Entertaining</a
+        ><a class="banner__button share share__menu">Share </a>
+      </div>
+    </div>
+    <p class="banner__caption-text">
+      Hosting Mother’s Day Brunch can induce a smidge of intimidation in even
+      the most seasoned home entertainers. I mean, who do we really want to
+      impress more than our own mothers? On a day that’s about showing all the
+      love to mom, it’s nice to have a few tricks up your sleeve that will
+      impress, but also keep you stress-free when you’re prepping the house for
+      guests. We’ve asked the creator of Crumb, Devin Connell, to share her top
+      tips for setting a meaningful Mother’s Day table.
+    </p>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(function() {
+      const heroDesc = $(".cat-header .banner__caption-text");
+      console.log(heroDesc);
+      const newStr = $(heroDesc).text();
+
+      if (newStr.toLowerCase().indexOf("Devin Connell") >= 0) {
+        $(heroDesc).html(function(i, el) {
+          return el.replace(
+            "Devin Connell",
+            `<a href="thisiscrumb.com" target="_blank" class="banner__caption-link">Devin Connell</a>`
+          );
+        });
+      }
+    });
+  </script>
+</html>

@@ -83,7 +83,8 @@
         margin: 10.93838vw auto 7.031vw;
       }
     }
-    .banner__caption-text {
+    .banner__caption-text,
+    .banner__caption-link {
       font-family: "Miller Banner Light", Arial, Helvetica, sans-serif;
       font-size: 36px;
       line-height: 1.33;
@@ -106,6 +107,9 @@
         text-align: left;
         width: 68.75vw;
       }
+    }
+    .banner__caption-link {
+      color: #66948e;
     }
     .banner__button {
       font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial,
@@ -538,7 +542,8 @@
     }
     @media (max-width: 675px) {
       font-size: 3.125vw;
-      margin-top: 3.125vw;
+      width: 68.75vw;
+      margin: 3.125vw auto 0;
     }
   }
   .cat-quote__caps .banner__caption-title {

@@ -95,3 +95,29 @@ Recipe list & instructions, Q&A, videos, copy with hyperlinks
   </div>
 </section>
 ```
+
+Template for numbered lists
+
+```
+<section class="cat__embed cat-main list">
+  <h2 class="list__number">[Number goes here]</h2>
+  <div class="banner list__feat-l cat-main">
+    <div class="banner__container">
+      <div class="banner__image">
+        <picture>
+          <source media="(min-width: 675px)" srcset=""/>
+          <source srcset="" />
+          <img data-type="banner" class="banner__image-picture" src="" alt="" />
+        </picture>
+      </div>
+    </div>
+    <div class="banner__copy-container cat-article">
+      <h2 class="banner__caption-title">
+      </h2>
+      <h3 class="banner__caption--name"></h3>
+      <p class="banner__caption-text">
+      </p>
+    </div>
+  </div>
+</section>
+```

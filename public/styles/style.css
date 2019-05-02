@@ -248,14 +248,14 @@
 .heather__quote-before::before {
   content: "";
   position: absolute;
-  background: url(https://static.indigoimages.ca/2019/123154_heather_01.png);
+  background: url(https://static.indigoimages.ca/2019/123154_heather_01c.png);
   width: 29%;
   height: 873px;
   background-size: contain;
   background-repeat: no-repeat;
   left: 0;
   z-index: -10;
-  top: -59%; }
+  top: -96%; }
   @media (max-width: 675px) {
     .heather__quote-before::before {
       top: -2vw;
@@ -473,7 +473,8 @@
           line-height: 0.9;
           width: 100%;
           margin: 10.93838vw auto 7.031vw; } }
-    .cat-header .banner__copy-container .banner__caption-text {
+    .cat-header .banner__copy-container .banner__caption-text,
+    .cat-header .banner__copy-container .banner__caption-link {
       font-family: "Miller Banner Light", Arial, Helvetica, sans-serif;
       font-size: 36px;
       line-height: 1.33;
@@ -485,16 +486,21 @@
       width: 53.125vw;
       text-align: left; }
       @media (max-width: 1920px) {
-        .cat-header .banner__copy-container .banner__caption-text {
+        .cat-header .banner__copy-container .banner__caption-text,
+        .cat-header .banner__copy-container .banner__caption-link {
           font-size: 1.775vw; } }
       @media (max-width: 939px) {
-        .cat-header .banner__copy-container .banner__caption-text {
+        .cat-header .banner__copy-container .banner__caption-text,
+        .cat-header .banner__copy-container .banner__caption-link {
           font-size: 14px; } }
       @media (max-width: 675px) {
-        .cat-header .banner__copy-container .banner__caption-text {
+        .cat-header .banner__copy-container .banner__caption-text,
+        .cat-header .banner__copy-container .banner__caption-link {
           font-size: 3.814vw;
           text-align: left;
           width: 68.75vw; } }
+    .cat-header .banner__copy-container .banner__caption-link {
+      color: #66948e; }
     .cat-header .banner__copy-container .banner__button {
       font-family: "Franklin Gothic Extra Condensed", "Ultramagnetic", Arial, Helvetica, sans-serif;
       -webkit-box-ordinal-group: 0;
@@ -891,7 +897,8 @@
     @media (max-width: 675px) {
       .cat-quote .cat-quote__byline {
         font-size: 3.125vw;
-        margin-top: 3.125vw; } }
+        width: 68.75vw;
+        margin: 3.125vw auto 0; } }
   .cat-quote .cat-quote__caps .banner__caption-title {
     text-transform: uppercase; }
   .cat-quote .cat-quote-top {
