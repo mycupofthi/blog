@@ -62,10 +62,20 @@ const blogPosts = [
     linkURL: "/inspired/wellness/crystals",
     postTitle: "4 Ways Crystals Can Improve Your Life",
   },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585x585_blog_springCleaning.jpg",
+    linkURL: "/inspired/style-design/spring-cleaning",
+    postTitle: "5 Spring Cleaning Tips To Refresh Your Home",
+  },
     {
       imgURL: "https://static.indigoimages.ca/2019/585x585_blog_mothersdaybrunch.jpg",
       linkURL: "/en-ca/inspired/food-entertaining/mothers-day-brunch",
       postTitle: "Setting A Mother's Day Brunch Table With Crumb",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/585_585_blog_heatherqa.jpg",
+    linkURL: "/en-ca/inspired/family/heather-interview",
+    postTitle: "Mother’s Day Q&A with Heather Reisman",
   }
 ];
 
@@ -106,7 +116,7 @@ function appendCard() {
   // markup for individual card
   const bxslider = document.querySelector('.bxslider-inspire');
   
-  for (let i=0; i <= 9; i++) {
+  for (let i=0; i <= 11; i++) {
 
     blogURL = adjustedBP[i].linkURL;
     blogImg = adjustedBP[i].imgURL;
