@@ -74,7 +74,7 @@ const blogPosts = [
   },
   {
     imgURL: "https://static.indigoimages.ca/2019/585_585_blog_heatherqa.jpg",
-    linkURL: "inspired/family/mothers-day-q-and-a-with-heather-reisman",
+    linkURL: "/en-ca/inspired/family/mothers-day-q-and-a-with-heather-reisman",
     postTitle: "Mother’s Day Q&A with Heather Reisman",
   }
 ];
