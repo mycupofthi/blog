@@ -24,7 +24,7 @@ var blogPosts = [
 //   postTitle: "5 Life Lessons with Annie Leibovitz",
 // },
 {
-  imgURL: "https://static.indigoimages.ca/2019/585x585_blog_10books.jpg",
+  imgURL: "https://static.indigoimages.ca/2019/585x585_Blog_10booksNEW.jpg",
   linkURL: "/inspired/books/10-books",
   postTitle: "Shelf Life: 10 Books by Badass Moms"
 }, {
@@ -65,7 +65,7 @@ var blogPosts = [
   postTitle: "Setting A Mother's Day Brunch Table With Crumb"
 }, {
   imgURL: "https://static.indigoimages.ca/2019/585_585_blog_heatherqa.jpg",
-  linkURL: "/en-ca/inspired/family/heather-interview",
+  linkURL: "/en-ca/inspired/family/mothers-day-q-and-a-with-heather-reisman",
   postTitle: "Mother’s Day Q&A with Heather Reisman"
 }];
 
