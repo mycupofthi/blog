@@ -71,6 +71,10 @@ var blogPosts = [
   imgURL: "https://static.indigoimages.ca/2019/123854_sf_gradgifts_m.jpg",
   linkURL: "/en-ca/inspired/gifting/grad-gifts",
   postTitle: "Graduation Gifts To Help Them Take On The World"
+}, {
+  imgURL: "https://static.indigoimages.ca/2019/123855_sf_topbooksdad_d.jpg",
+  linkURL: "/en-ca/inspired/books/10-books-by-dads",
+  postTitle: "Shelf Life: 10 Books by Dads We Love"
 }];
 
 // initialize empty array
