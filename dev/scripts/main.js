@@ -76,6 +76,11 @@ const blogPosts = [
     imgURL: "https://static.indigoimages.ca/2019/585_585_blog_heatherqa.jpg",
     linkURL: "/en-ca/inspired/family/mothers-day-q-and-a-with-heather-reisman",
     postTitle: "Mother’s Day Q&A with Heather Reisman",
+  },
+  {
+    imgURL: "https://static.indigoimages.ca/2019/123854_sf_gradgifts_m.jpg",
+    linkURL: "/en-ca/inspired/gifting/grad-gifts",
+    postTitle: "Graduation Gifts To Help Them Take On The World",
   }
 ];
 
@@ -116,7 +121,7 @@ function appendCard() {
   // markup for individual card
   const bxslider = document.querySelector('.bxslider-inspire');
   
-  for (let i=0; i <= 11; i++) {
+  for (let i=0; i <= adjustedBP.length-1; i++) {
 
     blogURL = adjustedBP[i].linkURL;
     blogImg = adjustedBP[i].imgURL;
@@ -169,7 +174,10 @@ prerequire.add(['jquery'], function($) {
         minSlides: (windowWidth <= 675) ? 2 : 3,
         moveSlides:(windowWidth <= 675) ? 2 : 3,
         nextText: '<img src="https://static.indigoimages.ca/2019/next.png">',
-        prevText: '<img src="https://static.indigoimages.ca/2019/previous.png">'
+        prevText: '<img src="https://static.indigoimages.ca/2019/previous.png">',
+        onSliderLoad: function(){
+          $(".bxslider-inspire").css("visibility", "visible");        
+        }
       }; 
     }
 
@@ -191,7 +199,7 @@ prerequire.add(['jquery'], function($) {
     $(window).on('orientationchange resize', _.debounce(configureSlider));
 
     // init 
-    configureSlider();
+    $(window).on('load', configureSlider)
       
   });
 })
@@ -199,10 +207,6 @@ prerequire.add(['jquery'], function($) {
 
 
 // START SHARE CODE
-
-
-
-
 
 
 // SHARE FUNCTIONALITY FOR HEADER //
